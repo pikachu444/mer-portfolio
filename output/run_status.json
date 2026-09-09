@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "github_run_id": "34264597743",
+  "github_run_id": "34390242779",
   "mode": "scheduled",
-  "run_label": "scheduled_rebalance",
-  "completed_at": "2026-09-09T03:42:48.992323",
+  "run_label": "scheduled",
+  "completed_at": "2026-09-10T03:39:06.572427",
   "state_bundle_committed": true,
-  "report_path": "report_20260909.md",
+  "report_path": "report_20260910.md",
   "chart_path": "chart_latest.png",
-  "no_changes": false,
+  "no_changes": true,
   "telegram_delivery_required": true,
   "telegram_delivery_deferred": true,
   "telegram_delivery_accepted": null,
-  "status_note": ""
+  "status_note": "포트폴리오 안전 검증으로 변경 보류: decisions[0] links signals incompatible with maintaining or increasing the verified long"
 }
