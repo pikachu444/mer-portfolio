@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "kst_date": "2026-09-11",
-  "report_path": "report_20260911.md",
-  "prepared_at": "2026-09-11T03:32:18.168572+09:00",
-  "prepared_by_run_id": "34514698962",
-  "delivery_status": "delivered",
-  "delivered_at": "2026-09-11T03:32:23.212094+09:00",
-  "delivered_by_run_id": "34514698962"
+  "kst_date": "2026-09-12",
+  "report_path": "report_20260912.md",
+  "prepared_at": "2026-09-12T03:36:52.259675+09:00",
+  "prepared_by_run_id": "34634065819",
+  "delivery_status": "prepared",
+  "delivered_at": null,
+  "delivered_by_run_id": null
 }
