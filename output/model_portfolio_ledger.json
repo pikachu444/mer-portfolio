@@ -1121,7 +1121,7 @@
     }
   ],
   "corporate_action_state": {
-    "last_checked_date": "2026-09-12",
+    "last_checked_date": "2026-09-13",
     "last_applied_date": "2026-08-28"
   },
   "snapshots": [
@@ -1754,6 +1754,17 @@
     },
     {
       "date": "2026-09-12",
+      "kind": "closing",
+      "cash": 79.5513012,
+      "invested_value": 21.56467014,
+      "total_value": 101.11597133,
+      "return_pct": 1.11597133,
+      "realized_pnl": -0.13758894,
+      "dividend_income": 0.0118263,
+      "cumulative_costs": 0.16487386
+    },
+    {
+      "date": "2026-09-13",
       "kind": "closing",
       "cash": 79.5513012,
       "invested_value": 21.56467014,
