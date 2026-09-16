@@ -4,10 +4,10 @@
   "inception_date": "2026-07-14",
   "base_currency": "KRW",
   "starting_value": 100.0,
-  "cash": 79.55130119622945,
+  "cash": 77.61361613753941,
   "realized_pnl": -0.1375889351489082,
   "dividend_income": 0.011826302743827288,
-  "cumulative_costs": 0.1648738565477441,
+  "cumulative_costs": 0.17066952471929955,
   "positions": [
     {
       "key": "stock:KR:005930",
@@ -67,12 +67,12 @@
       "code": "091170",
       "market": "KR",
       "asset_type": "etf",
-      "quantity": 0.0003050047182646165,
-      "average_cost": 16363.93395809696,
+      "quantity": 0.00042013519445761307,
+      "average_cost": 16491.744125899993,
       "decision_actor": "AI",
       "opened_date": "2026-08-15",
       "episode_realized_pnl": 0.0,
-      "target_weight": 5.0
+      "target_weight": 7.0
     },
     {
       "key": "etf:KR:233160",
@@ -1088,6 +1088,21 @@
       "target_weight": 5.0,
       "drift_bps_before": 147.28192538541637,
       "reason": "이사회를 통한 40조 원 규모의 대규모 자사주 취득 및 전량 소각 결정으로 주당순가치(EPS)의 극적인 상승이 예상되어 포트폴리오 내 비중 확대를 결정함. / 결정론적 슬리브·변동성·상한 정책 적용"
+    },
+    {
+      "date": "2026-09-17",
+      "type": "추가 매수",
+      "key": "etf:KR:091170",
+      "name": "KODEX 은행",
+      "decision_actor": "AI",
+      "price": 16780.0,
+      "quantity": 0.00011513047619299656,
+      "value": 1.9318893905184824,
+      "trade_cost": 0.005795668171555447,
+      "realized_pnl": 0.0,
+      "target_weight": 7.0,
+      "drift_bps_before": 191.8516232512247,
+      "reason": "가상자산의 강력한 도전이었던 미국 클라리티 법안 부결로 예금 유출 우려가 경감되었고, 시중금리 상승 기조 하의 대출 NIM 회복 흐름과 시너지를 낼 수 있어 비중을 확대함. / 결정론적 슬리브·변동성·상한 정책 적용"
     }
   ],
   "corporate_events": [
@@ -1121,7 +1136,7 @@
     }
   ],
   "corporate_action_state": {
-    "last_checked_date": "2026-09-16",
+    "last_checked_date": "2026-09-17",
     "last_applied_date": "2026-08-28"
   },
   "snapshots": [
@@ -1806,6 +1821,17 @@
       "realized_pnl": -0.13758894,
       "dividend_income": 0.0118263,
       "cumulative_costs": 0.16487386
+    },
+    {
+      "date": "2026-09-17",
+      "kind": "closing",
+      "cash": 77.61361614,
+      "invested_value": 23.09879191,
+      "total_value": 100.71240804,
+      "return_pct": 0.71240804,
+      "realized_pnl": -0.13758894,
+      "dividend_income": 0.0118263,
+      "cumulative_costs": 0.17066952
     }
   ],
   "legacy_epochs": [

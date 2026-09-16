@@ -1,56 +1,127 @@
 {
-  "analysis_date": "2026-09-09",
+  "analysis_date": "2026-09-17",
   "run_type": "rebalance",
   "insights": [
     {
-      "id": "INSIGHT-20260909-1",
-      "title": "OpenAI GPT-6 Astra 공개와 엔비디아의 구조적 하드웨어 수요 지속",
-      "summary": "오픈AI가 자가 학습 및 End-to-End 제어 역량이 대폭 강화된 GPT-6 Astra를 발표하며 하드웨어 대규모 구매 의향을 드러냈습니다. AGI 트리거 독점 조항 해소로 마이크로소프트의 상업적 활용 역시 한층 안정화될 전망입니다.",
-      "investment_implication": "오픈AI의 대규모 인프라 구축 투자가 고스란히 엔비디아의 매출로 인식되는 가치 사슬이 더욱 고착화되어, 반도체 대형주의 AI 인프라 수혜 로드맵의 가시성을 높이고 있습니다.",
+      "id": "INSIGHT-20260917-1",
+      "title": "미국 클라리티 법안 표결 부결과 은행권 수혜 전망",
+      "summary": "미국 상원에서 가상자산 이자 지급 허용 등을 담은 클라리티 법안 필리버스터 종료 표결이 찬성 49, 반대 50으로 부결되었습니다. 트럼프 가문 관련 이해상충 방지 및 윤리 규정 합의 실패가 부결 요인으로 작동했습니다.",
+      "investment_implication": "스테이블코인으로의 자금 이탈 압력이 해소되면서 기존 은행권 예금의 마진 방어 및 독점적 지위가 지속될 것으로 기대됩니다.",
       "evidence_posts": [
         {
-          "title": "오픈AI가 발표한 GPT-6 Astra는 어떤 수준일까?",
-          "url": "https://blog.naver.com/ranto28/224403735059?fromRss=true&trackingCode=rss",
-          "published_date": "2026-09-07"
-        }
-      ],
-      "related_decision_codes": []
-    },
-    {
-      "id": "INSIGHT-20260909-2",
-      "title": "미국-한국 전력망 공동 대형 투자 협력 및 국내 전력 인프라 정책 모멘텀",
-      "summary": "한국의 대미 투자 패키지 중 하나인 텍사스 가스복합화력발전소 프로젝트(30조 원 규모)와 함께 국내 서해안 에너지 고속도로 구축에 72.8조 원 투입이 계획되면서 전력 그리드 및 해저케이블 부문에서 구조적 시장 수요 확대가 현실화되고 있습니다.",
-      "investment_implication": "대형 원전 및 가스발전 시공 관련 건설사들과 장기 송배전망 고도화의 수혜를 직접적으로 입는 초고압 해저케이블 관련 산업에 대한 장기 관찰 가치가 크게 상승했습니다.",
-      "evidence_posts": [
-        {
-          "title": "한국의 대미투자 패키지 1호사업으로 거론되는 프로젝트는?",
-          "url": "https://blog.naver.com/ranto28/224404876483?fromRss=true&trackingCode=rss",
-          "published_date": "2026-09-08"
+          "title": "클라리티 법안 표결결과가 나왔다. 변수가 있다면?",
+          "url": "https://blog.naver.com/ranto28/224413251320?fromRss=true&trackingCode=rss",
+          "published_date": "2026-09-15"
         },
         {
-          "title": "경영권 전쟁 본게임이 시작되나? (feat 대한항공 vs 호반)",
-          "url": "https://blog.naver.com/ranto28/224400415287?fromRss=true&trackingCode=rss",
-          "published_date": "2026-09-03"
+          "title": "코인과 은행간 한판승부 결과는? (feat 9.15일 클라리티 법안 표결)",
+          "url": "https://blog.naver.com/ranto28/224408966593?fromRss=true&trackingCode=rss",
+          "published_date": "2026-09-12"
         }
       ],
-      "related_decision_codes": []
+      "related_decision_codes": [
+        "091170"
+      ]
     },
     {
-      "id": "INSIGHT-20260909-3",
-      "title": "국내 제약·바이오 기업의 연구개발 공시 강화안 도입에 따른 투명성 개선",
-      "summary": "금융당국이 연구개발 이력관리 총괄표 도입 및 FDA 보완요구서한(CRL) 의무 공시 구체화를 단행함에 따라, 2026년 3분기 분기보고서부터 제약·바이오 기업들의 파이프라인 가치 평가 객관성이 대폭 제고될 예정입니다.",
-      "investment_implication": "불투명한 기대감 대신 실질적인 임상 이력과 계약 단위 공시에 입각한 합리적인 가치 평가가 가능해져 우량 파이프라인을 보유한 제약사 중심으로의 선별 흐름이 강화될 것입니다.",
+      "id": "INSIGHT-20260917-2",
+      "title": "에너지 공급 인프라의 지정학적 리스크 심화와 유가 100달러 재돌파",
+      "summary": "사우디아라비아의 페트로 라인 송유관 드론 피격과 지중해 이스트메드 파이프라인을 둘러싼 이스라엘-튀르키예 간 갈등 고조로 글로벌 에너지 공급망의 불안이 가중되고 있습니다. 유가는 배럴당 100달러를 재돌파했습니다.",
+      "investment_implication": "에너지 유통 병목 지속에 따른 조선 기자재 및 원유 수송 톤마일 상승 수혜 구도가 한층 견고해질 것입니다.",
       "evidence_posts": [
         {
-          "title": "제약사의 문제많던 공시가 조금 더 투명해지나?",
-          "url": "https://blog.naver.com/ranto28/224402787474?fromRss=true&trackingCode=rss",
-          "published_date": "2026-09-06"
+          "title": "사우디 사우디 동서횡단 송유관 폭파의 비밀",
+          "url": "https://blog.naver.com/ranto28/224411023780?fromRss=true&trackingCode=rss",
+          "published_date": "2026-09-14"
+        },
+        {
+          "title": "이스라엘과 터키 전쟁설이 나오는 이유",
+          "url": "https://blog.naver.com/ranto28/224412958088?fromRss=true&trackingCode=rss",
+          "published_date": "2026-09-15"
+        }
+      ],
+      "related_decision_codes": [
+        "042660"
+      ]
+    },
+    {
+      "id": "INSIGHT-20260917-3",
+      "title": "미국 국채 10년물 금리 급등에 따른 메르의 대응 조건",
+      "summary": "유가 상승에 따른 인플레이션 재점화 및 베센트 재무장관의 소규모 국채 바이백 정책에 대한 실망으로 미국 10년물 국채 금리가 5% 수준에 도달하며 패닉 징후를 보이고 있습니다.",
+      "investment_implication": "메르는 국채 금리가 추가 하락 압력을 이기지 못하고 5.1%를 터치할 경우 매수 기회로 활용하겠다는 명확한 기준선을 설정했습니다.",
+      "evidence_posts": [
+        {
+          "title": "미국국채 10년물이 드디어 5%를 찍었다.",
+          "url": "https://blog.naver.com/ranto28/224412030235?fromRss=true&trackingCode=rss",
+          "published_date": "2026-09-14"
+        },
+        {
+          "title": "미국 국채금리가 결국 발작을 시작했다.",
+          "url": "https://blog.naver.com/ranto28/224407689635?fromRss=true&trackingCode=rss",
+          "published_date": "2026-09-10"
         }
       ],
       "related_decision_codes": []
     }
   ],
   "portfolio_decisions": [
+    {
+      "name": "KODEX 은행",
+      "code": "091170",
+      "market": "KR",
+      "asset_type": "etf",
+      "decision_actor": "AI",
+      "action": "비중확대",
+      "basis": "섹터 분석",
+      "decision_date": "2026-09-17",
+      "evidence_posts": [
+        {
+          "title": "클라리티 법안 표결결과가 나왔다. 변수가 있다면?",
+          "url": "https://blog.naver.com/ranto28/224413251320?fromRss=true&trackingCode=rss",
+          "published_date": "2026-09-15"
+        }
+      ],
+      "source_mentioned": false,
+      "previous_weight": 5.0,
+      "proposed_weight": 7.0,
+      "weight_source": "AI 제안",
+      "change_reason": "가상자산의 강력한 도전이었던 미국 클라리티 법안 부결로 예금 유출 우려가 경감되었고, 시중금리 상승 기조 하의 대출 NIM 회복 흐름과 시너지를 낼 수 있어 비중을 확대함.",
+      "allocation_role": "satellite",
+      "source_scope": "sector_only",
+      "investment_rationale": "정부 대출규제 완화 수혜에 이어 가상자산 규제 표류에 따른 예금 수성 우위 확보.",
+      "current_entry_reason": "클라리티 법안 부결에 따른 은행 자금 유출 방어 기저 강화.",
+      "key_risks": [
+        "연체율 상승에 따른 대손 비용 증가",
+        "정치권의 추가 금리 인하 유도 개입 가능성"
+      ],
+      "linked_insight_ids": [
+        "INSIGHT-20260917-1"
+      ],
+      "linked_signal_ids": [],
+      "thesis_id": "thesis_8c72c1f9e05e65107ff54127",
+      "issuer_id": "KODEX_BANKS",
+      "theme_ids": [
+        "banking_deregulation",
+        "interest_rate_upcycle"
+      ],
+      "country_code": "KR",
+      "quality_components": {
+        "explicitness": 0.8,
+        "causality": 0.8,
+        "catalyst": 0.9,
+        "confirmation": 0.8,
+        "invalidation": 0.6,
+        "recency": 0.9
+      },
+      "provenance_status": "legacy_unvalidated",
+      "origin_signal_type": "LEGACY_UNVALIDATED",
+      "origin_signal_ids": [],
+      "decision_model_id": "gemini-3.5-flash",
+      "rejected_linked_signal_ids": [],
+      "allocation_method": null,
+      "policy_action": null,
+      "policy_change_reason": null
+    },
     {
       "name": "SK하이닉스",
       "code": "000660",
@@ -59,30 +130,28 @@
       "decision_actor": "AI",
       "action": "보유",
       "basis": "이전 판단 유지",
-      "decision_date": "2026-09-09",
+      "decision_date": "2026-09-17",
       "evidence_posts": [
         {
-          "title": "오픈AI가 발표한 GPT-6 Astra는 어떤 수준일까?",
-          "url": "https://blog.naver.com/ranto28/224403735059?fromRss=true&trackingCode=rss",
-          "published_date": "2026-09-07"
+          "title": "한전은 왜 삼성전자와 하이닉스에게 전기료 선납을 제안했을까?",
+          "url": "https://blog.naver.com/ranto28/224410243249?fromRss=true&trackingCode=rss",
+          "published_date": "2026-09-13"
         }
       ],
       "source_mentioned": false,
       "previous_weight": 5.0,
       "proposed_weight": 5.0,
       "weight_source": "AI 제안",
-      "change_reason": "지난 이사회의 자사주 매입/소각 계획 이행 중이며, GPT-6 기반의 차세대 인프라 확대로 고성능 메모리 장기 수요처가 탄탄함을 재확인하여 비중 5.0%를 우호적으로 유지함.",
+      "change_reason": "한국전력의 5년 전기료 선납 조건 제안(국고채 이상 수준의 이자 보전) 등 여유 자금을 예금 이상의 고효율 처방으로 굴릴 수 있는 자금 수단이 제안되며 수급 신뢰도가 견조해 기존 비중 유지.",
       "allocation_role": "satellite",
       "source_scope": "previous_decision",
-      "investment_rationale": "글로벌 하이퍼스케일러의 견고한 가이던스 기반 HBM 공급 과점 우위 지속.",
-      "current_entry_reason": "자사주 대규모 소각 수급 방어력 및 차세대 대형 모델 등장에 따른 성능 한계 상쇄 시나리오 유효.",
+      "investment_rationale": "자사주 소각 효과 및 데이터센터 고성능 HBM 시장 내 높은 과점적 가치 사슬 유지.",
+      "current_entry_reason": "재무 건전성 기반의 전기료 선납 자금 운용 기전 포착.",
       "key_risks": [
-        "외국인 단기 수급 이탈 가능성",
-        "DRAM 범용 유통단가의 중저가 경쟁 압력"
+        "외국인 단기 차익 실현 욕구",
+        "DRAM 시장 범용 가격 변동성"
       ],
-      "linked_insight_ids": [
-        "INSIGHT-20260909-1"
-      ],
+      "linked_insight_ids": [],
       "linked_signal_ids": [],
       "thesis_id": "thesis_f71c12c78b2b0afd880b57f8",
       "issuer_id": "SK_HYNIX",
@@ -91,12 +160,12 @@
       ],
       "country_code": "KR",
       "quality_components": {
-        "explicitness": 0.8,
+        "explicitness": 0.7,
         "causality": 0.8,
-        "catalyst": 0.8,
+        "catalyst": 0.7,
         "confirmation": 0.7,
         "invalidation": 0.5,
-        "recency": 0.9
+        "recency": 0.8
       },
       "provenance_status": "legacy_unvalidated",
       "origin_signal_type": "LEGACY_UNVALIDATED",
@@ -115,34 +184,33 @@
       "decision_actor": "AI",
       "action": "보유",
       "basis": "이전 판단 유지",
-      "decision_date": "2026-09-09",
+      "decision_date": "2026-09-17",
       "evidence_posts": [],
       "source_mentioned": false,
       "previous_weight": 1.5,
       "proposed_weight": 1.5,
       "weight_source": "AI 제안",
-      "change_reason": "대규모 분기 배당 지급 및 안정성 기반의 가치를 고려해 이전의 균형적인 비중 1.5%를 그대로 유지함.",
+      "change_reason": "분기 배당 메리트와 한전 선납 제안을 활용한 신형 자금 관리 등 포괄적 대형주 방어력을 감안해 비중 유지.",
       "allocation_role": "core",
       "source_scope": "previous_decision",
-      "investment_rationale": "메모리 업황의 완만한 가동률 복구 국면 속 대규모 배당의 가치 안정 마진 확보.",
-      "current_entry_reason": "HBM3E 검증 흐름 및 강력한 자금 환원 매력의 조화.",
+      "investment_rationale": "메모리 가동률 개선 안정성과 우수한 현금 버퍼를 보유한 방어주 역할 지속.",
+      "current_entry_reason": "HBM3E 납품 타임라인 검증 진행을 주시하는 관망세.",
       "key_risks": [
-        "외국인 자금 분기 환전에 따른 원화 약세 압력",
-        "기술 수율 도달 타임라인 지연 우려"
+        "외국인 자본 이탈 변동성",
+        "수율 타임라인 지연"
       ],
       "linked_insight_ids": [],
       "linked_signal_ids": [],
       "thesis_id": "thesis_d440cb53229e025ace44361f",
       "issuer_id": "SAMSUNG_ELECTRONICS",
       "theme_ids": [
-        "memory_semiconductors",
-        "shareholder_return"
+        "memory_semiconductors"
       ],
       "country_code": "KR",
       "quality_components": {
         "explicitness": 0.7,
-        "causality": 0.8,
-        "catalyst": 0.7,
+        "causality": 0.7,
+        "catalyst": 0.6,
         "confirmation": 0.7,
         "invalidation": 0.5,
         "recency": 0.8
@@ -164,22 +232,24 @@
       "decision_actor": "AI",
       "action": "보유",
       "basis": "이전 판단 유지",
-      "decision_date": "2026-09-09",
+      "decision_date": "2026-09-17",
       "evidence_posts": [],
       "source_mentioned": false,
       "previous_weight": 1.5,
       "proposed_weight": 1.5,
       "weight_source": "AI 제안",
-      "change_reason": "미 육군 MTC 자주포 시제품 단독 수혜 등 그룹 방산 전력의 수혜 낙수효과는 유효하며, 향후 해군 MRO 계약의 실적 반영 국면까지 비중 1.5%를 지켜봄.",
+      "change_reason": "중동 송유관 피격에 따른 원유 수송 톤마일 상승 가속과 특수선/해군 MRO 잠재 가치가 유지됨에 따라 기존 비중 보유.",
       "allocation_role": "satellite",
       "source_scope": "previous_decision",
-      "investment_rationale": "지정학적 리스크 지속에 따른 특수선 수주 및 글로벌 MRO 방산 성장 잠재력 유지.",
-      "current_entry_reason": "한미 안보 자원화 과정의 해상 인프라 구축 기대감 지지.",
+      "investment_rationale": "지정학적 갈등 장기화 속 방산 특수선 및 글로벌 가치 사슬 수혜 지탱.",
+      "current_entry_reason": "해상 에너지 인프라 보호 및 글로벌 MRO 거점 성장세 유효.",
       "key_risks": [
-        "신조선가 단기 피크아웃 우려",
-        "정치 리스크에 따른 납기 변동"
+        "인력 수급 병목",
+        "단기 원자재 원가 재상승"
       ],
-      "linked_insight_ids": [],
+      "linked_insight_ids": [
+        "INSIGHT-20260917-2"
+      ],
       "linked_signal_ids": [],
       "thesis_id": "thesis_10c2680e31c656ca8932e2c7",
       "issuer_id": "HANWHA_OCEAN",
@@ -212,20 +282,20 @@
       "decision_actor": "AI",
       "action": "보유",
       "basis": "이전 판단 유지",
-      "decision_date": "2026-09-09",
+      "decision_date": "2026-09-17",
       "evidence_posts": [],
       "source_mentioned": false,
       "previous_weight": 5.0,
       "proposed_weight": 5.0,
       "weight_source": "AI 제안",
-      "change_reason": "미국 무역장벽 규제(OBBBA) 수혜 기조와 부실 한계 기업 구조조정에 따른 메이저 셀 메이커 중심 쏠림 현상이 유지되고 있어 비중 5.0% 보유를 유지함.",
+      "change_reason": "미국 무역장벽 규제 수혜와 대형 셀 메이커의 안정적 입지가 공고하여 신규 촉매 전까지 이전 판단 유지.",
       "allocation_role": "satellite",
       "source_scope": "previous_decision",
-      "investment_rationale": "구조개편 이후 핵심 퀄리티를 유지한 국내 2차전지 대형주 과점화 장기 수혜.",
-      "current_entry_reason": "미 보조금(AMPC) 및 글로벌 정책 법안을 통한 과점 구조 수혜 공고화.",
+      "investment_rationale": "구조개편 이후의 퀄리티 중심 메이저 기업 과점화 수혜 장기 지속.",
+      "current_entry_reason": "미 보조금 수혜 자생력 및 가치 집중 지지.",
       "key_risks": [
-        "원자재 코발트, 리튬 등 수급 다변화 리스크",
-        "완성차 OEM의 자체 배터리 기술 내재화 가속"
+        "원자재 공급 불균형",
+        "완성차 메이커의 배터리 자체 조달 속도"
       ],
       "linked_insight_ids": [],
       "linked_signal_ids": [],
@@ -238,59 +308,10 @@
       "quality_components": {
         "explicitness": 0.7,
         "causality": 0.8,
-        "catalyst": 0.8,
+        "catalyst": 0.7,
         "confirmation": 0.6,
         "invalidation": 0.5,
         "recency": 0.8
-      },
-      "provenance_status": "legacy_unvalidated",
-      "origin_signal_type": "LEGACY_UNVALIDATED",
-      "origin_signal_ids": [],
-      "decision_model_id": "gemini-3.5-flash",
-      "rejected_linked_signal_ids": [],
-      "allocation_method": null,
-      "policy_action": null,
-      "policy_change_reason": null
-    },
-    {
-      "name": "KODEX 은행",
-      "code": "091170",
-      "market": "KR",
-      "asset_type": "etf",
-      "decision_actor": "AI",
-      "action": "보유",
-      "basis": "이전 판단 유지",
-      "decision_date": "2026-09-09",
-      "evidence_posts": [],
-      "source_mentioned": false,
-      "previous_weight": 5.0,
-      "proposed_weight": 5.0,
-      "weight_source": "AI 제안",
-      "change_reason": "한국은행의 금리 연속 인상에 따른 NIM 개선 국면과 8.13 공급금융대책의 가계 총량 규제 완화 효과가 펀더멘털을 강하게 지지하므로 비중 5.0%를 견고히 유지함.",
-      "allocation_role": "satellite",
-      "source_scope": "previous_decision",
-      "investment_rationale": "금리 우상향 사이클과 가계 금융 규제 완화에 입각한 대출 이익 및 배당 여력 확대.",
-      "current_entry_reason": "예대 마진 수혜 및 잔금대출의 은행 총량 한도 예외화 조치 수혜 기대.",
-      "key_risks": [
-        "연체율 누적 상승에 따른 대손 비용 증가 압박",
-        "가계부채 억제를 향한 정책 개입 우려"
-      ],
-      "linked_insight_ids": [],
-      "linked_signal_ids": [],
-      "thesis_id": "thesis_8c72c1f9e05e65107ff54127",
-      "issuer_id": "KODEX_BANKS",
-      "theme_ids": [
-        "banking_deregulation",
-        "interest_rate_upcycle"
-      ],
-      "country_code": "KR",
-      "quality_components": {
-        "explicitness": 0.8,
-        "causality": 0.8,
-        "catalyst": 0.8,
-        "confirmation": 0.7,
-        "invalidation": 0.5,
-        "recency": 0.9
       },
       "provenance_status": "legacy_unvalidated",
       "origin_signal_type": "LEGACY_UNVALIDATED",
@@ -309,20 +330,20 @@
       "decision_actor": "AI",
       "action": "보유",
       "basis": "이전 판단 유지",
-      "decision_date": "2026-09-09",
+      "decision_date": "2026-09-17",
       "evidence_posts": [],
       "source_mentioned": false,
       "previous_weight": 3.0,
       "proposed_weight": 3.0,
       "weight_source": "AI 제안",
-      "change_reason": "서버당 약 180g의 은이 사용되는 AI 데이터센터 서버용 하드웨어 단자 수요가 실물의 수급 불균형을 견인하므로 기존 3.0% 비중을 유지함.",
+      "change_reason": "AI 데이터센터 인프라 등 핵심 부품 자재로서의 대규모 은 수요와 공급 비탄력성 매커니즘이 강고하므로 기존 비중 유지.",
       "allocation_role": "satellite",
       "source_scope": "previous_decision",
-      "investment_rationale": "공급 비탄력적 구조하에 고성능 컴퓨팅 및 친환경 전력 인프라 부품의 필수재적 가격 하방 공고화.",
-      "current_entry_reason": "전통적 은 가격 사이클을 뛰어넘는 데이터센터발 신수요 추가 효과 관찰.",
+      "investment_rationale": "전통적 태양광 우려를 극복한 하이퍼스케일 컴퓨팅 단자 하드웨어 필수소재로 부상.",
+      "current_entry_reason": "6년 연속 만성 공급 부족 기저 유효.",
       "key_risks": [
-        "글로벌 금리 기조의 급격한 변동 리스크",
-        "태양광 셀 박막화 기술 고도화 속도 증가"
+        "원자재 전반에 대한 금리 변동성 여파",
+        "대체 소재 적용 가속화"
       ],
       "linked_insight_ids": [],
       "linked_signal_ids": [],
@@ -339,7 +360,7 @@
         "catalyst": 0.8,
         "confirmation": 0.7,
         "invalidation": 0.5,
-        "recency": 0.9
+        "recency": 0.8
       },
       "provenance_status": "legacy_unvalidated",
       "origin_signal_type": "LEGACY_UNVALIDATED",
@@ -352,6 +373,46 @@
     }
   ],
   "watchlist": [
+    {
+      "name": "미국국채 10년물",
+      "code": "IEF",
+      "market": "US",
+      "asset_type": "etf",
+      "decision_actor": "메르",
+      "basis": "직접 발언",
+      "decision_date": "2026-09-17",
+      "evidence_posts": [
+        {
+          "title": "미국국채 10년물이 드디어 5%를 찍었다.",
+          "url": "https://blog.naver.com/ranto28/224412030235?fromRss=true&trackingCode=rss",
+          "published_date": "2026-09-14"
+        }
+      ],
+      "source_mentioned": true,
+      "watchlist_entry_date": "2026-09-17",
+      "latest_evidence_date": "2026-09-14",
+      "watchlist_duration_days": 3,
+      "portfolio_entry_date": null,
+      "watchlist_closed_date": null,
+      "status": "관심",
+      "source_scope": "blogger_trade_disclosure",
+      "observation_reason": "금리가 5%를 돌파하고 시장이 과도하게 위축되어 5.1% 수준에 도달할 시 매수 진입하겠다는 메르의 명확한 가격선 가이드라인을 추적함.",
+      "linked_signal_ids": [
+        "sig_998211951b4436ff22f906b71a7042505daa351d69013a81de58bef52090add1"
+      ],
+      "thesis_id": "thesis_b2c6bf7bac387b804e6f8534",
+      "watchlist_kind": "cyclical",
+      "provenance_status": "verified",
+      "origin_signal_type": "MER_DIRECT",
+      "origin_signal_ids": [
+        "sig_998211951b4436ff22f906b71a7042505daa351d69013a81de58bef52090add1"
+      ],
+      "lifecycle_status": "active",
+      "latest_material_signal_date": "2026-09-14",
+      "expires_on": "2026-12-07",
+      "archived_date": null,
+      "archive_reason": null
+    },
     {
       "name": "농산물/곡물 섹터",
       "code": "",
@@ -370,7 +431,7 @@
       "source_mentioned": false,
       "watchlist_entry_date": "2026-06-16",
       "latest_evidence_date": "2026-07-11",
-      "watchlist_duration_days": 85,
+      "watchlist_duration_days": 93,
       "portfolio_entry_date": null,
       "watchlist_closed_date": null,
       "status": "관심",
@@ -411,7 +472,7 @@
       "source_mentioned": true,
       "watchlist_entry_date": "2026-08-09",
       "latest_evidence_date": "2026-07-31",
-      "watchlist_duration_days": 31,
+      "watchlist_duration_days": 39,
       "portfolio_entry_date": null,
       "watchlist_closed_date": null,
       "status": "관심",
@@ -447,7 +508,7 @@
       "source_mentioned": true,
       "watchlist_entry_date": "2026-08-14",
       "latest_evidence_date": "2026-08-12",
-      "watchlist_duration_days": 26,
+      "watchlist_duration_days": 34,
       "portfolio_entry_date": null,
       "watchlist_closed_date": null,
       "status": "관심",
@@ -483,7 +544,7 @@
       "source_mentioned": false,
       "watchlist_entry_date": "2026-08-15",
       "latest_evidence_date": "2026-08-14",
-      "watchlist_duration_days": 25,
+      "watchlist_duration_days": 33,
       "portfolio_entry_date": null,
       "watchlist_closed_date": null,
       "status": "관심",
@@ -519,7 +580,7 @@
       "source_mentioned": true,
       "watchlist_entry_date": "2026-09-02",
       "latest_evidence_date": "2026-08-20",
-      "watchlist_duration_days": 7,
+      "watchlist_duration_days": 15,
       "portfolio_entry_date": null,
       "watchlist_closed_date": null,
       "status": "관심",
@@ -560,7 +621,7 @@
       "source_mentioned": false,
       "watchlist_entry_date": "2026-09-02",
       "latest_evidence_date": "2026-08-30",
-      "watchlist_duration_days": 7,
+      "watchlist_duration_days": 15,
       "portfolio_entry_date": null,
       "watchlist_closed_date": null,
       "status": "관심",
@@ -596,22 +657,18 @@
       "source_mentioned": true,
       "watchlist_entry_date": "2026-09-09",
       "latest_evidence_date": "2026-09-07",
-      "watchlist_duration_days": 0,
+      "watchlist_duration_days": 8,
       "portfolio_entry_date": null,
       "watchlist_closed_date": null,
       "status": "관심",
       "source_scope": "source_named_security",
       "observation_reason": "오픈AI의 GPT-6 Astra 학습에 GPU 10만 개 이상 동원 및 차세대 구축 계획에 입각한 대규모 하드웨어 구매 로드맵 수혜의 최전선 종목으로 신규 등록함.",
-      "linked_signal_ids": [
-        "sig_947c42b065549d52ff12efd4e45417b25ff142a5f5d20a84d21fb2a85656b374"
-      ],
+      "linked_signal_ids": [],
       "thesis_id": "thesis_1365f8c3633e7679c956772f",
       "watchlist_kind": "structural",
-      "provenance_status": "verified",
-      "origin_signal_type": "MER_THESIS",
-      "origin_signal_ids": [
-        "sig_947c42b065549d52ff12efd4e45417b25ff142a5f5d20a84d21fb2a85656b374"
-      ],
+      "provenance_status": "legacy_unvalidated",
+      "origin_signal_type": "LEGACY_UNVALIDATED",
+      "origin_signal_ids": [],
       "lifecycle_status": "active",
       "latest_material_signal_date": "2026-09-07",
       "expires_on": "2027-02-22",
@@ -636,22 +693,18 @@
       "source_mentioned": true,
       "watchlist_entry_date": "2026-09-09",
       "latest_evidence_date": "2026-09-03",
-      "watchlist_duration_days": 0,
+      "watchlist_duration_days": 8,
       "portfolio_entry_date": null,
       "watchlist_closed_date": null,
       "status": "관심",
       "source_scope": "source_named_security",
       "observation_reason": "여드름 치료 물질을 드러그 리포지셔닝한 탈모 신약 '브레줄라'의 글로벌 임상 3상 통과 및 2027년 초 상용화 허가 타임라인 도달에 따라 신규 관심종목으로 편입함.",
-      "linked_signal_ids": [
-        "sig_59e61706f50bbf56f1f41196377940099467e688afd7b89735ed3e459b4d0214"
-      ],
+      "linked_signal_ids": [],
       "thesis_id": "thesis_5027996f4ddceef31f7670de",
       "watchlist_kind": "structural",
-      "provenance_status": "verified",
-      "origin_signal_type": "MER_THESIS",
-      "origin_signal_ids": [
-        "sig_59e61706f50bbf56f1f41196377940099467e688afd7b89735ed3e459b4d0214"
-      ],
+      "provenance_status": "legacy_unvalidated",
+      "origin_signal_type": "LEGACY_UNVALIDATED",
+      "origin_signal_ids": [],
       "lifecycle_status": "active",
       "latest_material_signal_date": "2026-09-03",
       "expires_on": "2027-02-18",
@@ -676,15 +729,13 @@
       "source_mentioned": false,
       "watchlist_entry_date": "2026-09-09",
       "latest_evidence_date": "2026-09-03",
-      "watchlist_duration_days": 0,
+      "watchlist_duration_days": 8,
       "portfolio_entry_date": null,
       "watchlist_closed_date": null,
       "status": "관심",
       "source_scope": "sector_only",
       "observation_reason": "대한민국 정부의 2024~2038년 서해안 에너지 고속도로 구축에 예정된 72.8조 원의 장기 예산 투입 수혜를 점검하기 위해 관찰군으로 신규 편입함.",
-      "linked_signal_ids": [
-        "sig_2d1f77c6242c5ab753dbf229700d8bb43528538bb2f1d15d726faab8e45cb99c"
-      ],
+      "linked_signal_ids": [],
       "thesis_id": "thesis_863413c300d2ff99765d6e6d",
       "watchlist_kind": "structural",
       "provenance_status": "legacy_unvalidated",
