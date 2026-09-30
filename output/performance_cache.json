@@ -1,23 +1,23 @@
 {
-  "updated": "2026-09-30",
+  "updated": "2026-10-01",
   "epoch_id": "clean-v4-2026-07-14",
   "inception_date": "2026-07-14",
   "legacy_epoch_count": 1,
-  "portfolio_return_krw": 0.77461374,
-  "cash": 77.61361614,
+  "portfolio_return_krw": 0.69994019,
+  "cash": 77.63924438,
   "realized_pnl": -0.13758894,
-  "dividend_income": 0.011826302743827288,
+  "dividend_income": 0.03745454960574168,
   "cumulative_costs": 0.17066952471929955,
-  "actual_cash_weight": 77.01703163084731,
+  "actual_cash_weight": 77.09959333988755,
   "risk_metrics": {
-    "total_return": 0.007746137399999853,
-    "annualized_volatility": 0.062046885183645435,
-    "sharpe": 0.4488755901490221,
-    "sortino": 0.657618941496939,
+    "total_return": 0.006999401899999702,
+    "annualized_volatility": 0.061656573606737576,
+    "sharpe": 0.40592397986900197,
+    "sortino": 0.5945732496542758,
     "max_drawdown": -0.02342425239246848,
-    "benchmark_return": -0.02180050163069669,
-    "excess_return": 0.029546639030696542,
-    "information_ratio": 0.11484768082317677
+    "benchmark_return": -0.02434682315477843,
+    "excess_return": 0.03134622505477813,
+    "information_ratio": 0.13171621893325966
   },
   "benchmark": {
     "policy": "KOSPI200 TR 및 S&P500 TR(KRW) 비교 벤치마크",
@@ -97,6 +97,7 @@
       0.0,
       -0.017920626575572363,
       -0.0025509117989434005,
+      -0.002603069750420739,
       0.0
     ]
   },
@@ -113,9 +114,9 @@
       "opened_date": "2026-07-14",
       "episode_realized_pnl": 0.0,
       "target_weight": 1.5,
-      "current_price": 272500.0,
-      "return_pct_krw": 6.752434249314909,
-      "actual_weight": 1.592025617861404
+      "current_price": 268500.0,
+      "return_pct_krw": 5.185426040150665,
+      "actual_weight": 1.5698196639782749
     },
     {
       "key": "stock:KR:042660",
@@ -129,9 +130,9 @@
       "opened_date": "2026-07-14",
       "episode_realized_pnl": 0.0,
       "target_weight": 1.5,
-      "current_price": 78600.0,
-      "return_pct_krw": -0.5521506546350863,
-      "actual_weight": 1.4830905254046556
+      "current_price": 78800.0,
+      "return_pct_krw": -0.29910269192423566,
+      "actual_weight": 1.4879668695808976
     },
     {
       "key": "etf:KR:305720",
@@ -145,9 +146,9 @@
       "opened_date": "2026-07-16",
       "episode_realized_pnl": 0.04688420403397224,
       "target_weight": 5.0,
-      "current_price": 14275.0,
-      "return_pct_krw": 2.946134471810624,
-      "actual_weight": 4.6766283801934065
+      "current_price": 14370.0,
+      "return_pct_krw": 3.631240095265742,
+      "actual_weight": 4.711242311038999
     },
     {
       "key": "stock:KR:000660",
@@ -161,9 +162,9 @@
       "opened_date": "2026-07-16",
       "episode_realized_pnl": 0.0,
       "target_weight": 5.0,
-      "current_price": 1765000.0,
-      "return_pct_krw": -3.4802766446118794,
-      "actual_weight": 5.2204740176276365
+      "current_price": 1776000.0,
+      "return_pct_krw": -2.878737292255351,
+      "actual_weight": 5.256904893259955
     },
     {
       "key": "etf:KR:091170",
@@ -177,9 +178,9 @@
       "opened_date": "2026-08-15",
       "episode_realized_pnl": 0.0,
       "target_weight": 7.0,
-      "current_price": 16540.0,
-      "return_pct_krw": 0.29260625032510035,
-      "actual_weight": 6.8956216834881925
+      "current_price": 16025.0,
+      "return_pct_krw": -2.8301683699238356,
+      "actual_weight": 6.685869404183717
     },
     {
       "key": "etf:KR:233160",
@@ -193,9 +194,9 @@
       "opened_date": "2026-09-02",
       "episode_realized_pnl": 0.0,
       "target_weight": 3.0,
-      "current_price": 7885.0,
-      "return_pct_krw": 3.371673277340892,
-      "actual_weight": 3.1151281450463677
+      "current_price": 8065.0,
+      "return_pct_krw": 5.731457829011322,
+      "actual_weight": 3.188603513570891
     }
   ],
   "closed_positions": [
@@ -788,6 +789,10 @@
     {
       "date": "2026-09-30",
       "avg_return_krw": 0.77461374
+    },
+    {
+      "date": "2026-10-01",
+      "avg_return_krw": 0.69994019
     }
   ]
 }

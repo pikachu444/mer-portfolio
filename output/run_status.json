@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "github_run_id": "36623178241",
+  "github_run_id": "36769841489",
   "mode": "scheduled",
   "run_label": "scheduled",
-  "completed_at": "2026-09-30T05:00:37.318831",
+  "completed_at": "2026-10-01T05:03:28.257552",
   "state_bundle_committed": true,
-  "report_path": "report_20260930.md",
+  "report_path": "report_20261001.md",
   "chart_path": "chart_latest.png",
-  "no_changes": false,
+  "no_changes": true,
   "telegram_delivery_required": true,
   "telegram_delivery_deferred": true,
   "telegram_delivery_accepted": null,
-  "status_note": ""
+  "status_note": "포트폴리오 안전 검증으로 변경 보류: new positions lack verified source signals: 미국국채 10년물"
 }
