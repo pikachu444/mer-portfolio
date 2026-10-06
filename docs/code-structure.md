@@ -27,6 +27,9 @@
 기존 `schedule.yml`은 유지한다. `tests.yml`은 PR에서 자격 증명 없이 회귀 검사와
 오프라인 비교를 실행한다. `model-comparison.yml`은 수동 실행이며 실모델 비교는
 main 브랜치의 인증된 고정 자체 서버에서만 실행한다.
+이 ChatGPT 실호출 비교 경로는 고정 자체 서버가 필요해 최신 자동 운영 요구에서 제외한다.
+운영 `schedule.yml`은 GitHub 제공 Ubuntu 실행 서버와 Gemini 키를 사용하는 기존 예약
+자동화를 유지한다. OpenAI API 키 제공자와 Copilot Actions 판단 제공자는 아직 없다.
 
 `gemini-comparison.yml`은 기존 키를 사용하는 별도 Gemini 실호출 비교다. 기능 브랜치의
 해당 파일 변경과 수동 실행에서만 동작하며 임시 Ubuntu 실행 서버에서 캐시를 읽고

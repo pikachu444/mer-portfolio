@@ -177,6 +177,10 @@ RUN_MODE=rebalance FETCH_DAYS=14 python main.py
 
 기본 설정은 기존 Gemini·기존 문맥입니다. 선택적 연결은 [ChatGPT 로그인](docs/chatgpt-login.md),
 원문 연결과 문맥 개선은 [개선 실험](docs/context-experiment.md)을 참고하세요.
+운영 요구사항은 PC·자체 서버 없이 GitHub 제공 실행 서버에서 예약 자동 실행하는 것입니다.
+추가한 ChatGPT 구독 로그인 경로는 고정 인증 호스트가 필요하므로 이 운영 대안에서 제외합니다.
+GPT 자동 판단을 추가하려면 별도 OpenAI API 키 방식 또는 Copilot 사용 권한을 갖춘
+Actions 경로를 구현·검증해야 합니다. 현재 코드에 이 두 경로는 구현되지 않았습니다.
 운영을 바꾸지 않고 비교하려면 아래 명령을 사용합니다.
 
 ```bash

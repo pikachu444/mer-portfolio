@@ -18,6 +18,17 @@
 
 ## 선택적 ChatGPT 경로와 개선 실험 (2026-10-06)
 
+### 최신 운영 요구사항
+
+- GitHub 제공 실행 서버의 예약 실행으로 완전 자동 운영한다. 개인 PC·고정 자체 서버를 운영 전제로 추가하지 않는다.
+- 기존 Gemini API 자동화는 유지한다. 아래 구독 로그인 구현은 운영 대안에서 제외하고 선택적·과거 구현으로 보존한다.
+- GPT 자동 판단의 별도 대안은 OpenAI API 키 또는 GitHub Copilot CLI의 Actions 토큰 인증이다. OpenAI API는 사용량 요금이 있고 Copilot은 계정의 사용 권한·AI 크레딧 조건이 필요하다. 두 대안은 현재 미구현·미검증이며 비용이 발생하는 실호출이나 구독 변경은 실행하지 않았다.
+- 원문 대상과 근거 연결, 시점별 투자 성과 검증은 로그인 여부와 독립적으로 계속 평가한다.
+
+공식 근거: [OpenAI API 키](https://developers.openai.com/api/docs/quickstart),
+[API 요금](https://developers.openai.com/api/docs/pricing),
+[Copilot Actions 인증과 과금](https://docs.github.com/en/copilot/concepts/agents/copilot-cli/copilot-cli-in-github-actions).
+
 ### 합의됨
 
 - 사용자 요청에 따라 Gemini 글별 요약과 기본 투자 판단 경로를 유지한다. ChatGPT 구독 로그인은 선택 가능한 판단 제공자로 추가한다.
