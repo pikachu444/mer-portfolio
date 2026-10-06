@@ -1,6 +1,6 @@
 """
 analyze.py
-Google AI Studio (Gemini) 무료 API를 이용한 메르AI 분석 모듈.
+Gemini 기본 경로와 선택적 ChatGPT 구독 로그인으로 메르AI 판단을 생성한다.
 
 투자 판단은 무료 티어의 안정 모델인 gemini-3.5-flash를 사용한다.
 글별 요약 모델은 fetch_mer.py에서 별도로 설정한다.
@@ -14,7 +14,7 @@ import os
 import re
 import time
 from copy import deepcopy
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Callable, List, Dict, Tuple
 
@@ -38,6 +38,14 @@ from gemini_utils import (
     RETRY_BUDGET_SECONDS,
     generate_content_with_retry,
     is_daily_quota_error,
+)
+from decision_providers import (
+    TrackedGeminiClient,
+    consume_request,
+    record_metric,
+    resolve_context_mode,
+    resolve_model,
+    resolve_provider,
 )
 
 
@@ -301,6 +309,8 @@ class StructuredAnalysisResult:
     decision: AnalysisDecisionV2
     report: str
     decision_model_version: str
+    decision_provider: str = "gemini"
+    request_metrics: list[dict] = field(default_factory=list)
 
 
 _MODEL_VERSION_BY_ID: dict[str, str] = {}
@@ -475,27 +485,69 @@ def _call_investment_decision(
     client: genai.Client,
     user_message: str,
     validator: Callable[[str], object],
+    *,
+    provider: str = "gemini",
+    model_name: str | None = None,
+    request_budget=None,
+    request_metrics: list[dict] | None = None,
 ) -> object:
     """Run a fail-closed investment decision with one explicit model."""
     stage_name = "1차 포트폴리오 판단"
-    model_name = _decision_model()
+    model_name = model_name or _decision_model()
+    provider_label = "Gemini" if provider == "gemini" else "ChatGPT"
     started_at = time.monotonic()
 
     def remaining_budget() -> float:
         return max(0.0, RETRY_BUDGET_SECONDS - (time.monotonic() - started_at))
 
+    def generate_text(message: str) -> str:
+        if provider == "gemini":
+            return _call_model_text(
+                client, model_name, message, DECISION_SYSTEM_PROMPT,
+                response_mime_type="application/json",
+                max_retries=DECISION_MAX_ATTEMPTS,
+                response_json_schema=DECISION_RESPONSE_SCHEMA,
+                retry_budget_seconds=remaining_budget(),
+            )
+        attempted = False
+        call_started = time.monotonic()
+
+        def before_request():
+            nonlocal attempted
+            consume_request(request_budget, provider, model_name)
+            attempted = True
+
+        try:
+            response = client.generate_json(
+                model=model_name, user_message=message, instructions=DECISION_SYSTEM_PROMPT,
+                json_schema=DECISION_RESPONSE_SCHEMA,
+                retry_budget_seconds=remaining_budget(), before_request=before_request,
+            )
+        except Exception as exc:
+            if attempted and request_metrics is not None:
+                record_metric(request_metrics, request_budget, {
+                    "provider": provider, "model": model_name, "status": "failed",
+                    "error_type": type(exc).__name__,
+                    "latency_seconds": round(time.monotonic() - call_started, 3),
+                })
+            raise
+        _MODEL_VERSION_BY_ID[model_name] = response.model_version or model_name
+        if request_metrics is not None:
+            usage = response.usage
+            details = usage.get("output_tokens_details") or {}
+            record_metric(request_metrics, request_budget, {
+                "provider": provider, "model": model_name, "status": "completed",
+                "latency_seconds": response.latency_seconds,
+                "input_tokens": usage.get("input_tokens"),
+                "output_tokens": usage.get("output_tokens"),
+                "thinking_tokens": details.get("reasoning_tokens") if isinstance(details, dict) else None,
+                "total_tokens": usage.get("total_tokens"),
+            })
+        return response.text
+
     try:
         print(f"  {stage_name} 모델 시도: {model_name}")
-        text = _call_model_text(
-            client,
-            model_name,
-            user_message,
-            DECISION_SYSTEM_PROMPT,
-            response_mime_type="application/json",
-            max_retries=DECISION_MAX_ATTEMPTS,
-            response_json_schema=DECISION_RESPONSE_SCHEMA,
-            retry_budget_seconds=remaining_budget(),
-        )
+        text = generate_text(user_message)
         try:
             return validator(text)
         except Exception as validation_error:
@@ -503,25 +555,18 @@ def _call_investment_decision(
                 f"    {stage_name} 형식 교정 재시도 1/1: {model_name} - "
                 f"{str(validation_error)[:180]}"
             )
-            repaired_text = _call_model_text(
-                client,
-                model_name,
+            repaired_text = generate_text(
                 user_message
                 + "\n\n직전 응답은 다음 검증 오류가 있었습니다:\n"
                 + str(validation_error)
                 + "\n누락된 근거와 필수 필드를 보완하여 요구 형식의 전체 응답을 다시 출력하십시오.",
-                DECISION_SYSTEM_PROMPT,
-                response_mime_type="application/json",
-                max_retries=DECISION_MAX_ATTEMPTS,
-                response_json_schema=DECISION_RESPONSE_SCHEMA,
-                retry_budget_seconds=remaining_budget(),
             )
             return validator(repaired_text)
     except Exception as exc:
         message = str(exc)
         print(f"    {stage_name} 보류: {model_name} - {message[:180]}")
         raise RuntimeError(
-            f"Gemini 투자 판단 보류. model={model_name}. {message}"
+            f"{provider_label} 투자 판단 보류. model={model_name}. {message}"
         ) from exc
 
 
@@ -610,9 +655,11 @@ def _fit_context_to_budget(
     client: genai.Client,
     context: str,
     message_builder: Callable[[str], str],
+    *,
+    model_name: str | None = None,
 ) -> str:
     """Keep stored inputs intact and trim only an abnormal transmitted context tail."""
-    model = DECISION_MODEL
+    model = model_name or DECISION_MODEL
     safe_limit = int(MODEL_INPUT_TOKEN_LIMIT * MODEL_INPUT_SAFE_RATIO)
     message = message_builder(context)
     tokens = _count_tokens(client, model, message)
@@ -705,15 +752,28 @@ def analyze_posts_structured(
     *,
     is_rebalance: bool = False,
     decision_validator: Callable[[AnalysisDecisionV2], object] | None = None,
+    decision_provider: str | None = None,
+    decision_model: str | None = None,
+    context_mode: str | None = None,
+    request_budget=None,
 ) -> StructuredAnalysisResult:
     """Generate validated decision JSON first, then a Markdown report."""
     if not posts:
         raise ValueError("분석할 포스트가 없습니다.")
 
-    context = _structured_context(posts)
+    provider = resolve_provider(decision_provider)
+    model_name = resolve_model(provider, decision_model, _decision_model())
+    selected_context = resolve_context_mode(context_mode)
+    request_metrics: list[dict] = []
+    context, inference_state = _decision_context_parts(posts, current_state, selected_context)
     run_type = "rebalance" if is_rebalance else "regular"
-    client = _get_client()
-    inference_state = _compact_state_for_inference(current_state)
+    if provider == "gemini":
+        client = _get_client()
+        if getattr(client, "models", None) is not None:
+            client = TrackedGeminiClient(client, request_budget, request_metrics)
+    else:
+        from chatgpt_client import ChatGPTClient
+        client = ChatGPTClient.from_env()
 
     decision_builder = lambda request_context: build_decision_user_message(
         context=request_context,
@@ -721,23 +781,33 @@ def analyze_posts_structured(
         run_type=run_type,
         current_state=inference_state,
     )
-    context = _fit_context_to_budget(client, context, decision_builder)
+    if provider == "gemini":
+        context = _fit_context_to_budget(client, context, decision_builder, model_name=model_name)
     decision_message = decision_builder(context)
+    selected_validator = decision_validator
+    if selected_context == "focused":
+        selected_validator = _focused_source_validator(
+            posts, current_state, analysis_date, model_name, decision_validator,
+        )
     decision = _call_investment_decision(
         client,
         decision_message,
         lambda text: _parse_and_validate_model_decision_json(
             text,
             current_state,
-            decision_validator,
+            selected_validator,
             expected_analysis_date=analysis_date,
             expected_run_type=run_type,
         ),
+        provider=provider,
+        model_name=model_name,
+        request_budget=request_budget,
+        request_metrics=request_metrics,
     )
     assert isinstance(decision, AnalysisDecisionV2)
     decision_model_version = _MODEL_VERSION_BY_ID.get(
-        _decision_model(),
-        _decision_model(),
+        model_name,
+        model_name,
     )
     decision_payload = decision.to_dict()
     for item in decision_payload["portfolio_decisions"]:
@@ -762,7 +832,98 @@ def analyze_posts_structured(
         decision=decision,
         report=report,
         decision_model_version=decision_model_version,
+        decision_provider=provider,
+        request_metrics=request_metrics,
     )
+
+
+def _decision_context_parts(posts, current_state, context_mode):
+    context = _structured_context(posts)
+    if context_mode == "baseline":
+        return context, _compact_state_for_inference(current_state)
+    from decision_context import build_evidence_packet, compact_state_for_decision
+    packet = build_evidence_packet(posts, current_state)
+    guide = packet if isinstance(packet, str) else json.dumps(packet, ensure_ascii=False, separators=(",", ":"))
+    return context + "\n\n[원문 신호와 행동 방향 확인]\n" + guide, compact_state_for_decision(current_state)
+
+
+def preview_decision_input(
+    posts, analysis_date, current_state, *, is_rebalance=False, context_mode=None,
+) -> str:
+    """Build exact pre-transport model input without any network request."""
+    mode = resolve_context_mode(context_mode)
+    context, inference_state = _decision_context_parts(posts, current_state, mode)
+    return build_decision_user_message(
+        context=context, analysis_date=analysis_date,
+        run_type="rebalance" if is_rebalance else "regular", current_state=inference_state,
+    )
+
+
+def _focused_source_validator(posts, current_state, analysis_date, model_name, custom_validator):
+    """Return source errors to the model's existing one-shot correction path."""
+    from portfolio_provenance import enrich_decision_provenance, prepare_post_signal_events
+    from portfolio_runtime import security_key, validate_rebalance_coverage
+    from decision_context import ambiguous_source_signal_ids
+    _, source_events = prepare_post_signal_events(posts, created_at=analysis_date, model_id=model_name)
+    ambiguous_ids = ambiguous_source_signal_ids(posts)
+
+    def validate(decision):
+        if custom_validator is not None:
+            candidate = custom_validator(decision)
+            if isinstance(candidate, AnalysisDecisionV2):
+                decision = candidate
+        validation_state = current_state if current_state and current_state.get("schema_version") in {"2.0", "2.1"} else {
+            "schema_version": "2.0", "portfolio": [], "watchlist": [],
+            "closed_positions": [], "decision_history": [], "insights": [], "signal_events": [],
+        }
+        state = parse_portfolio_state(validation_state)
+        validate_rebalance_coverage(state, decision)
+        enriched, events = enrich_decision_provenance(
+            decision, source_events, created_at=analysis_date, model_id=model_name,
+        )
+        projected = apply_analysis_decision(state, enriched, new_signal_events=events)
+        _validate_direction_review_exposure(enriched, validation_state, events, ambiguous_ids)
+        existing_keys = {security_key(item) for item in state.portfolio}
+        for item in projected.portfolio:
+            if security_key(item) not in existing_keys and item.get("provenance_status") != "verified":
+                raise ValueError(f"원문 신호로 검증되지 않은 신규 편입: {item.get('code')}")
+        return decision
+
+    return validate
+
+
+def _validate_direction_review_exposure(decision, current_state, events, ambiguous_ids):
+    """Mixed direction labels alone cannot justify increasing exposure.
+
+    Canonical origins from enrich_decision_provenance, rather than raw model
+    links, determine the basis. Existing exposure and protective reductions are
+    left to the existing portfolio policy; this does not infer a bearish view.
+    """
+    from portfolio_runtime import security_key
+    if not ambiguous_ids:
+        return
+    current = {security_key(item): float(item.get("proposed_weight") or 0) for item in current_state.get("portfolio", [])}
+    event_by_id = {item["signal_id"]: item for item in events}
+    for item in decision.portfolio_decisions:
+        if float(item.get("proposed_weight") or 0) <= current.get(security_key(item), 0) + 1e-9:
+            continue
+        roots = list(item.get("origin_signal_ids") or item.get("linked_signal_ids") or [])
+        parents = set()
+        visited = set()
+        while roots:
+            signal_id = roots.pop()
+            if signal_id in visited:
+                continue
+            visited.add(signal_id)
+            event = event_by_id.get(signal_id)
+            if event is None:
+                continue
+            if event.get("signal_type") == "AI_INFERRED":
+                roots.extend(event.get("parent_signal_ids") or [])
+            elif event.get("signal_type") in {"MER_DIRECT", "MER_THESIS"} and event.get("direction") == "bullish":
+                parents.add(signal_id)
+        if parents & ambiguous_ids and not parents - ambiguous_ids:
+            raise ValueError(f"방향 검토가 필요한 근거만으로 신규·추가 투자할 수 없음: {item.get('code')}. 원문 대상·가격 방향을 구분하거나 독립된 적합 근거를 사용하십시오.")
 
 
 def _build_deterministic_report(

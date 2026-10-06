@@ -1,0 +1,101 @@
+name: 메르 판단 모델 비교 (운영 상태 유지)
+
+on:
+  workflow_dispatch:
+    inputs:
+      execution:
+        description: "offline=API 없는 입력 검사, live=인증된 자체 서버에서 실제 비교"
+        type: choice
+        options: [offline, live]
+        default: offline
+      variants:
+        description: "비교 경로 (공백으로 구분)"
+        type: string
+        default: "gemini-baseline gemini-focused chatgpt-focused"
+      run_type:
+        description: "regular=미분석 글, rebalance=현재 리밸런싱 출처 범위"
+        type: choice
+        options: [rebalance, regular]
+        default: rebalance
+      max_requests:
+        description: "재시도·교정을 포함한 전체 생성 요청 상한"
+        type: string
+        default: "3"
+      repetitions:
+        description: "각 경로 반복 횟수"
+        type: string
+        default: "1"
+      gemini_model:
+        description: "실험 Gemini 모델 (운영 설정은 변경하지 않음)"
+        type: string
+        default: "gemini-3.5-flash"
+      chatgpt_model:
+        description: "로그인 계정에서 사용 가능한 ChatGPT 모델"
+        type: string
+        default: "gpt-6.1-sol"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mer-model-comparison
+  cancel-in-progress: false
+
+jobs:
+  compare:
+    # ChatGPT rotating OAuth credentials live outside checkout on this host.
+    # No pull_request/push trigger may reach the authenticated runner.
+    if: ${{ inputs.execution == 'offline' || github.ref == 'refs/heads/main' }}
+    runs-on: ${{ inputs.execution == 'live' && fromJSON('["self-hosted","linux","mer-chatgpt"]') || 'ubuntu-latest' }}
+    timeout-minutes: 30
+    env:
+      PYTHONUTF8: "1"
+      EXPERIMENT_EXECUTION: ${{ inputs.execution }}
+      EXPERIMENT_VARIANTS: ${{ inputs.variants }}
+      EXPERIMENT_RUN_TYPE: ${{ inputs.run_type }}
+      EXPERIMENT_MAX_REQUESTS: ${{ inputs.max_requests }}
+      EXPERIMENT_REPETITIONS: ${{ inputs.repetitions }}
+      EXPERIMENT_GEMINI_MODEL: ${{ inputs.gemini_model }}
+      EXPERIMENT_CHATGPT_MODEL: ${{ inputs.chatgpt_model }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies in isolated environment
+        run: |
+          python -m venv .venv
+          .venv/bin/python -m pip install -r requirements.txt
+      - name: Compare cached inputs and decision results
+        env:
+          GEMINI_API_KEY: ${{ inputs.execution == 'live' && secrets.GEMINI_API_KEY || '' }}
+          # Optional configuration of the fixed runner's outside-repo directory.
+          CHATGPT_AUTH_DIR: ${{ vars.CHATGPT_AUTH_DIR }}
+          CHATGPT_ACCOUNT: ${{ vars.CHATGPT_ACCOUNT }}
+        run: |
+          .venv/bin/python - <<'PY'
+          import os
+          from compare_decisions import main
+          args = [
+              '--live' if os.environ['EXPERIMENT_EXECUTION'] == 'live' else '--dry-run',
+              '--output-dir', 'experiments/comparison-workflow',
+              '--run-type', os.environ['EXPERIMENT_RUN_TYPE'],
+              '--max-requests', os.environ['EXPERIMENT_MAX_REQUESTS'],
+              '--repetitions', os.environ['EXPERIMENT_REPETITIONS'],
+              '--gemini-model', os.environ['EXPERIMENT_GEMINI_MODEL'],
+              '--chatgpt-model', os.environ['EXPERIMENT_CHATGPT_MODEL'],
+              '--variants', *os.environ['EXPERIMENT_VARIANTS'].split(),
+          ]
+          raise SystemExit(main(args))
+          PY
+      - name: Upload comparison only
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mer-model-comparison
+          path: experiments/comparison-workflow/comparison.json
+          if-no-files-found: warn
+
+# No Telegram secrets, operating-state commits, or credential uploads.

@@ -21,3 +21,9 @@ Thumbs.db
 # 로컬 테스트 출력 (output/ 폴더는 GitHub Actions가 커밋)
 # output/ 주석처리 — Actions에서 커밋 필요
 output/error_*.log
+
+# ChatGPT credentials must remain outside source control and artifacts.
+.chatgpt-auth/
+chatgpt_credentials*.json
+chatgpt_auth_profile*.json
+experiments/comparison-*/
