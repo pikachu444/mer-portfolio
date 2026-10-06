@@ -19,7 +19,7 @@ from portfolio_provenance import (
 )
 
 
-CONTEXT_VERSION = "focused-source-v1"
+CONTEXT_VERSION = "focused-source-v2"
 _SIGNAL_REFERENCE_KEYS = {"origin_signal_ids", "linked_signal_ids", "parent_signal_ids"}
 _UNRESOLVED_STATUSES = {
     "open", "pending", "pending_admin", "unresolved", "active", "재검토 필요",
@@ -312,6 +312,8 @@ No ticker, market valuation, target weight, or new trading threshold is created.
             "매수·비중확대·보유에 새 근거를 연결할 때 bullish, 매도·비중축소에는 bearish 신호가 필요합니다.",
             "MENTION_ONLY와 neutral은 새로운 포트폴리오 편입 근거가 될 수 없으며 단순 언급은 관심종목으로만 남깁니다.",
             "linked_signal_ids의 원문 URL·대상·방향이 결정과 일치해야 합니다. 분야의 긍정 논지를 다른 개별주에 자동 전용하지 마십시오.",
+            "linked_signal_ids는 행동을 지지하는 근거입니다. 반대 근거·무효화 가능성은 key_risks와 change_reason에서 검토하고 보유·매수의 지지 연결에 섞지 마십시오. 기존 보유의 원문 연결은 유지할 수 있지만 다른 종목의 과거 ID를 복사하지 마십시오.",
+            "linked_insight_ids는 이번 응답의 insights에 실제로 작성한 ID만 사용하십시오. 과거 상태의 ID만 복사하지 마십시오.",
             "산업·원자재 논지를 ETF로 해석한 판단은 AI 추론이며 메르의 해당 ETF 직접 보유·추천으로 표현하지 마십시오.",
             "원래 방향 표현과 인용 주변 문맥에서 조건·반대 시나리오·가격과 금리의 관계를 확인하십시오. compatible_actions만으로 수혜를 확정하지 마십시오.",
             "requires_direction_review=true는 방향 표기에 긍정·부정 단어가 함께 있다는 뜻이며 올바른 방향을 확정하지 않습니다. 그 신호만으로 신규 매수·비중확대 근거를 만들지 마십시오. 기존 보유·위험 감소를 자동으로 막는 규칙은 아닙니다.",

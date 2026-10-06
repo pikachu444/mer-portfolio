@@ -869,7 +869,10 @@ def _focused_source_validator(posts, current_state, analysis_date, model_name, c
 
     def validate(decision):
         if custom_validator is not None:
-            candidate = custom_validator(decision)
+            try:
+                candidate = custom_validator(decision)
+            except ValueError as exc:
+                raise ValueError(str(exc) + _source_repair_feedback(decision, current_state, source_events)) from exc
             if isinstance(candidate, AnalysisDecisionV2):
                 decision = candidate
         validation_state = current_state if current_state and current_state.get("schema_version") in {"2.0", "2.1"} else {
@@ -881,7 +884,10 @@ def _focused_source_validator(posts, current_state, analysis_date, model_name, c
         enriched, events = enrich_decision_provenance(
             decision, source_events, created_at=analysis_date, model_id=model_name,
         )
-        projected = apply_analysis_decision(state, enriched, new_signal_events=events)
+        try:
+            projected = apply_analysis_decision(state, enriched, new_signal_events=events)
+        except ValueError as exc:
+            raise ValueError(str(exc) + _source_repair_feedback(decision, current_state, source_events)) from exc
         _validate_direction_review_exposure(enriched, validation_state, events, ambiguous_ids)
         existing_keys = {security_key(item) for item in state.portfolio}
         for item in projected.portfolio:
@@ -890,6 +896,50 @@ def _focused_source_validator(posts, current_state, analysis_date, model_name, c
         return decision
 
     return validate
+
+
+def _source_repair_feedback(decision, current_state, events):
+    """Explain rejected links without changing evidence or approving a trade."""
+    from portfolio_provenance import _direction_matches_action, _identity_matches
+    from portfolio_runtime import security_key
+    by_id = {event['signal_id']: event for event in events}
+    current = {security_key(item): item for item in (current_state or {}).get('portfolio', [])}
+    rows = []
+    for index, item in enumerate(decision.portfolio_decisions):
+        old = current.get(security_key(item), {})
+        old_ids = set((old.get('linked_signal_ids') or []) + (old.get('origin_signal_ids') or []))
+        for signal_id in item.get('linked_signal_ids') or []:
+            if signal_id in old_ids:
+                continue
+            event = by_id.get(signal_id)
+            reasons = []
+            if event is None:
+                reasons.append('새 입력에 없고 이 보유 종목의 기존 연결도 아닌 ID')
+            else:
+                if not _direction_matches_action(item, event):
+                    reasons.append('근거의 방향이 제안 행동과 불일치; 반대 근거를 보유·매수의 지지 근거로 연결하지 마십시오')
+                if not _identity_matches(item, event) and not (
+                    item.get('decision_actor') == 'AI' and item.get('asset_type') == 'etf'
+                    and item.get('source_scope') == 'sector_only' and str(item.get('investment_rationale') or '').strip()
+                ):
+                    reasons.append('원문 대상이 이 종목과 다름; ETF 추론은 AI/sector_only와 명시적인 연결 논리가 필요하며 개별주로 임의 전용할 수 없음')
+                if event.get('signal_type') not in {'MER_DIRECT', 'MER_THESIS'}:
+                    reasons.append('직접 판단·방향성 논지가 아닌 신호')
+                urls = {post.get('url') for post in item.get('evidence_posts') or []}
+                if event.get('post_url') not in urls:
+                    reasons.append('근거 글 목록에 이 신호의 원문 URL이 없음')
+            if reasons:
+                rows.append({'decision_index': index, 'code': item.get('code'), 'name': item.get('name'),
+                             'action': item.get('action'), 'signal_id': signal_id,
+                             'source_entity': event.get('entity') if event else None,
+                             'source_direction': event.get('direction') if event else None,
+                             'reasons': reasons})
+    if not rows:
+        return ''
+    return '\n근거 연결 교정 상세: ' + json.dumps(rows, ensure_ascii=False, separators=(',', ':')) + (
+        '\n근거의 원문·대상·방향을 바꾸거나 ID를 만들어 통과시키지 마십시오. 반대 근거는 key_risks·무효화 검토에 설명하십시오. '
+        '기존 보유를 유지할 근거가 실제로 유효하면 그 종목의 기존 연결을 보존하고, 무효화됐으면 원문에 맞는 축소·매도를 판단하십시오.'
+    )
 
 
 def _validate_direction_review_exposure(decision, current_state, events, ambiguous_ids):

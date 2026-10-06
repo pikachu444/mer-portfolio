@@ -37,6 +37,22 @@ class FakeChatGPT:
 
 
 class DecisionProviderTest(unittest.TestCase):
+    def test_source_repair_identifies_target_direction_and_unknown_id_without_rewriting(self):
+        row = {'code': 'AA', 'name': 'Alcoa', 'market': 'US', 'asset_type': 'stock', 'action': '보유',
+               'decision_actor': 'AI', 'source_scope': 'source_named_security', 'linked_signal_ids': ['old', 'bad', 'missing']}
+        state = {'portfolio': [{**row, 'linked_signal_ids': ['old'], 'origin_signal_ids': ['old']}]}
+        events = [{'signal_id': 'bad', 'signal_type': 'MER_THESIS', 'direction': 'bearish',
+                   'entity': {'code': 'BHP', 'name': 'BHP', 'market': 'US'}}]
+        message = analyze._source_repair_feedback(SimpleNamespace(portfolio_decisions=[row]), state, events)
+        self.assertIn('AA', message)
+        self.assertIn('BHP', message)
+        self.assertIn('bearish', message)
+        self.assertIn('missing', message)
+        self.assertIn('원문 URL', message)
+        self.assertNotIn('"signal_id":"old"', message)
+        self.assertEqual(events[0]['direction'], 'bearish')
+        self.assertEqual(row['linked_signal_ids'], ['old', 'bad', 'missing'])
+
     def _review_exposure(self, *, proposed=8, previous=0, parents=None):
         row = {"asset_type": "stock", "market": "US", "code": "AA", "proposed_weight": proposed, "origin_signal_ids": ["inferred"]}
         state = {"portfolio": [{**row, "proposed_weight": previous}]} if previous else {"portfolio": []}
