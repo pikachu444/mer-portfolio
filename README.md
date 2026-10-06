@@ -190,7 +190,8 @@ python compare_decisions.py --live --run-type rebalance --max-requests 3
 실제 요청 상한에는 재시도와 교정 요청도 포함됩니다. 자세한 범위와 한계는
 [동일 입력 모델 비교](docs/model-comparison.md), 구현 검증은
 [2026-10-06 검증 기록](docs/validation/chatgpt-provider-20261006.md)을 참고하세요.
-실모델 비교와 수익률 개선은 아직 검증하지 않았습니다.
+Gemini 실제 호출 결과와 수정 내용은 [실모델 검증 기록](docs/validation/gemini-live-20261006.md)에 있습니다.
+ChatGPT 실계정 호출과 수익률 개선은 아직 검증하지 않았습니다.
 
 - 신규 글 원문은 고정 글자 수로 자르지 않고 저장합니다.
 - 신규 글은 모두 Flash로 1차 요약하고, 투자 관련 여부와 분류 이유를 함께 기록합니다.
