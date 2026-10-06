@@ -55,3 +55,8 @@ python compare_decisions.py --live --max-requests 3 --repetitions 1
 
 수동 GitHub 실행과 최초 로그인은 [연결 안내](chatgpt-login.md), API 없는 실제 캐시 검사와
 모의 모델 교정 테스트는 [2026-10-06 검증 기록](validation/chatgpt-provider-20261006.md)을 참고한다.
+
+`메르 Gemini 실모델 비교 (운영 상태 유지)`는 저장소의 기존 Gemini 키로 두 Gemini
+경로를 호출하는 별도 워크플로다. ChatGPT 인증이 필요 없고 최초 검증의 생성 상한은
+4회다. 기능 브랜치에서 해당 워크플로 파일을 변경할 때만 자동 실행하며, 검증 기록과
+일반 코드·문서 갱신은 새 호출을 만들지 않는다.
