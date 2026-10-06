@@ -86,4 +86,7 @@ class TrackedGeminiClient:
     """Count actual generate calls, including retries inside gemini_utils."""
 
     def __init__(self, client, budget, observations):
+        # google.genai.Client.__del__ closes the transports. Keep their owner
+        # alive for as long as this proxy, not only its models sub-object.
+        self._client = client
         self.models = _TrackedGeminiModels(client.models, budget, observations)

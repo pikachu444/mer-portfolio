@@ -1,4 +1,6 @@
+import gc
 import json
+import weakref
 import os
 from types import SimpleNamespace
 import unittest
@@ -115,6 +117,27 @@ class DecisionProviderTest(unittest.TestCase):
             tracked.models.generate_content(model="gemini-3.5-flash", contents="request", config=None)
         models.generate_content.assert_called_once()
         self.assertEqual(metrics[0]["input_tokens"], 100)
+
+    def test_gemini_proxy_keeps_real_sdk_transport_owner_alive(self):
+        from google import genai
+        # No network call or real key: only construct the actual SDK lifecycle.
+        # Ignore execution-environment proxy settings for this local test.
+        environment = {key: value for key, value in os.environ.items() if not key.lower().endswith('_proxy')}
+        with patch.dict(os.environ, environment, clear=True):
+            client = genai.Client(api_key='test-lifecycle-only', vertexai=False)
+        reference = weakref.ref(client)
+        tracked = TrackedGeminiClient(client, Budget(1), [])
+        del client
+        gc.collect()
+        try:
+            self.assertIsNotNone(reference(), 'SDK owner was collected and closed the transport')
+            with patch.object(tracked.models._models, 'generate_content', return_value=SimpleNamespace(usage_metadata=None)) as generation:
+                tracked.models.generate_content(model='test-model', contents='test')
+                generation.assert_called_once()
+        finally:
+            alive = reference()
+            if alive is not None:
+                alive.close()
 
     def test_preview_is_network_free_and_unchanged_for_baseline(self):
         with patch.object(analyze, "_get_client") as client:

@@ -18,6 +18,9 @@ on:
 permissions:
   contents: read
 
+env:
+  PYTHONUNBUFFERED: "1"
+
 concurrency:
   group: mer-gemini-comparison
   cancel-in-progress: false
