@@ -904,9 +904,22 @@ def _source_repair_feedback(decision, current_state, events):
     from portfolio_runtime import security_key
     by_id = {event['signal_id']: event for event in events}
     current = {security_key(item): item for item in (current_state or {}).get('portfolio', [])}
+    enriched_rows = None
+    if isinstance(decision, AnalysisDecisionV2):
+        from portfolio_provenance import enrich_decision_provenance
+        enriched, _ = enrich_decision_provenance(
+            decision, events, created_at=decision.analysis_date, model_id='repair-diagnostic-only',
+        )
+        enriched_rows = enriched.portfolio_decisions
     rows = []
     for index, item in enumerate(decision.portfolio_decisions):
         old = current.get(security_key(item), {})
+        if not old and enriched_rows is not None and enriched_rows[index].get('provenance_status') != 'verified':
+            rows.append({'decision_index': index, 'code': item.get('code'), 'name': item.get('name'),
+                         'action': item.get('action'), 'reasons': [
+                             '신규 편입인데 현재 원문 신호에서 대상·방향·근거 연결이 검증되지 않음. 다른 보유 종목의 연결 오류와 함께 이번 교정에서 검토하십시오.',
+                             '원문에 없는 직접 추천이나 코드를 만들지 마십시오. 적합한 근거를 검증할 수 없다면 편입하지 말고 관심종목과 필요한 추가 검토에 남기십시오.',
+                         ]})
         old_ids = set((old.get('linked_signal_ids') or []) + (old.get('origin_signal_ids') or []))
         for signal_id in item.get('linked_signal_ids') or []:
             if signal_id in old_ids:

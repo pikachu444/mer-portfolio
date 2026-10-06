@@ -25,6 +25,7 @@ permissions:
 
 env:
   PYTHONUNBUFFERED: "1"
+  # Revalidate focused-source-v3; at most two generation attempts.
 
 concurrency:
   group: mer-gemini-comparison

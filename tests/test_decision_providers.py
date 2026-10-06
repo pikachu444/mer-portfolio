@@ -37,6 +37,16 @@ class FakeChatGPT:
 
 
 class DecisionProviderTest(unittest.TestCase):
+    def test_repair_reports_unverified_new_position_even_without_explicit_signal_links(self):
+        from test_portfolio_schema import decision, insight
+        payload = {**DECISION, 'insights': [insight()], 'portfolio_decisions': [decision()]}
+        candidate = analyze.parse_analysis_decision(payload)
+        message = analyze._source_repair_feedback(candidate, {'portfolio': []}, [])
+        self.assertIn('신규 편입', message)
+        self.assertIn('AA', message)
+        self.assertIn('관심종목', message)
+        self.assertEqual(candidate.portfolio_decisions[0]['proposed_weight'], payload['portfolio_decisions'][0]['proposed_weight'])
+
     def test_source_repair_identifies_target_direction_and_unknown_id_without_rewriting(self):
         row = {'code': 'AA', 'name': 'Alcoa', 'market': 'US', 'asset_type': 'stock', 'action': '보유',
                'decision_actor': 'AI', 'source_scope': 'source_named_security', 'linked_signal_ids': ['old', 'bad', 'missing']}
