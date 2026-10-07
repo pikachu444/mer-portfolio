@@ -2,15 +2,16 @@
 
 ## 전체 구성 요약
 
-이 프로젝트는 **3가지 방식**으로 메르AI를 사용할 수 있습니다.
+이 프로젝트는 기존 Gemini 자동화와 두 페르소나를 제공하며, 자동화 코드에 선택적 ChatGPT 로그인 판단과 모델 비교 기능을 추가했습니다.
 
 | 방식 | 위치 | 자동화 | 필요한 것 |
 |------|------|--------|---------|
 | **GitHub Actions 자동화** | 이 폴더 | ✅ 매일 자동 실행 | Gemini API 키 |
 | **ChatGPT GPTs 페르소나** | `personas/chatgpt-gpt/` | 수동 트리거 | ChatGPT Plus (이미 있음) |
 | **Gemini Gems 페르소나** | `personas/gemini-gem/` | 수동 트리거 | Gemini Advanced (이미 있음) |
+| **ChatGPT 로그인 판단·비교** | `chatgpt_auth.py`, `compare_decisions.py` | 로컬 또는 고정 자체 서버 | 공식 로그인으로 허용된 계정·모델 |
 
-→ 셋 중 하나만 써도 되고, 셋 다 써도 됩니다.
+→ 기존 Gemini 자동화는 그대로 사용할 수 있습니다. ChatGPT 연결은 선택 사항입니다.
 → 채팅으로 빠르게 쓰고 싶으면 Gems, 자동으로 쌓아두고 싶으면 GitHub Actions.
 
 메르(blog.naver.com/ranto28)의 블로그 글을 자동 수집해서
@@ -152,6 +153,11 @@ output/
 | `FETCH_DAYS` | 모드별 기본값 | RSS 조회 범위를 임시 조정할 때만 사용하는 일수 |
 | `GEMINI_SUMMARY_MODEL` | `gemini-3.1-flash-lite` | 글별 요약과 원문 근거 후보 추출 모델 |
 | `GEMINI_DECISION_MODEL` | `gemini-3.5-flash` | 구조화 포트폴리오 판단 모델 |
+| `MER_DECISION_PROVIDER` | `gemini` | 판단 제공자: `gemini`, `chatgpt`. 글별 요약은 Gemini 유지 |
+| `MER_DECISION_CONTEXT` | `baseline` | 기존 입력 `baseline`, 원문·현재 판단 중심 실험 입력 `focused` |
+| `CHATGPT_DECISION_MODEL` | `gpt-6.1-sol` | 공식 로그인 계정의 모델 목록에서 선택 |
+| `CHATGPT_AUTH_DIR` | `~/.config/mer-portfolio/chatgpt` | 저장소 외부의 보호된 인증 디렉터리 |
+| `CHATGPT_ACCOUNT` | 저장된 선택 계정 | 여러 로그인 중 사용할 계정 레이블 |
 | `ENABLE_POST_SUMMARIES` | 켜짐 | 신규 글별 1차 요약 API 호출 여부. Actions의 `verify`에서는 꺼지고 `full_verify`에서는 켜짐 |
 | `OUTPUT_DIR` | `output` | 리포트 저장 경로 |
 
@@ -168,6 +174,28 @@ RUN_MODE=rebalance FETCH_DAYS=14 python main.py
 ---
 
 ## 모델 및 한도 운영 정책
+
+기본 설정은 기존 Gemini·기존 문맥입니다. 선택적 연결은 [ChatGPT 로그인](docs/chatgpt-login.md),
+원문 연결과 문맥 개선은 [개선 실험](docs/context-experiment.md)을 참고하세요.
+운영 요구사항은 PC·자체 서버 없이 GitHub 제공 실행 서버에서 예약 자동 실행하는 것입니다.
+추가한 ChatGPT 구독 로그인 경로는 고정 인증 호스트가 필요하므로 이 운영 대안에서 제외합니다.
+GPT 자동 판단을 추가하려면 별도 OpenAI API 키 방식 또는 Copilot 사용 권한을 갖춘
+Actions 경로를 구현·검증해야 합니다. 현재 코드에 이 두 경로는 구현되지 않았습니다.
+운영을 바꾸지 않고 비교하려면 아래 명령을 사용합니다.
+
+```bash
+# API·Telegram 전송 없이 저장된 리밸런싱 입력 검사
+python compare_decisions.py --dry-run --run-type rebalance
+
+# Gemini 키와 ChatGPT 최초 인증을 준비한 후에만 실행
+python compare_decisions.py --live --run-type rebalance --max-requests 3
+```
+
+실제 요청 상한에는 재시도와 교정 요청도 포함됩니다. 자세한 범위와 한계는
+[동일 입력 모델 비교](docs/model-comparison.md), 구현 검증은
+[2026-10-06 검증 기록](docs/validation/chatgpt-provider-20261006.md)을 참고하세요.
+Gemini 실제 호출 결과와 수정 내용은 [실모델 검증 기록](docs/validation/gemini-live-20261006.md)에 있습니다.
+ChatGPT 실계정 호출과 수익률 개선은 아직 검증하지 않았습니다.
 
 - 신규 글 원문은 고정 글자 수로 자르지 않고 저장합니다.
 - 신규 글은 모두 Flash로 1차 요약하고, 투자 관련 여부와 분류 이유를 함께 기록합니다.
