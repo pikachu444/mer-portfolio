@@ -9,27 +9,29 @@
       "decision_actor": "AI",
       "action": "보유",
       "basis": "이전 판단 유지",
-      "decision_date": "2026-09-30",
+      "decision_date": "2026-10-09",
       "evidence_posts": [
         {
-          "title": "홍해 더 위험해지나? (feat 수니파와 시아파 극단들의 협력 )",
-          "url": "https://blog.naver.com/ranto28/224398540411?fromRss=true&trackingCode=rss",
-          "published_date": "2026-09-02"
+          "title": "알래스카 LNG 프로젝트에 대해 알아보자",
+          "url": "https://blog.naver.com/ranto28/224428298482?fromRss=true&trackingCode=rss",
+          "published_date": "2026-10-01"
         }
       ],
       "source_mentioned": false,
       "previous_weight": 1.5,
       "proposed_weight": 1.5,
       "weight_source": "AI 제안",
-      "change_reason": "홍해 및 호르무즈 등 주요 해상 통로의 무장 충돌과 해상 지정학 위기 심화로 조선 방산 가치가 보존되어 기존 비중을 유지함.",
+      "change_reason": "알래스카 친환경 대규모 천연가스 송배전 터미널 구축 및 한-미 LNG 연계 수송선 발주 모멘텀이 추가 확인되어 기존 보유 기조 유지.",
       "source_scope": "previous_decision",
-      "investment_rationale": "지정학적 요충지 분쟁 및 해상 에너지 통로 안전성 저하에 대응하는 특수선/MRO 경쟁력 장기 보존.",
-      "current_entry_reason": "에너지 수송 톤마일 유지 및 글로벌 해군 방산 수요 증가 가능성 관망.",
+      "investment_rationale": "글로벌 지정학 위기 속에서 한국 특수선 기술 가치 및 차세대 미 알래스카 대규모 LNG 해상 운송 인프라 공급 역량 확대.",
+      "current_entry_reason": "장기 공급 다변화에 기인한 신규 LNG 캐리어 수주 가능성 기대 보유.",
       "key_risks": [
-        "조선 부문 현장 인력 병목 현상",
-        "강재 및 원자재 단가 상승에 따른 마진 압박"
+        "조선 가공 인력의 수급 타이트 및 노무 비용 인상 압력",
+        "FID(최종투자결정) 추진 지연 리스크"
       ],
-      "linked_insight_ids": [],
+      "linked_insight_ids": [
+        "INSIGHT-20261009-2"
+      ],
       "allocation_role": "satellite",
       "allocation_role_source": "rebalance_review_2026-06-15",
       "allocation_role_reason": "조선/MRO 수혜 보조 성장 포지션",
@@ -42,7 +44,8 @@
       "linked_signal_ids": [],
       "issuer_id": "HANWHA_OCEAN",
       "theme_ids": [
-        "naval_mro_defense"
+        "naval_mro_defense",
+        "lng_carriers"
       ],
       "country_code": "KR",
       "quality_components": {
@@ -67,35 +70,22 @@
       "decision_actor": "AI",
       "action": "보유",
       "basis": "이전 판단 유지",
-      "decision_date": "2026-09-30",
-      "evidence_posts": [
-        {
-          "title": "한국 반도체 시작 썰 (feat 삼성전자)",
-          "url": "https://blog.naver.com/ranto28/224423696087?fromRss=true&trackingCode=rss",
-          "published_date": "2026-09-27"
-        },
-        {
-          "title": "추석전후, 삼성전자와 SK하이닉스 체크포인트",
-          "url": "https://blog.naver.com/ranto28/224419329394?fromRss=true&trackingCode=rss",
-          "published_date": "2026-09-21"
-        }
-      ],
-      "source_mentioned": true,
+      "decision_date": "2026-10-09",
+      "evidence_posts": [],
+      "source_mentioned": false,
       "previous_weight": 1.5,
       "proposed_weight": 1.5,
       "weight_source": "AI 제안",
-      "change_reason": "역사적으로 이어진 3사 과점의 업황 방어력과 3분기 대규모 주주환원 재원이 안정마진 역할을 제공하고 있어 기존 비중을 유지함.",
+      "change_reason": "새로운 거시적 근거의 변화나 메르의 직접적인 매매 액션이 부재하므로 기존의 장기 점진적 회복 및 특별 주주환원 기대 비중을 그대로 유지함.",
       "allocation_role": "core",
       "source_scope": "previous_decision",
-      "investment_rationale": "대규모 특별배당 수급 지지와 3사 메모리 과점 체제에 기반한 점진적 업황 회복 기대.",
-      "current_entry_reason": "주주가치 극대화 가시성 및 공급자 우위 전술을 감안한 지속 보유.",
+      "investment_rationale": "DRAM 과점 시장에서의 대규모 주주환원 현금 재원과 안정적 밸류에이션 하단 지지 매력.",
+      "current_entry_reason": "전체 포트폴리오의 국내 테크 섹터 코어 자산 방어력 유지 목적.",
       "key_risks": [
-        "외국인 이탈에 따른 수급 및 환율 변동성",
-        "관세 규제 변수 적용 가능성"
+        "글로벌 긴축 수급 하에 외국인 매수 연속성의 이탈 리스크",
+        "관세 규제 등에 따른 글로벌 공급망 변화 여파"
       ],
-      "linked_insight_ids": [
-        "INSIGHT-20260929-2"
-      ],
+      "linked_insight_ids": [],
       "provenance_status": "verified",
       "origin_signal_type": "MER_THESIS",
       "origin_signal_ids": [
@@ -131,36 +121,33 @@
       "decision_actor": "AI",
       "action": "보유",
       "basis": "이전 판단 유지",
-      "decision_date": "2026-09-30",
+      "decision_date": "2026-10-09",
       "evidence_posts": [
         {
-          "title": "한국 반도체 시작 썰 (feat 삼성전자)",
-          "url": "https://blog.naver.com/ranto28/224423696087?fromRss=true&trackingCode=rss",
-          "published_date": "2026-09-27"
-        },
-        {
-          "title": "추석전후, 삼성전자와 SK하이닉스 체크포인트",
-          "url": "https://blog.naver.com/ranto28/224419329394?fromRss=true&trackingCode=rss",
-          "published_date": "2026-09-21"
+          "title": "SK가 공시한 9,440억원 블록딜의 비밀 (feat SK하이닉스)",
+          "url": "https://blog.naver.com/ranto28/224433051682?fromRss=true&trackingCode=rss",
+          "published_date": "2026-10-06"
         }
       ],
       "source_mentioned": true,
       "previous_weight": 5.0,
       "proposed_weight": 5.0,
       "weight_source": "AI 제안",
-      "change_reason": "10월 예정된 대규모 자사주 매입 소각의 물량 지지 효과와 타이트한 3사 D램 과점 구조 유효성을 바탕으로 이전 비중을 보유함.",
+      "change_reason": "대주주 최태원 회장의 PRS 계약 선택으로 장기적 SK하이닉스의 성장 모멘텀에 대한 내재적 신뢰가 재확인되어 기존 포트폴리오 비중을 유지함.",
       "allocation_role": "satellite",
       "source_scope": "previous_decision",
-      "investment_rationale": "자사주 소각 추진을 통한 주당 가치 상승 및 고성능 HBM과 고부가가치 SSD 부문의 공급 지배력.",
-      "current_entry_reason": "자사주 매입 완료 타임라인 진입에 따른 유통 수급 방어력 확인.",
+      "investment_rationale": "글로벌 DRAM 및 독보적 HBM, 기업용 대용량 SSD 수급 지배력이 탄탄한 상태에서 최대주주 계열 가치의 가시성 확보.",
+      "current_entry_reason": "상방 옵션을 보유한 PRS 지분 구조가 장기적 가치 수렴에 우호적인 자극을 줄 것으로 해석.",
       "key_risks": [
-        "소각 종료 이후 일시적 수급 공백 우려",
-        "미국 반도체 무역 규제 세부 요건 변화"
+        "글로벌 거시 경제 둔화 시 IT 인프라용 반도체 수요 지연 가능성",
+        "소각 완결 이후 일시적 수급 변동성 우려"
       ],
       "linked_insight_ids": [
-        "INSIGHT-20260929-2"
+        "INSIGHT-20261009-3"
       ],
-      "linked_signal_ids": [],
+      "linked_signal_ids": [
+        "sig_2e37c7396c55d27937f39939c11a227701f34f564547b0860b2764e99abac328"
+      ],
       "thesis_id": "thesis_f71c12c78b2b0afd880b57f8",
       "issuer_id": "SK_HYNIX",
       "theme_ids": [
@@ -193,20 +180,20 @@
       "decision_actor": "AI",
       "action": "보유",
       "basis": "이전 판단 유지",
-      "decision_date": "2026-09-30",
+      "decision_date": "2026-10-09",
       "evidence_posts": [],
       "source_mentioned": false,
       "previous_weight": 5.0,
       "proposed_weight": 5.0,
       "weight_source": "AI 제안",
-      "change_reason": "글로벌 공급망 보호 정책 기조와 주요 셀 메이커의 시장 방어력 펀더멘털에 변동이 없어 기존 비중 유지.",
+      "change_reason": "산업 구조 개편에 큰 훼손 요인이 없으며, 중장기 규제 무역 수혜 매커니즘이 강고하여 기존의 5% 비중을 변동 없이 유지함.",
       "allocation_role": "satellite",
       "source_scope": "previous_decision",
-      "investment_rationale": "한계 소형사 배제 구도 속 메이저 중심의 무역 보조금 혜택 및 수혜 구조 장기 지속.",
-      "current_entry_reason": "미국 보조금 등 우호적 규제 장벽 혜택 보존 여부 주시.",
+      "investment_rationale": "메이저 셀 제조업체의 공급 탄력성과 수직 계열화된 글로벌 무역 제재 방어 기제 유효성.",
+      "current_entry_reason": "공급선 다변화 속도 및 시장 우위 점유율 보존 여부 대기 관망.",
       "key_risks": [
-        "유럽 완성차 배터리 개발 속도",
-        "글로벌 광물 원자재 공급 과잉 지속 여부"
+        "유럽 및 주요 타깃 시장의 단기 수요 회복 속도 둔화",
+        "원자재 단가 및 유통 구조 불안정성 지속"
       ],
       "linked_insight_ids": [],
       "linked_signal_ids": [],
@@ -240,26 +227,20 @@
       "decision_actor": "AI",
       "action": "보유",
       "basis": "이전 판단 유지",
-      "decision_date": "2026-09-30",
-      "evidence_posts": [
-        {
-          "title": "미국 연준이 기준금리를 인상했다. 그런데, 이게 끝이 아니다.",
-          "url": "https://blog.naver.com/ranto28/224414401619?fromRss=true&trackingCode=rss",
-          "published_date": "2026-09-16"
-        }
-      ],
+      "decision_date": "2026-10-09",
+      "evidence_posts": [],
       "source_mentioned": false,
       "previous_weight": 7.0,
       "proposed_weight": 7.0,
       "weight_source": "AI 제안",
-      "change_reason": "미 연준의 기준금리 인상 및 Higher for longer 기조 지속에 따른 전반적 NIM 안정성과 규제 완화 수혜 기조가 탄탄하여 기존 비중 유지.",
+      "change_reason": "고금리 장기화에 부합하는 은행 NIM 안정성과 부동산 공급 가계 대출 완화 수혜 기대감이 강고하게 지탱되어 비중을 기존 수준으로 보유함.",
       "allocation_role": "satellite",
       "source_scope": "previous_decision",
-      "investment_rationale": "가상자산 통화 이탈 방어 및 고금리 환경 장기화에 따른 NIM 안정마진, 부동산 대출 규제 완화에 따른 이익 기초력 유지.",
-      "current_entry_reason": "기준금리 추가 상승 압박에 기댄 이자 마진의 견고성 지지.",
+      "investment_rationale": "상대적으로 탁월한 자산 방어력 및 연중 지속되는 배당 경쟁력 메리트 우위.",
+      "current_entry_reason": "지속되는 고금리 매파 사이클에서의 이자 마진 방어 안정성 지속 주시.",
       "key_risks": [
-        "연체율 및 대손 충당금 부담 증가 추이",
-        "추가 대출 가산금리 인하 정책 유도 가능성"
+        "한계 가계 차주 증가에 의한 장기 대손 부담 리스크",
+        "정부 주도의 가산금리 추가 억제 정책 변화"
       ],
       "linked_insight_ids": [],
       "linked_signal_ids": [],
@@ -294,20 +275,20 @@
       "decision_actor": "AI",
       "action": "보유",
       "basis": "이전 판단 유지",
-      "decision_date": "2026-09-30",
+      "decision_date": "2026-10-09",
       "evidence_posts": [],
       "source_mentioned": false,
       "previous_weight": 3.0,
       "proposed_weight": 3.0,
       "weight_source": "AI 제안",
-      "change_reason": "AI 데이터센터 인프라에 필요한 산업용 단자/하드웨어 전극으로서의 실물 은 부족 요인이 견고하여 이전 판단을 유지함.",
+      "change_reason": "AI 연산 데이터센터 인프라용 산업 특수재로서의 장기 공급 부족 수혜 기조가 탄탄하여 기존 비중을 유지함.",
       "allocation_role": "satellite",
       "source_scope": "previous_decision",
-      "investment_rationale": "구조적 공급 한계 속에서 고성능 연산 서버 인프라 구축 확대로 인한 장기 산업재 수요 추가.",
-      "current_entry_reason": "연간 실물 공급 적자 지속 및 대체재 전환 타임라인의 완만함을 근거로 지지.",
+      "investment_rationale": "만성적 글로벌 광물 채굴 정체와 동시에 하드웨어 하이퍼스케일 서버 전극용 은 수요의 구조적 우상향 사이클 수혜.",
+      "current_entry_reason": "대체재 전환 장벽이 비교적 길게 유지되는 기간 내 가치 포지셔닝.",
       "key_risks": [
-        "미 실질금리 재급등에 따른 비철금속 자산 변동성",
-        "산업용 은 박막화 고도화 속도 증가"
+        "원자재 전반에 대한 고금리 압박 심화 및 단기 청산 리스크",
+        "박막 코팅 정밀 가공 단자 기술 발전에 의한 서버당 실물 사용량 축소"
       ],
       "linked_insight_ids": [],
       "linked_signal_ids": [],
@@ -333,6 +314,69 @@
       ],
       "decision_model_id": "gemini-3.5-flash",
       "rejected_linked_signal_ids": []
+    },
+    {
+      "name": "미국국채 10년물",
+      "code": "IEF",
+      "market": "US",
+      "asset_type": "etf",
+      "decision_actor": "메르",
+      "action": "매수",
+      "basis": "직접 발언",
+      "decision_date": "2026-10-09",
+      "evidence_posts": [
+        {
+          "title": "미국국채를 매수하는 단골 고객이 약해지고 있다.",
+          "url": "https://blog.naver.com/ranto28/224426600100?fromRss=true&trackingCode=rss",
+          "published_date": "2026-09-30"
+        },
+        {
+          "title": "오늘 새벽 진행된 미국국채 10년물 입찰결과를 뜯어보자.",
+          "url": "https://blog.naver.com/ranto28/224434786803?fromRss=true&trackingCode=rss",
+          "published_date": "2026-10-07"
+        }
+      ],
+      "source_mentioned": true,
+      "previous_weight": null,
+      "proposed_weight": 10.0,
+      "weight_source": "메르 직접 발언 기반",
+      "change_reason": "블로거 메르가 본인의 원글에서 미국 10년물 국채를 5.28% 수준에서 실제 분할 매수 진입했음을 명확히 확인해 줌에 따라 관심종목에서 모델 포트폴리오로 승격하여 신규 매수를 결정함.",
+      "allocation_role": "defensive",
+      "source_scope": "blogger_trade_disclosure",
+      "investment_rationale": "연준의 긴축 정점 신호, 26년 만에 가장 높은 수준인 5.3% 부근의 우량 무위험 수익률 매력, 80% 이상의 외국 기관 중심 간접 입찰 수요로 하방 경직성 확보.",
+      "current_entry_reason": "블로거 직접 매수 진입 가격 범위(5.28%~5.30%) 도달에 기반한 정량적 최적 대응.",
+      "key_risks": [
+        "미국 내 구조적 은퇴 세대의 사회 보장 자금 고갈 방어를 위한 지속적인 채권 매각 및 재무부 공급 압력",
+        "일부 해외 헤지펀드의 대규모 베이시스 트레이드 마진콜 발생 시 채권 가격 일시적 변동성 유발"
+      ],
+      "linked_insight_ids": [
+        "INSIGHT-20261009-1"
+      ],
+      "linked_signal_ids": [
+        "sig_f904b181e5b67eb50578581acbbf04c179ef8af0019f47d0ed3651024f2e4266"
+      ],
+      "thesis_id": "thesis_d3aae23cef640ebed20cabc4",
+      "issuer_id": "IEF_US_10Y",
+      "theme_ids": [
+        "us_treasury_peak_yield",
+        "defensive_asset_allocation"
+      ],
+      "country_code": "US",
+      "quality_components": {
+        "explicitness": 1.0,
+        "causality": 0.9,
+        "catalyst": 0.9,
+        "confirmation": 0.9,
+        "invalidation": 0.6,
+        "recency": 1.0
+      },
+      "provenance_status": "verified",
+      "origin_signal_type": "MER_THESIS",
+      "origin_signal_ids": [
+        "sig_f904b181e5b67eb50578581acbbf04c179ef8af0019f47d0ed3651024f2e4266"
+      ],
+      "decision_model_id": "gemini-3.5-flash",
+      "rejected_linked_signal_ids": []
     }
   ],
   "watchlist": [
@@ -343,7 +387,7 @@
       "asset_type": "stock",
       "decision_actor": "AI",
       "basis": "종목 분석",
-      "decision_date": "2026-09-09",
+      "decision_date": "2026-10-09",
       "evidence_posts": [
         {
           "title": "스타트업 성장 이야기 (feat 리센느)",
@@ -359,7 +403,7 @@
       "source_mentioned": true,
       "watchlist_entry_date": "2026-08-09",
       "latest_evidence_date": "2026-07-31",
-      "watchlist_duration_days": 60,
+      "watchlist_duration_days": 61,
       "portfolio_entry_date": null,
       "watchlist_closed_date": null,
       "status": "관심",
@@ -389,7 +433,7 @@
       "asset_type": "stock",
       "decision_actor": "AI",
       "basis": "종목 분석",
-      "decision_date": "2026-09-09",
+      "decision_date": "2026-10-09",
       "evidence_posts": [
         {
           "title": "미국과 중국의 희토류 전쟁 근황",
@@ -400,12 +444,12 @@
       "source_mentioned": true,
       "watchlist_entry_date": "2026-08-14",
       "latest_evidence_date": "2026-08-12",
-      "watchlist_duration_days": 55,
+      "watchlist_duration_days": 56,
       "portfolio_entry_date": null,
       "watchlist_closed_date": null,
       "status": "관심",
       "source_scope": "source_named_security",
-      "observation_reason": "미 국방부 주도의 4억 달러 규모 자금 투입 및 희토류 가격 하방 보장 정책에 따른 중장기 실적 개선 여부를 지속 분석함.",
+      "observation_reason": "미 국방부 주도의 자금 투입 및 희토류 가격 하방 보장 정책에 따른 중장기 실적 개선 여부를 지속 분석함.",
       "linked_signal_ids": [
         "sig_755ca2266bdcc73d57d4f4c5a77975dd607b2c8e58952531fb135bf210871d4b"
       ],
@@ -429,7 +473,7 @@
       "asset_type": "sector",
       "decision_actor": "AI",
       "basis": "섹터 분석",
-      "decision_date": "2026-09-09",
+      "decision_date": "2026-10-09",
       "evidence_posts": [
         {
           "title": "8.13 부동산 공급대책과 금융 종합대책의 행간 읽기",
@@ -440,7 +484,7 @@
       "source_mentioned": false,
       "watchlist_entry_date": "2026-08-15",
       "latest_evidence_date": "2026-08-14",
-      "watchlist_duration_days": 54,
+      "watchlist_duration_days": 55,
       "portfolio_entry_date": null,
       "watchlist_closed_date": null,
       "status": "관심",
@@ -467,7 +511,7 @@
       "asset_type": "stock",
       "decision_actor": "AI",
       "basis": "종목 분석",
-      "decision_date": "2026-09-09",
+      "decision_date": "2026-10-09",
       "evidence_posts": [
         {
           "title": "꿈의 암 치료제가 모더나에서 터졌다는데 어떤걸까?",
@@ -478,12 +522,12 @@
       "source_mentioned": true,
       "watchlist_entry_date": "2026-09-02",
       "latest_evidence_date": "2026-08-20",
-      "watchlist_duration_days": 36,
+      "watchlist_duration_days": 37,
       "portfolio_entry_date": null,
       "watchlist_closed_date": null,
       "status": "관심",
       "source_scope": "source_named_security",
-      "observation_reason": "mRNA 기반 개인 맞춤형 신항원 암 백신(인티스메란 오토진)의 임상 3상 성공 및 키트루다 병용 치료 경쟁력 모니터링을 위해 관심종목으로 지속 관찰함.",
+      "observation_reason": "mRNA 기반 개인 맞춤형 신항원 암 백신의 임상 3상 성공 및 키트루다 병용 치료 경쟁력 모니터링을 위해 관심종목으로 지속 관찰함.",
       "linked_signal_ids": [
         "sig_e5e8f9561e1b7c2e727c93a9a850f1f478e10f33bdaa2cbca4ed9cd9dc0ee1dc"
       ],
@@ -505,7 +549,7 @@
       "asset_type": "sector",
       "decision_actor": "AI",
       "basis": "섹터 분석",
-      "decision_date": "2026-09-09",
+      "decision_date": "2026-10-09",
       "evidence_posts": [
         {
           "title": "새로운 에너지, 핵융합 속도가 빨라지고 있다. 3 (feat 트럼프)",
@@ -531,7 +575,7 @@
       "source_mentioned": false,
       "watchlist_entry_date": "2026-09-02",
       "latest_evidence_date": "2026-08-30",
-      "watchlist_duration_days": 36,
+      "watchlist_duration_days": 37,
       "portfolio_entry_date": null,
       "watchlist_closed_date": null,
       "status": "관심",
@@ -559,7 +603,7 @@
       "asset_type": "stock",
       "decision_actor": "AI",
       "basis": "종목 분석",
-      "decision_date": "2026-09-09",
+      "decision_date": "2026-10-09",
       "evidence_posts": [
         {
           "title": "오픈AI가 발표한 GPT-6 Astra는 어떤 수준일까?",
@@ -570,7 +614,7 @@
       "source_mentioned": true,
       "watchlist_entry_date": "2026-09-09",
       "latest_evidence_date": "2026-09-07",
-      "watchlist_duration_days": 29,
+      "watchlist_duration_days": 30,
       "portfolio_entry_date": null,
       "watchlist_closed_date": null,
       "status": "관심",
@@ -599,7 +643,7 @@
       "asset_type": "stock",
       "decision_actor": "AI",
       "basis": "종목 분석",
-      "decision_date": "2026-09-09",
+      "decision_date": "2026-10-09",
       "evidence_posts": [
         {
           "title": "탈모 신약은 어떤게 진행되고 있을까?",
@@ -610,7 +654,7 @@
       "source_mentioned": true,
       "watchlist_entry_date": "2026-09-09",
       "latest_evidence_date": "2026-09-03",
-      "watchlist_duration_days": 29,
+      "watchlist_duration_days": 30,
       "portfolio_entry_date": null,
       "watchlist_closed_date": null,
       "status": "관심",
@@ -639,7 +683,7 @@
       "asset_type": "sector",
       "decision_actor": "AI",
       "basis": "섹터 분석",
-      "decision_date": "2026-09-09",
+      "decision_date": "2026-10-09",
       "evidence_posts": [
         {
           "title": "경영권 전쟁 본게임이 시작되나? (feat 대한항공 vs 호반)",
@@ -650,7 +694,7 @@
       "source_mentioned": false,
       "watchlist_entry_date": "2026-09-09",
       "latest_evidence_date": "2026-09-03",
-      "watchlist_duration_days": 29,
+      "watchlist_duration_days": 30,
       "portfolio_entry_date": null,
       "watchlist_closed_date": null,
       "status": "관심",
@@ -671,75 +715,13 @@
       "archive_reason": null
     },
     {
-      "name": "미국국채 10년물",
-      "code": "IEF",
-      "market": "US",
-      "asset_type": "etf",
-      "decision_actor": "메르",
-      "basis": "직접 발언",
-      "decision_date": "2026-09-29",
-      "evidence_posts": [
-        {
-          "title": "미국국채 10년물이 드디어 5%를 찍었다.",
-          "url": "https://blog.naver.com/ranto28/224412030235?fromRss=true&trackingCode=rss",
-          "published_date": "2026-09-14"
-        },
-        {
-          "title": "미국국채 10년물이 5.2%를 찍는 이유?",
-          "url": "https://blog.naver.com/ranto28/224422263567?fromRss=true&trackingCode=rss",
-          "published_date": "2026-09-25"
-        },
-        {
-          "title": "미국 10년물 국채금리가 5.1%를 찍었다.",
-          "url": "https://blog.naver.com/ranto28/224421516189?fromRss=true&trackingCode=rss",
-          "published_date": "2026-09-23"
-        },
-        {
-          "title": "미국 연준이 기준금리를 인상했다. 그런데, 이게 끝이 아니다.",
-          "url": "https://blog.naver.com/ranto28/224414401619?fromRss=true&trackingCode=rss",
-          "published_date": "2026-09-16"
-        },
-        {
-          "title": "주절주절...미국국채를 사야하는 타이밍이 오는걸까?",
-          "url": "https://blog.naver.com/ranto28/2244398027941?fromRss=true&trackingCode=rss",
-          "published_date": "2026-09-02"
-        }
-      ],
-      "source_mentioned": true,
-      "watchlist_entry_date": "2026-09-17",
-      "latest_evidence_date": "2026-09-25",
-      "watchlist_duration_days": 21,
-      "portfolio_entry_date": null,
-      "watchlist_closed_date": null,
-      "status": "관심",
-      "source_scope": "blogger_trade_disclosure",
-      "observation_reason": "연준의 금리 인상 후 10년물 금리가 5.2%까지 급등하는 등 패닉 국면이 가시화되었습니다. 입찰 테일 발생 등 재무부 수요 둔화 구조가 부각됨에 따라, 메르의 진입 타겟(5.1%) 상회 시점에서의 재진입 기회를 정밀 타진합니다.",
-      "linked_signal_ids": [
-        "sig_998211951b4436ff22f906b71a7042505daa351d69013a81de58bef52090add1",
-        "sig_2554947a83d46351e90b0e81369bc17784dbb442d980238872980e2354d6dec6",
-        "sig_519eb8bde1b9862b90f0fa75071aeb66f5725aeef319c9a98ceae0affa2998f7"
-      ],
-      "thesis_id": "thesis_b2c6bf7bac387b804e6f8534",
-      "watchlist_kind": "cyclical",
-      "provenance_status": "verified",
-      "origin_signal_type": "MER_DIRECT",
-      "origin_signal_ids": [
-        "sig_998211951b4436ff22f906b71a7042505daa351d69013a81de58bef52090add1"
-      ],
-      "lifecycle_status": "active",
-      "latest_material_signal_date": "2026-09-25",
-      "expires_on": "2026-12-18",
-      "archived_date": null,
-      "archive_reason": null
-    },
-    {
       "name": "나이키",
       "code": "NKE",
       "market": "US",
       "asset_type": "stock",
       "decision_actor": "메르",
       "basis": "직접 발언",
-      "decision_date": "2026-09-29",
+      "decision_date": "2026-10-09",
       "evidence_posts": [
         {
           "title": "나이키 몰락의 비밀",
@@ -750,7 +732,7 @@
       "source_mentioned": true,
       "watchlist_entry_date": "2026-09-27",
       "latest_evidence_date": "2026-09-21",
-      "watchlist_duration_days": 11,
+      "watchlist_duration_days": 12,
       "portfolio_entry_date": null,
       "watchlist_closed_date": null,
       "status": "관심",
@@ -790,7 +772,7 @@
       "source_mentioned": true,
       "watchlist_entry_date": "2026-09-27",
       "latest_evidence_date": "2026-09-21",
-      "watchlist_duration_days": 11,
+      "watchlist_duration_days": 12,
       "portfolio_entry_date": null,
       "watchlist_closed_date": null,
       "status": "관심",
@@ -819,7 +801,7 @@
       "asset_type": "sector",
       "decision_actor": "AI",
       "basis": "섹터 분석",
-      "decision_date": "2026-09-29",
+      "decision_date": "2026-10-09",
       "evidence_posts": [
         {
           "title": "미중 정상회담 팩트시트에 정제유가 나오는 비밀",
@@ -830,12 +812,12 @@
       "source_mentioned": false,
       "watchlist_entry_date": "2026-09-29",
       "latest_evidence_date": "2026-09-28",
-      "watchlist_duration_days": 9,
+      "watchlist_duration_days": 10,
       "portfolio_entry_date": null,
       "watchlist_closed_date": null,
       "status": "관심",
       "source_scope": "sector_only",
-      "observation_reason": "미국 디젤 쇼매가 사상 최고치 경신 및 높은 정제마진 환경에도 불구하고, 국내 정유사들이 겪고 있는 정부 수출 물량 규제 등의 제약 영향을 정밀 모니터링하기 위해 등록함.",
+      "observation_reason": "미국 디젤 소매가 사상 최고치 경신 및 높은 정제마진 환경에도 불구하고, 국내 정유사들이 겪고 있는 정부 수출 물량 규제 등의 제약 영향을 정밀 모니터링하기 위해 등록함.",
       "linked_signal_ids": [
         "sig_6fcf0e4b16381b93d13d63be3de15d61e2cec53d622c60c7a60ec6f01e3acf3a"
       ],
@@ -857,7 +839,7 @@
       "asset_type": "sector",
       "decision_actor": "AI",
       "basis": "섹터 분석",
-      "decision_date": "2026-09-30",
+      "decision_date": "2026-10-09",
       "evidence_posts": [
         {
           "title": "비대면진료와 처방약 배송이 확대되나?",
@@ -868,7 +850,7 @@
       "source_mentioned": false,
       "watchlist_entry_date": "2026-09-30",
       "latest_evidence_date": "2026-09-29",
-      "watchlist_duration_days": 8,
+      "watchlist_duration_days": 9,
       "portfolio_entry_date": null,
       "watchlist_closed_date": null,
       "status": "관심",
@@ -886,6 +868,47 @@
       "lifecycle_status": "active",
       "latest_material_signal_date": "2026-09-29",
       "expires_on": "2027-03-16",
+      "archived_date": null,
+      "archive_reason": null
+    },
+    {
+      "name": "쿠팡",
+      "code": "CPNG",
+      "market": "US",
+      "asset_type": "stock",
+      "decision_actor": "AI",
+      "basis": "종목 분석",
+      "decision_date": "2026-10-09",
+      "evidence_posts": [
+        {
+          "title": "쿠팡 및 쿠팡이츠 에러, 서버 터진듯",
+          "url": "https://blog.naver.com/ranto28/224435833096?fromRss=true&trackingCode=rss",
+          "published_date": "2026-10-08"
+        }
+      ],
+      "source_mentioned": true,
+      "watchlist_entry_date": "2026-09-27",
+      "latest_evidence_date": "2026-10-08",
+      "watchlist_duration_days": 12,
+      "portfolio_entry_date": null,
+      "watchlist_closed_date": null,
+      "status": "관심",
+      "source_scope": "source_named_security",
+      "observation_reason": "인증 시스템 마비로 일시적인 쿠팡 및 쿠팡이츠 전면 마비 사태와 분류 물류 올스톱이 발생함. 일시적 이벤트이나 단기 새벽배송 차질 여파 및 네이버쇼핑 등 타 서비스의 반사 반사이익 발생 여부를 관찰하기 위해 관심종목 지위를 유지함.",
+      "linked_signal_ids": [
+        "sig_14ac8888a6fad8f93e6f757c47792f23d9818d955f15151427bae1b429d97795",
+        "sig_b620e8ed2d9ff61713cde758b77dacf950101f4b9a13d1b2e4856433574db845"
+      ],
+      "thesis_id": "thesis_576d2c285c625f1995b127fb",
+      "watchlist_kind": "structural",
+      "provenance_status": "verified",
+      "origin_signal_type": "MER_THESIS",
+      "origin_signal_ids": [
+        "sig_14ac8888a6fad8f93e6f757c47792f23d9818d955f15151427bae1b429d97795"
+      ],
+      "lifecycle_status": "active",
+      "latest_material_signal_date": "2026-10-08",
+      "expires_on": "2027-03-25",
       "archived_date": null,
       "archive_reason": null
     }
@@ -2368,6 +2391,113 @@
       "expires_on": "2026-10-02",
       "archived_date": "2026-10-02",
       "archive_reason": "Watchlist 유효기간 만료"
+    },
+    {
+      "name": "미국국채 10년물",
+      "code": "IEF",
+      "market": "US",
+      "asset_type": "etf",
+      "decision_actor": "메르",
+      "basis": "직접 발언",
+      "decision_date": "2026-09-29",
+      "evidence_posts": [
+        {
+          "title": "미국국채 10년물이 드디어 5%를 찍었다.",
+          "url": "https://blog.naver.com/ranto28/224412030235?fromRss=true&trackingCode=rss",
+          "published_date": "2026-09-14"
+        },
+        {
+          "title": "미국국채 10년물이 5.2%를 찍는 이유?",
+          "url": "https://blog.naver.com/ranto28/224422263567?fromRss=true&trackingCode=rss",
+          "published_date": "2026-09-25"
+        },
+        {
+          "title": "미국 10년물 국채금리가 5.1%를 찍었다.",
+          "url": "https://blog.naver.com/ranto28/224421516189?fromRss=true&trackingCode=rss",
+          "published_date": "2026-09-23"
+        },
+        {
+          "title": "미국 연준이 기준금리를 인상했다. 그런데, 이게 끝이 아니다.",
+          "url": "https://blog.naver.com/ranto28/224414401619?fromRss=true&trackingCode=rss",
+          "published_date": "2026-09-16"
+        },
+        {
+          "title": "주절주절...미국국채를 사야하는 타이밍이 오는걸까?",
+          "url": "https://blog.naver.com/ranto28/2244398027941?fromRss=true&trackingCode=rss",
+          "published_date": "2026-09-02"
+        }
+      ],
+      "source_mentioned": true,
+      "watchlist_entry_date": "2026-09-17",
+      "latest_evidence_date": "2026-09-25",
+      "watchlist_duration_days": 21,
+      "portfolio_entry_date": "2026-10-09",
+      "watchlist_closed_date": "2026-10-09",
+      "status": "포트폴리오 편입",
+      "source_scope": "blogger_trade_disclosure",
+      "observation_reason": "연준의 금리 인상 후 10년물 금리가 5.2%까지 급등하는 등 패닉 국면이 가시화되었습니다. 입찰 테일 발생 등 재무부 수요 둔화 구조가 부각됨에 따라, 메르의 진입 타겟(5.1%) 상회 시점에서의 재진입 기회를 정밀 타진합니다.",
+      "linked_signal_ids": [
+        "sig_998211951b4436ff22f906b71a7042505daa351d69013a81de58bef52090add1",
+        "sig_2554947a83d46351e90b0e81369bc17784dbb442d980238872980e2354d6dec6",
+        "sig_519eb8bde1b9862b90f0fa75071aeb66f5725aeef319c9a98ceae0affa2998f7"
+      ],
+      "thesis_id": "thesis_b2c6bf7bac387b804e6f8534",
+      "watchlist_kind": "cyclical",
+      "provenance_status": "verified",
+      "origin_signal_type": "MER_DIRECT",
+      "origin_signal_ids": [
+        "sig_998211951b4436ff22f906b71a7042505daa351d69013a81de58bef52090add1"
+      ],
+      "lifecycle_status": "promoted",
+      "latest_material_signal_date": "2026-09-25",
+      "expires_on": "2026-12-18",
+      "archived_date": "2026-10-09",
+      "archive_reason": "포트폴리오 편입"
+    },
+    {
+      "name": "미국국채 10년물",
+      "code": "IEF",
+      "market": "US",
+      "asset_type": "etf",
+      "decision_actor": "메르",
+      "basis": "직접 발언",
+      "decision_date": "2026-10-09",
+      "evidence_posts": [
+        {
+          "title": "미국국채를 매수하는 단골 고객이 약해지고 있다.",
+          "url": "https://blog.naver.com/ranto28/224426600100?fromRss=true&trackingCode=rss",
+          "published_date": "2026-09-30"
+        },
+        {
+          "title": "오늘 새벽 진행된 미국국채 10년물 입찰결과를 뜯어보자.",
+          "url": "https://blog.naver.com/ranto28/224434786803?fromRss=true&trackingCode=rss",
+          "published_date": "2026-10-07"
+        }
+      ],
+      "source_mentioned": true,
+      "watchlist_entry_date": "2026-09-17",
+      "latest_evidence_date": "2026-10-07",
+      "watchlist_duration_days": 22,
+      "portfolio_entry_date": "2026-10-09",
+      "watchlist_closed_date": "2026-10-09",
+      "status": "포트폴리오 편입",
+      "source_scope": "blogger_trade_disclosure",
+      "observation_reason": "블로거 메르가 미국 10년물 국채를 5.28% 부근에서 직접 매수했다고 밝혔고, 강력한 고금리 헤외 입찰 지표를 재확인함에 따라 포트폴리오로 편입을 확정함.",
+      "linked_signal_ids": [
+        "sig_f904b181e5b67eb50578581acbbf04c179ef8af0019f47d0ed3651024f2e4266"
+      ],
+      "thesis_id": "thesis_d3aae23cef640ebed20cabc4",
+      "watchlist_kind": "cyclical",
+      "provenance_status": "verified",
+      "origin_signal_type": "MER_THESIS",
+      "origin_signal_ids": [
+        "sig_f904b181e5b67eb50578581acbbf04c179ef8af0019f47d0ed3651024f2e4266"
+      ],
+      "lifecycle_status": "promoted",
+      "latest_material_signal_date": "2026-10-07",
+      "expires_on": "2026-12-30",
+      "archived_date": "2026-10-09",
+      "archive_reason": "포트폴리오 편입"
     }
   ],
   "closed_positions": [
@@ -11816,22 +11946,430 @@
       ],
       "decision_model_id": "gemini-3.5-flash",
       "rejected_linked_signal_ids": []
+    },
+    {
+      "name": "미국국채 10년물",
+      "code": "IEF",
+      "market": "US",
+      "asset_type": "etf",
+      "decision_actor": "메르",
+      "action": "매수",
+      "basis": "직접 발언",
+      "decision_date": "2026-10-09",
+      "evidence_posts": [
+        {
+          "title": "미국국채를 매수하는 단골 고객이 약해지고 있다.",
+          "url": "https://blog.naver.com/ranto28/224426600100?fromRss=true&trackingCode=rss",
+          "published_date": "2026-09-30"
+        },
+        {
+          "title": "오늘 새벽 진행된 미국국채 10년물 입찰결과를 뜯어보자.",
+          "url": "https://blog.naver.com/ranto28/224434786803?fromRss=true&trackingCode=rss",
+          "published_date": "2026-10-07"
+        }
+      ],
+      "source_mentioned": true,
+      "previous_weight": null,
+      "proposed_weight": 10.0,
+      "weight_source": "메르 직접 발언 기반",
+      "change_reason": "블로거 메르가 본인의 원글에서 미국 10년물 국채를 5.28% 수준에서 실제 분할 매수 진입했음을 명확히 확인해 줌에 따라 관심종목에서 모델 포트폴리오로 승격하여 신규 매수를 결정함.",
+      "allocation_role": "defensive",
+      "source_scope": "blogger_trade_disclosure",
+      "investment_rationale": "연준의 긴축 정점 신호, 26년 만에 가장 높은 수준인 5.3% 부근의 우량 무위험 수익률 매력, 80% 이상의 외국 기관 중심 간접 입찰 수요로 하방 경직성 확보.",
+      "current_entry_reason": "블로거 직접 매수 진입 가격 범위(5.28%~5.30%) 도달에 기반한 정량적 최적 대응.",
+      "key_risks": [
+        "미국 내 구조적 은퇴 세대의 사회 보장 자금 고갈 방어를 위한 지속적인 채권 매각 및 재무부 공급 압력",
+        "일부 해외 헤지펀드의 대규모 베이시스 트레이드 마진콜 발생 시 채권 가격 일시적 변동성 유발"
+      ],
+      "linked_insight_ids": [
+        "INSIGHT-20261009-1"
+      ],
+      "linked_signal_ids": [
+        "sig_f904b181e5b67eb50578581acbbf04c179ef8af0019f47d0ed3651024f2e4266"
+      ],
+      "thesis_id": "thesis_d3aae23cef640ebed20cabc4",
+      "issuer_id": "IEF_US_10Y",
+      "theme_ids": [
+        "us_treasury_peak_yield",
+        "defensive_asset_allocation"
+      ],
+      "country_code": "US",
+      "quality_components": {
+        "explicitness": 1.0,
+        "causality": 0.9,
+        "catalyst": 0.9,
+        "confirmation": 0.9,
+        "invalidation": 0.6,
+        "recency": 1.0
+      },
+      "provenance_status": "verified",
+      "origin_signal_type": "MER_THESIS",
+      "origin_signal_ids": [
+        "sig_f904b181e5b67eb50578581acbbf04c179ef8af0019f47d0ed3651024f2e4266"
+      ],
+      "decision_model_id": "gemini-3.5-flash",
+      "rejected_linked_signal_ids": []
+    },
+    {
+      "name": "SK하이닉스",
+      "code": "000660",
+      "market": "KR",
+      "asset_type": "stock",
+      "decision_actor": "AI",
+      "action": "보유",
+      "basis": "이전 판단 유지",
+      "decision_date": "2026-10-09",
+      "evidence_posts": [
+        {
+          "title": "SK가 공시한 9,440억원 블록딜의 비밀 (feat SK하이닉스)",
+          "url": "https://blog.naver.com/ranto28/224433051682?fromRss=true&trackingCode=rss",
+          "published_date": "2026-10-06"
+        }
+      ],
+      "source_mentioned": true,
+      "previous_weight": 5.0,
+      "proposed_weight": 5.0,
+      "weight_source": "AI 제안",
+      "change_reason": "대주주 최태원 회장의 PRS 계약 선택으로 장기적 SK하이닉스의 성장 모멘텀에 대한 내재적 신뢰가 재확인되어 기존 포트폴리오 비중을 유지함.",
+      "allocation_role": "satellite",
+      "source_scope": "previous_decision",
+      "investment_rationale": "글로벌 DRAM 및 독보적 HBM, 기업용 대용량 SSD 수급 지배력이 탄탄한 상태에서 최대주주 계열 가치의 가시성 확보.",
+      "current_entry_reason": "상방 옵션을 보유한 PRS 지분 구조가 장기적 가치 수렴에 우호적인 자극을 줄 것으로 해석.",
+      "key_risks": [
+        "글로벌 거시 경제 둔화 시 IT 인프라용 반도체 수요 지연 가능성",
+        "소각 완결 이후 일시적 수급 변동성 우려"
+      ],
+      "linked_insight_ids": [
+        "INSIGHT-20261009-3"
+      ],
+      "linked_signal_ids": [
+        "sig_2e37c7396c55d27937f39939c11a227701f34f564547b0860b2764e99abac328"
+      ],
+      "thesis_id": "thesis_f71c12c78b2b0afd880b57f8",
+      "issuer_id": "SK_HYNIX",
+      "theme_ids": [
+        "memory_semiconductors",
+        "shareholder_return"
+      ],
+      "country_code": "KR",
+      "quality_components": {
+        "explicitness": 0.8,
+        "causality": 0.9,
+        "catalyst": 0.9,
+        "confirmation": 0.8,
+        "invalidation": 0.6,
+        "recency": 0.9
+      },
+      "provenance_status": "verified",
+      "origin_signal_type": "MER_THESIS",
+      "origin_signal_ids": [
+        "sig_b0812f75a9616ba8e4f75e9487de58939c5cdb5d359161dd9478861b75f9c410",
+        "sig_72709e9b66b5708c5c911ec0c295292e60f9a4dd87499d1efdce03b1fb51c296"
+      ],
+      "decision_model_id": "gemini-3.5-flash",
+      "rejected_linked_signal_ids": []
+    },
+    {
+      "name": "한화오션",
+      "code": "042660",
+      "market": "KR",
+      "asset_type": "stock",
+      "decision_actor": "AI",
+      "action": "보유",
+      "basis": "이전 판단 유지",
+      "decision_date": "2026-10-09",
+      "evidence_posts": [
+        {
+          "title": "알래스카 LNG 프로젝트에 대해 알아보자",
+          "url": "https://blog.naver.com/ranto28/224428298482?fromRss=true&trackingCode=rss",
+          "published_date": "2026-10-01"
+        }
+      ],
+      "source_mentioned": false,
+      "previous_weight": 1.5,
+      "proposed_weight": 1.5,
+      "weight_source": "AI 제안",
+      "change_reason": "알래스카 친환경 대규모 천연가스 송배전 터미널 구축 및 한-미 LNG 연계 수송선 발주 모멘텀이 추가 확인되어 기존 보유 기조 유지.",
+      "allocation_role": "satellite",
+      "source_scope": "previous_decision",
+      "investment_rationale": "글로벌 지정학 위기 속에서 한국 특수선 기술 가치 및 차세대 미 알래스카 대규모 LNG 해상 운송 인프라 공급 역량 확대.",
+      "current_entry_reason": "장기 공급 다변화에 기인한 신규 LNG 캐리어 수주 가능성 기대 보유.",
+      "key_risks": [
+        "조선 가공 인력의 수급 타이트 및 노무 비용 인상 압력",
+        "FID(최종투자결정) 추진 지연 리스크"
+      ],
+      "linked_insight_ids": [
+        "INSIGHT-20261009-2"
+      ],
+      "linked_signal_ids": [],
+      "thesis_id": "thesis_10c2680e31c656ca8932e2c7",
+      "issuer_id": "HANWHA_OCEAN",
+      "theme_ids": [
+        "naval_mro_defense",
+        "lng_carriers"
+      ],
+      "country_code": "KR",
+      "quality_components": {
+        "explicitness": 0.7,
+        "causality": 0.8,
+        "catalyst": 0.7,
+        "confirmation": 0.7,
+        "invalidation": 0.5,
+        "recency": 0.8
+      },
+      "provenance_status": "verified",
+      "origin_signal_type": "MER_THESIS",
+      "origin_signal_ids": [
+        "sig_801c6b21e36a044835339691ccadb7cc6de20303a7db303fadf7932baee6c88f"
+      ],
+      "decision_model_id": "gemini-3.5-flash",
+      "rejected_linked_signal_ids": []
+    },
+    {
+      "name": "삼성전자",
+      "code": "005930",
+      "market": "KR",
+      "asset_type": "stock",
+      "decision_actor": "AI",
+      "action": "보유",
+      "basis": "이전 판단 유지",
+      "decision_date": "2026-10-09",
+      "evidence_posts": [],
+      "source_mentioned": false,
+      "previous_weight": 1.5,
+      "proposed_weight": 1.5,
+      "weight_source": "AI 제안",
+      "change_reason": "새로운 거시적 근거의 변화나 메르의 직접적인 매매 액션이 부재하므로 기존의 장기 점진적 회복 및 특별 주주환원 기대 비중을 그대로 유지함.",
+      "allocation_role": "core",
+      "source_scope": "previous_decision",
+      "investment_rationale": "DRAM 과점 시장에서의 대규모 주주환원 현금 재원과 안정적 밸류에이션 하단 지지 매력.",
+      "current_entry_reason": "전체 포트폴리오의 국내 테크 섹터 코어 자산 방어력 유지 목적.",
+      "key_risks": [
+        "글로벌 긴축 수급 하에 외국인 매수 연속성의 이탈 리스크",
+        "관세 규제 등에 따른 글로벌 공급망 변화 여파"
+      ],
+      "linked_insight_ids": [],
+      "linked_signal_ids": [],
+      "thesis_id": "thesis_d440cb53229e025ace44361f",
+      "issuer_id": "SAMSUNG_ELECTRONICS",
+      "theme_ids": [
+        "memory_semiconductors",
+        "shareholder_return"
+      ],
+      "country_code": "KR",
+      "quality_components": {
+        "explicitness": 0.8,
+        "causality": 0.8,
+        "catalyst": 0.9,
+        "confirmation": 0.8,
+        "invalidation": 0.5,
+        "recency": 0.9
+      },
+      "provenance_status": "verified",
+      "origin_signal_type": "MER_THESIS",
+      "origin_signal_ids": [
+        "sig_ad2170fd380757f5f112202a0ac941ea2eacfc278ef655d2d973541fbde830df"
+      ],
+      "decision_model_id": "gemini-3.5-flash",
+      "rejected_linked_signal_ids": []
+    },
+    {
+      "name": "KODEX 2차전지산업",
+      "code": "305720",
+      "market": "KR",
+      "asset_type": "etf",
+      "decision_actor": "AI",
+      "action": "보유",
+      "basis": "이전 판단 유지",
+      "decision_date": "2026-10-09",
+      "evidence_posts": [],
+      "source_mentioned": false,
+      "previous_weight": 5.0,
+      "proposed_weight": 5.0,
+      "weight_source": "AI 제안",
+      "change_reason": "산업 구조 개편에 큰 훼손 요인이 없으며, 중장기 규제 무역 수혜 매커니즘이 강고하여 기존의 5% 비중을 변동 없이 유지함.",
+      "allocation_role": "satellite",
+      "source_scope": "previous_decision",
+      "investment_rationale": "메이저 셀 제조업체의 공급 탄력성과 수직 계열화된 글로벌 무역 제재 방어 기제 유효성.",
+      "current_entry_reason": "공급선 다변화 속도 및 시장 우위 점유율 보존 여부 대기 관망.",
+      "key_risks": [
+        "유럽 및 주요 타깃 시장의 단기 수요 회복 속도 둔화",
+        "원자재 단가 및 유통 구조 불안정성 지속"
+      ],
+      "linked_insight_ids": [],
+      "linked_signal_ids": [],
+      "thesis_id": "thesis_f1681dfea0bd6980c0e2330c",
+      "issuer_id": "SAMSUNG_SDI_LG_ENS_SK_ON",
+      "theme_ids": [
+        "battery_regulatory_benefit"
+      ],
+      "country_code": "KR",
+      "quality_components": {
+        "explicitness": 0.7,
+        "causality": 0.8,
+        "catalyst": 0.7,
+        "confirmation": 0.6,
+        "invalidation": 0.5,
+        "recency": 0.8
+      },
+      "provenance_status": "verified",
+      "origin_signal_type": "AI_INFERRED",
+      "origin_signal_ids": [
+        "sig_3de60dd2e605343b1d57923b550b5dfa91c3e238ae725c4ed35cfa17bc3e3c0b"
+      ],
+      "decision_model_id": "gemini-3.5-flash",
+      "rejected_linked_signal_ids": []
+    },
+    {
+      "name": "KODEX 은행",
+      "code": "091170",
+      "market": "KR",
+      "asset_type": "etf",
+      "decision_actor": "AI",
+      "action": "보유",
+      "basis": "이전 판단 유지",
+      "decision_date": "2026-10-09",
+      "evidence_posts": [],
+      "source_mentioned": false,
+      "previous_weight": 7.0,
+      "proposed_weight": 7.0,
+      "weight_source": "AI 제안",
+      "change_reason": "고금리 장기화에 부합하는 은행 NIM 안정성과 부동산 공급 가계 대출 완화 수혜 기대감이 강고하게 지탱되어 비중을 기존 수준으로 보유함.",
+      "allocation_role": "satellite",
+      "source_scope": "previous_decision",
+      "investment_rationale": "상대적으로 탁월한 자산 방어력 및 연중 지속되는 배당 경쟁력 메리트 우위.",
+      "current_entry_reason": "지속되는 고금리 매파 사이클에서의 이자 마진 방어 안정성 지속 주시.",
+      "key_risks": [
+        "한계 가계 차주 증가에 의한 장기 대손 부담 리스크",
+        "정부 주도의 가산금리 추가 억제 정책 변화"
+      ],
+      "linked_insight_ids": [],
+      "linked_signal_ids": [],
+      "thesis_id": "thesis_8c72c1f9e05e65107ff54127",
+      "issuer_id": "KODEX_BANKS",
+      "theme_ids": [
+        "banking_deregulation",
+        "interest_rate_upcycle"
+      ],
+      "country_code": "KR",
+      "quality_components": {
+        "explicitness": 0.8,
+        "causality": 0.8,
+        "catalyst": 0.8,
+        "confirmation": 0.8,
+        "invalidation": 0.6,
+        "recency": 0.8
+      },
+      "provenance_status": "verified",
+      "origin_signal_type": "AI_INFERRED",
+      "origin_signal_ids": [
+        "sig_2d653a55b8db675f42bf0499d05631af76cc1fb1747bb6a4ddb006be38d28c01"
+      ],
+      "decision_model_id": "gemini-3.5-flash",
+      "rejected_linked_signal_ids": []
+    },
+    {
+      "name": "KODEX 은선물(H)",
+      "code": "233160",
+      "market": "KR",
+      "asset_type": "etf",
+      "decision_actor": "AI",
+      "action": "보유",
+      "basis": "이전 판단 유지",
+      "decision_date": "2026-10-09",
+      "evidence_posts": [],
+      "source_mentioned": false,
+      "previous_weight": 3.0,
+      "proposed_weight": 3.0,
+      "weight_source": "AI 제안",
+      "change_reason": "AI 연산 데이터센터 인프라용 산업 특수재로서의 장기 공급 부족 수혜 기조가 탄탄하여 기존 비중을 유지함.",
+      "allocation_role": "satellite",
+      "source_scope": "previous_decision",
+      "investment_rationale": "만성적 글로벌 광물 채굴 정체와 동시에 하드웨어 하이퍼스케일 서버 전극용 은 수요의 구조적 우상향 사이클 수혜.",
+      "current_entry_reason": "대체재 전환 장벽이 비교적 길게 유지되는 기간 내 가치 포지셔닝.",
+      "key_risks": [
+        "원자재 전반에 대한 고금리 압박 심화 및 단기 청산 리스크",
+        "박막 코팅 정밀 가공 단자 기술 발전에 의한 서버당 실물 사용량 축소"
+      ],
+      "linked_insight_ids": [],
+      "linked_signal_ids": [],
+      "thesis_id": "thesis_2a0301e7cc713d74708d03be",
+      "issuer_id": "KODEX_SILVER",
+      "theme_ids": [
+        "commodity_deficit",
+        "ai_hardware_materials"
+      ],
+      "country_code": "KR",
+      "quality_components": {
+        "explicitness": 0.8,
+        "causality": 0.8,
+        "catalyst": 0.8,
+        "confirmation": 0.7,
+        "invalidation": 0.5,
+        "recency": 0.8
+      },
+      "provenance_status": "verified",
+      "origin_signal_type": "AI_INFERRED",
+      "origin_signal_ids": [
+        "sig_39123850642707242596d046adaa2a15235ed6a86bf25477b55ae5a80d9efd97"
+      ],
+      "decision_model_id": "gemini-3.5-flash",
+      "rejected_linked_signal_ids": []
     }
   ],
   "insights": [
     {
-      "id": "INSIGHT-20260930-1",
-      "title": "비대면 진료 및 약 배송 규제 개편과 이권 갈등",
-      "summary": "2026년 12월 의료법 개정안 시행을 앞두고 비대면 진료 범위는 축소되고 처방약 배송 범위는 확대되는 방향이 검토되고 있습니다. 이에 따라 플랫폼(닥터나우 등)의 수혜 가능성과 오프라인 동네 약국의 대면 매출 타격 우려가 상존하며, 약사회의 반발이 강력합니다.",
-      "investment_implication": "정책 방향에 따른 플랫폼 기업과 오프라인 의약 가치사슬의 희비가 엇갈릴 수 있으며, 연말까지 정책적 이해관계 조율 과정을 지속적으로 점검할 필요가 있습니다.",
+      "id": "INSIGHT-20261009-1",
+      "title": "미국 국채 10년물 고금리 도달과 메르의 분할 매수 집행",
+      "summary": "미국 10년물 국채 금리가 5.3%에 근접하며 26년 만의 역사적 고점 수준에 도달했습니다. 미세한 긴축 장기화 우려에도 불구하고, 80%를 넘어서는 대규모 해외 기관 및 간접 입찰 수요가 입증되면서 채권 시장의 하방 안정성이 부각되었습니다. 메르는 직접 5.28% 수준에서 미국 국채 10년물 분할 매수를 집행했다고 공식적으로 밝혔습니다.",
+      "investment_implication": "채권 금리가 역사적 상단 밴드에 들어섰으므로, 자산 배분 및 금리 인하 사이클을 대비한 장기 헤지 성격으로 미국 국채 10년물(IEF 등)에 분할 매수로 신규 진입하는 결정이 유효합니다.",
       "evidence_posts": [
         {
-          "title": "비대면진료와 처방약 배송이 확대되나?",
-          "url": "https://blog.naver.com/ranto28/224425475405?fromRss=true&trackingCode=rss",
-          "published_date": "2026-09-29"
+          "title": "미국국채를 매수하는 단골 고객이 약해지고 있다.",
+          "url": "https://blog.naver.com/ranto28/224426600100?fromRss=true&trackingCode=rss",
+          "published_date": "2026-09-30"
+        },
+        {
+          "title": "오늘 새벽 진행된 미국국채 10년물 입찰결과를 뜯어보자.",
+          "url": "https://blog.naver.com/ranto28/224434786803?fromRss=true&trackingCode=rss",
+          "published_date": "2026-10-07"
         }
       ],
-      "related_decision_codes": []
+      "related_decision_codes": [
+        "IEF"
+      ]
+    },
+    {
+      "id": "INSIGHT-20261009-2",
+      "title": "알래스카 대규모 LNG 프로젝트 추진과 한국 조선업의 장기 수혜",
+      "summary": "미국 트럼프 행정부 주도로 총 사업비 545억 달러 규모의 알래스카 LNG 프로젝트가 가시화되고 있습니다. 한국가스공사의 장기 구매 의향과 더불어 한국 정유/에너지 기업들의 예비 계약이 수반되는 상황으로, 해당 사업 진행 시 육상 인프라 구축뿐 아니라 다량의 LNG 운반선 수주 기회가 한국 조선업계에 직접적으로 부여될 가능성이 큽니다.",
+      "investment_implication": "지정학적 갈등에 따른 운송 톤마일 상승에 더해 트럼프 정권의 에너지 개발 승인 드라이브는 한국 주요 대형 조선사의 핵심 수주 파이프라인을 강화하므로 조선주 보유 매력도를 한층 더 높입니다.",
+      "evidence_posts": [
+        {
+          "title": "알래스카 LNG 프로젝트에 대해 알아보자",
+          "url": "https://blog.naver.com/ranto28/224428298482?fromRss=true&trackingCode=rss",
+          "published_date": "2026-10-01"
+        }
+      ],
+      "related_decision_codes": [
+        "042660"
+      ]
+    },
+    {
+      "id": "INSIGHT-20261009-3",
+      "title": "SK 그룹 최태원 회장의 PRS 스왑 체결과 반도체 롱사이클 자신감",
+      "summary": "이혼 분할금 재원 마련을 위해 공시된 9,440억 원의 SK 주식 블록딜 처분 과정에서, 최태원 회장은 단순 매각 외에 4,000억 원 규모의 3년 만기 주가수익스와프(PRS)를 선택했습니다. 이는 반도체 핵심 자회사인 SK하이닉스 가치 상승에 기반하여 향후 주가 상승의 이익을 직접적으로 귀속하려는 전술적 판단으로 해석됩니다.",
+      "investment_implication": "대주주가 이자 비용을 감수하면서까지 PRS를 통한 상방 가치를 포기하지 않은 행보는 주력 핵심 먹거리인 메모리 반도체의 중장기 성장 경쟁력에 강한 정성적 청신호로 해석됩니다.",
+      "evidence_posts": [
+        {
+          "title": "SK가 공시한 9,440억원 블록딜의 비밀 (feat SK하이닉스)",
+          "url": "https://blog.naver.com/ranto28/224433051682?fromRss=true&trackingCode=rss",
+          "published_date": "2026-10-06"
+        }
+      ],
+      "related_decision_codes": [
+        "000660"
+      ]
     }
   ],
   "signal_events": [
@@ -21002,18 +21540,986 @@
       "created_at": "2026-09-30T05:00:37.318831",
       "source_classification": "DIRECTIONAL_THESIS",
       "signal_id": "sig_2220918de081306955ac658d8c062ddc38477abe7a64a6a6567674e4c88a54ea"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224435833096",
+      "post_title": "쿠팡 및 쿠팡이츠 에러, 서버 터진듯",
+      "post_url": "https://blog.naver.com/ranto28/224435833096?fromRss=true&trackingCode=rss",
+      "published_date": "2026-10-08",
+      "evidence_text": "쿠팡 물류센터 심야배송 분류작업등도 모두 올스톱이라, 내일 새벽배송이 어려울 수 있음.",
+      "evidence_sha256": "0f8e68a7429b4825377db66b5efda196e2d5d8ce1ab4f822a3180c29adfc9639",
+      "entity": {
+        "name": "쿠팡",
+        "code": "",
+        "market": "",
+        "asset_type": "stock"
+      },
+      "direction": "bearish",
+      "horizon": {
+        "min_days": 0,
+        "max_days": 20
+      },
+      "catalysts": [
+        "인증 시스템 장애로 인한 물류 센터 작업 중단"
+      ],
+      "invalidation_conditions": [
+        "신속한 시스템 복구"
+      ],
+      "thesis_id": "thesis_576d2c285c625f1995b127fb",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_14ac8888a6fad8f93e6f757c47792f23d9818d955f15151427bae1b429d97795"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224435833096",
+      "post_title": "쿠팡 및 쿠팡이츠 에러, 서버 터진듯",
+      "post_url": "https://blog.naver.com/ranto28/224435833096?fromRss=true&trackingCode=rss",
+      "published_date": "2026-10-08",
+      "evidence_text": "네이버쇼핑이 있어서 그나마 다행임.",
+      "evidence_sha256": "eaa6a9c15c95167ff4103928de83c379bc3aec2381e21c4b6fc5c0ae4cdd59e7",
+      "entity": {
+        "name": "네이버쇼핑",
+        "code": "",
+        "market": "",
+        "asset_type": "sector"
+      },
+      "direction": "bullish",
+      "horizon": {
+        "min_days": 0,
+        "max_days": 20
+      },
+      "catalysts": [
+        "쿠팡 서비스 마비로 인한 이용자 유입"
+      ],
+      "invalidation_conditions": [],
+      "thesis_id": "thesis_7b2a46e6a839fe83210c0f64",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_b620e8ed2d9ff61713cde758b77dacf950101f4b9a13d1b2e4856433574db845"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224435147266",
+      "post_title": "농지조사 근황 A/S의 A/S",
+      "post_url": "https://blog.naver.com/ranto28/224435147266?fromRss=true&trackingCode=rss",
+      "published_date": "2026-10-08",
+      "evidence_text": "농업법인을 만들어 농지를 쪼개 팔거나 임대하며 부동산 수익을 올리는 경우",
+      "evidence_sha256": "411f755d38bf530ff3209f2cf31967321e24ca943a006f8b9e4b2f0bd84e31c7",
+      "entity": {
+        "name": "농업법인",
+        "code": "",
+        "market": "",
+        "asset_type": "sector"
+      },
+      "direction": "bearish",
+      "horizon": {
+        "min_days": 60,
+        "max_days": 365
+      },
+      "catalysts": [
+        "농지법 개정",
+        "투기 3종 세트 단속 강화"
+      ],
+      "invalidation_conditions": [
+        "입법 과정에서의 내용 변경"
+      ],
+      "thesis_id": "thesis_c62aabd6810d90ce6758dc78",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_10a5adc7384f69e27c8aed7a9410183c28daf0867e183be5707ec54d13eaef37"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224433750784",
+      "post_title": "미국국채 30년물의 6% 도달을 시장이 주목하는 비밀",
+      "post_url": "https://blog.naver.com/ranto28/224433750784?fromRss=true&trackingCode=rss",
+      "published_date": "2026-10-07",
+      "evidence_text": "모건스탠리는 헤지펀드들이 미국국채를 베이시스 트레이드 하는 규모를 1.2조달러로 보고있음.",
+      "evidence_sha256": "96cd9a341c2938cf0499fab994a3cc60d6226fce0b607525ecb054b8f32b00da",
+      "entity": {
+        "name": "미국 국채",
+        "code": "",
+        "market": "",
+        "asset_type": "sector"
+      },
+      "direction": "neutral",
+      "horizon": {
+        "min_days": 60,
+        "max_days": 365
+      },
+      "catalysts": [
+        "레포 금리 급등",
+        "증거금 콜",
+        "CTD 교체"
+      ],
+      "invalidation_conditions": [
+        "30년물 금리 하락",
+        "레버리지 축소"
+      ],
+      "thesis_id": "thesis_6940f5506548b4783a10656b",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_f11a7d7d7f5cc73cfe03eb3aa50b23ddae52ca29a4f009c01e6a34c62fb93220"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224433750784",
+      "post_title": "미국국채 30년물의 6% 도달을 시장이 주목하는 비밀",
+      "post_url": "https://blog.naver.com/ranto28/224433750784?fromRss=true&trackingCode=rss",
+      "published_date": "2026-10-07",
+      "evidence_text": "시장이 미국국채 30년물이 6%에 도달하는지를 주목하는 이유가 있음.",
+      "evidence_sha256": "d07fa9d8ca375e80470b88de0c954f0b6706b04a50fd17f2e54f2cff6e965ece",
+      "entity": {
+        "name": "미국 국채 30년물",
+        "code": "",
+        "market": "",
+        "asset_type": "sector"
+      },
+      "direction": "bearish",
+      "horizon": {
+        "min_days": 0,
+        "max_days": 20
+      },
+      "catalysts": [
+        "CTD 교체",
+        "금리 민감도 확대"
+      ],
+      "invalidation_conditions": [],
+      "thesis_id": "thesis_bbeb550ce11e42c5fb332126",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_f5b609bba1f0044e6f4bfef5ac8ddd536f75e649e531e5c6c95f6cdf7aab0f5c"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224433577964",
+      "post_title": "세계를 방황하고 있는 일본자금 근황",
+      "post_url": "https://blog.naver.com/ranto28/224433577964?fromRss=true&trackingCode=rss",
+      "published_date": "2026-10-07",
+      "evidence_text": "프랑스 국채의 매력이 사라진 것임.",
+      "evidence_sha256": "2da47b47ae0a45942f8bbeea8d231fac7cbaec8602b7b78d88cee1934ddd81f2",
+      "entity": {
+        "name": "프랑스 국채",
+        "code": "",
+        "market": "",
+        "asset_type": "sector"
+      },
+      "direction": "bearish",
+      "horizon": {
+        "min_days": 20,
+        "max_days": 180
+      },
+      "catalysts": [
+        "정부부채 증가",
+        "재정적자 확대",
+        "부도위험 증가"
+      ],
+      "invalidation_conditions": [],
+      "thesis_id": "thesis_448e4bf85193878a5439d5bd",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_96f24bf5617c5945abf22c40c4535683519d3f8f75b4e8e1eef785968943eb85"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224433577964",
+      "post_title": "세계를 방황하고 있는 일본자금 근황",
+      "post_url": "https://blog.naver.com/ranto28/224433577964?fromRss=true&trackingCode=rss",
+      "published_date": "2026-10-07",
+      "evidence_text": "미쓰이스미토모DS자산운용(SMDAM)의 구니베 신지가 이끄는 글로벌 채권팀이 보유하고 있는 프랑스 국채를 전량 매각한 이유임.",
+      "evidence_sha256": "740215580c64e4a8ba66fc5a895efd761c055d96d5d000f6e90ac90bef64ffed",
+      "entity": {
+        "name": "미쓰이스미토모DS자산운용",
+        "code": "",
+        "market": "",
+        "asset_type": "stock"
+      },
+      "direction": "bearish",
+      "horizon": {
+        "min_days": 0,
+        "max_days": 20
+      },
+      "catalysts": [
+        "프랑스 신용위험 증대"
+      ],
+      "invalidation_conditions": [],
+      "thesis_id": "thesis_dd31b40c526a0d59a6ed764a",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_52fb8f4a361557df0a59454f08756b68fe57024bd5c12e6eb0bd4e49de5042c3"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224433577964",
+      "post_title": "세계를 방황하고 있는 일본자금 근황",
+      "post_url": "https://blog.naver.com/ranto28/224433577964?fromRss=true&trackingCode=rss",
+      "published_date": "2026-10-07",
+      "evidence_text": "일본 기업연금 82곳중 일본국채 비중을 늘리겠다는 비율이 2008년이후 최고를 기록함.",
+      "evidence_sha256": "75629ddeb563f0162a28cdd8ae02308e78616e4c2c114f6d11c532e9848872ce",
+      "entity": {
+        "name": "일본 국채",
+        "code": "",
+        "market": "",
+        "asset_type": "sector"
+      },
+      "direction": "bullish",
+      "horizon": {
+        "min_days": 60,
+        "max_days": 365
+      },
+      "catalysts": [
+        "해외 채권 매력도 감소",
+        "환헤지 비용 부담"
+      ],
+      "invalidation_conditions": [],
+      "thesis_id": "thesis_4eddc2af39e351c5c9a85f8f",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_a9f45f0cb089147672aafed2b83e46ce153f6818e99706c99340819f476b8dcf"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224434786803",
+      "post_title": "오늘 새벽 진행된 미국국채 10년물 입찰결과를 뜯어보자.",
+      "post_url": "https://blog.naver.com/ranto28/224434786803?fromRss=true&trackingCode=rss",
+      "published_date": "2026-10-07",
+      "evidence_text": "미국국채 10년물의 응찰배율이 2.77배가 나왔고, 간접입찰이 80%를 넘겼으며, 프라이머리 딜러 비중이 2.54%밖에 나오지 않았다.",
+      "evidence_sha256": "8b8a7e000fd7090aa2b3cda5197439da2e816de3ec52c6831795f47811683d54",
+      "entity": {
+        "name": "미국 국채 10년물",
+        "code": "",
+        "market": "",
+        "asset_type": "sector"
+      },
+      "direction": "bullish",
+      "horizon": {
+        "min_days": 0,
+        "max_days": 20
+      },
+      "catalysts": [
+        "응찰배율 2.77배",
+        "간접입찰 비중 80% 상회",
+        "프라이머리 딜러 인수 비중 2.54%"
+      ],
+      "invalidation_conditions": [],
+      "thesis_id": "thesis_d3aae23cef640ebed20cabc4",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_f904b181e5b67eb50578581acbbf04c179ef8af0019f47d0ed3651024f2e4266"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224433051682",
+      "post_title": "SK가 공시한 9,440억원 블록딜의 비밀 (feat SK하이닉스)",
+      "post_url": "https://blog.naver.com/ranto28/224433051682?fromRss=true&trackingCode=rss",
+      "published_date": "2026-10-06",
+      "evidence_text": "최회장이 주식매각이 아니라 PRS를 택한것은 장기적으로 SK하이닉스를 좋게 보고 있다고 해석할 수 있음.",
+      "evidence_sha256": "1ab26b0bd93395720c7eff026dc7f3c136270ff46c93a054f727ce4e0febe275",
+      "entity": {
+        "name": "SK하이닉스",
+        "code": "",
+        "market": "",
+        "asset_type": "stock"
+      },
+      "direction": "bullish",
+      "horizon": {
+        "min_days": 60,
+        "max_days": 365
+      },
+      "catalysts": [
+        "반도체 사이클 상승",
+        "SK하이닉스 주가 상승 가능성"
+      ],
+      "invalidation_conditions": [
+        "SK 주가가 58만7천원 미만으로 하락하여 PRS 손실 발생"
+      ],
+      "thesis_id": "thesis_f71c12c78b2b0afd880b57f8",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_2e37c7396c55d27937f39939c11a227701f34f564547b0860b2764e99abac328"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224432463581",
+      "post_title": "주절주절...의전썰",
+      "post_url": "https://blog.naver.com/ranto28/224432463581?fromRss=true&trackingCode=rss",
+      "published_date": "2026-10-06",
+      "evidence_text": "트럼프 기준으로 왼편에는 일론 머스크, 오른편에 젠슨황이 앉아 있었다.",
+      "evidence_sha256": "a97bfe672860a247870e4f4e4aa357433b2825c331c9b0490e908534c8c200d3",
+      "entity": {
+        "name": "엔비디아/테슬라",
+        "code": "",
+        "market": "",
+        "asset_type": "stock"
+      },
+      "direction": "bullish",
+      "horizon": {
+        "min_days": 0,
+        "max_days": 20
+      },
+      "catalysts": [
+        "백악관 AI 회의 좌석 배치"
+      ],
+      "invalidation_conditions": [],
+      "thesis_id": "thesis_9cc018ca43ea4a32e094ba2b",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_7e60cc1444ca9531c6077d8d5d823b9fa1fc0b47b8f85ca536c113ee387ecf8f"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224432463581",
+      "post_title": "주절주절...의전썰",
+      "post_url": "https://blog.naver.com/ranto28/224432463581?fromRss=true&trackingCode=rss",
+      "published_date": "2026-10-06",
+      "evidence_text": "AI 속도조절론을 주장한 아모데이를 전체 좌석중 가장 하석에 배치하면서, 의전으로 경고하려는 모습같아",
+      "evidence_sha256": "de731e9a76a091b32896cc5cd090b59779bb9ce79c95c56578f13dc065056e3b",
+      "entity": {
+        "name": "앤트로픽",
+        "code": "",
+        "market": "",
+        "asset_type": "stock"
+      },
+      "direction": "bearish",
+      "horizon": {
+        "min_days": 0,
+        "max_days": 20
+      },
+      "catalysts": [
+        "AI 속도조절론 주장"
+      ],
+      "invalidation_conditions": [],
+      "thesis_id": "thesis_a028b2827acd4903792997cb",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_a4a082aab735e627f64e8d4c3fc812b87c3162cd63a6e81d329a8aef6ffa1819"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224431902976",
+      "post_title": "브라질 대선 1차투표가 끝났다. 룰라 4선 vs 보우소나루의 귀환",
+      "post_url": "https://blog.naver.com/ranto28/224431902976?fromRss=true&trackingCode=rss",
+      "published_date": "2026-10-05",
+      "evidence_text": "룰라가 이기면, 확장재정에 대한 우려로 헤알화 약세와 국채금리 상승 가능성이 높아진다고 시장은 보고 있음.",
+      "evidence_sha256": "c601dd6a3d3298b0d231198d6c05c9c8e7b1228bf348979c81072528fdefab17",
+      "entity": {
+        "name": "브라질 헤알화, 브라질 국채",
+        "code": "",
+        "market": "",
+        "asset_type": "sector"
+      },
+      "direction": "bullish",
+      "horizon": {
+        "min_days": 0,
+        "max_days": 20
+      },
+      "catalysts": [
+        "룰라 대통령 당선",
+        "확장재정 정책"
+      ],
+      "invalidation_conditions": [
+        "룰라의 낙선"
+      ],
+      "thesis_id": "thesis_0f3084399171dbe8760e935a",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_1cffb717cf9bd58e1925cd8420623ef131960da0527a6e1f445f6f6d4d21d9a2"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224431218151",
+      "post_title": "AI데이터센터에 부는 새로운 냉각바람?(feat 미체유체 냉각, MS)",
+      "post_url": "https://blog.naver.com/ranto28/224431218151?fromRss=true&trackingCode=rss",
+      "published_date": "2026-10-04",
+      "evidence_text": "냉각을 위한 물길이 칩 안으로 들어간다는 말은 냉각이 반도체 제조 공정의 일부가 된다는 말임.",
+      "evidence_sha256": "e8b6927944ec5dad0570e953875fb95fbe0ca83aa2eee36efd108b6d284b77f4",
+      "entity": {
+        "name": "반도체 제조",
+        "code": "",
+        "market": "",
+        "asset_type": "sector"
+      },
+      "direction": "bullish",
+      "horizon": {
+        "min_days": 60,
+        "max_days": 365
+      },
+      "catalysts": [
+        "AI 데이터센터 전력 소비 급증",
+        "칩 내장형 미세유체 냉각 기술 도입"
+      ],
+      "invalidation_conditions": [
+        "대량 생산 시 수율 및 누수 문제 발생",
+        "장기 신뢰성 입증 실패"
+      ],
+      "thesis_id": "thesis_4b8dc7f9e7961e0be3b04e42",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_8a5eb7334ac12c01191f0b45fffbd95125a765c569189e61ab101114173c8b06"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224431218151",
+      "post_title": "AI데이터센터에 부는 새로운 냉각바람?(feat 미체유체 냉각, MS)",
+      "post_url": "https://blog.naver.com/ranto28/224431218151?fromRss=true&trackingCode=rss",
+      "published_date": "2026-10-04",
+      "evidence_text": "TSMC는 패키징,소재,칩 설계를 함께 최적화해서 열 저항을 40% 낮춘 테스트 결과를 공개함.",
+      "evidence_sha256": "c96c04727b411078d11199fbe426df5c658d4fe6d9b5600103f6a36d69e1c972",
+      "entity": {
+        "name": "TSMC",
+        "code": "",
+        "market": "",
+        "asset_type": "stock"
+      },
+      "direction": "bullish",
+      "horizon": {
+        "min_days": 60,
+        "max_days": 365
+      },
+      "catalysts": [
+        "IMC-Si 기술 로드맵 반영"
+      ],
+      "invalidation_conditions": [
+        "기술 상용화 지연"
+      ],
+      "thesis_id": "thesis_d1629628b1225c9043e68413",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_ad0d06c0ba68ad676d9f9300e858ffb67ce1f08ab4c184fbd130728a7cc55d14"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224430771982",
+      "post_title": "맛있는 감자 이야기 (feat 수미, 남작, 두백, 감자찜, 감자튀김)",
+      "post_url": "https://blog.naver.com/ranto28/224430771982?fromRss=true&trackingCode=rss",
+      "published_date": "2026-10-04",
+      "evidence_text": "맥도날드의 감튀가 분질감자인데, 한 품종만을 쓰는게 아니다.",
+      "evidence_sha256": "1e7cd41f3457305a5c447d8197465cc0e0caf606dba70d53d4e421c63411cb95",
+      "entity": {
+        "name": "맥도날드",
+        "code": "",
+        "market": "",
+        "asset_type": "stock"
+      },
+      "direction": "bullish",
+      "horizon": {
+        "min_days": 20,
+        "max_days": 180
+      },
+      "catalysts": [
+        "품종별 계절적 수급 관리",
+        "품질 유지를 통한 제품 경쟁력 확보"
+      ],
+      "invalidation_conditions": [
+        "대체 품종의 부재",
+        "공급망 붕괴"
+      ],
+      "thesis_id": "thesis_6231368f66118a80d5172110",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_eaedc709a1ba04cc21ba37b371c0ad17107828bf639ea8c8a02407f2ced6e533"
+    },
+    {
+      "signal_type": "MENTION_ONLY",
+      "post_id": "224430771982",
+      "post_title": "맛있는 감자 이야기 (feat 수미, 남작, 두백, 감자찜, 감자튀김)",
+      "post_url": "https://blog.naver.com/ranto28/224430771982?fromRss=true&trackingCode=rss",
+      "published_date": "2026-10-04",
+      "evidence_text": "두백은 오리온의 감자연구소에서 교배하는 과정에서 나온 돌연변이종을 개량한 감자다.",
+      "evidence_sha256": "be7b302032b1a3efc23790364a501e145e0866b8b856c42e959aae3612c6a58f",
+      "entity": {
+        "name": "오리온",
+        "code": "",
+        "market": "",
+        "asset_type": "stock"
+      },
+      "direction": "neutral",
+      "horizon": {
+        "min_days": 0,
+        "max_days": 120
+      },
+      "catalysts": [],
+      "invalidation_conditions": [],
+      "thesis_id": "thesis_213d3dc9404317e25fd7b098",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "MENTION_ONLY",
+      "signal_id": "sig_6de9e66b30293d288ce05948eae071de6b7a5d9b09697027373ea19a436c72c3"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224430262140",
+      "post_title": "무신사(29CM),강남언니,신한,KB,하나,BNK,예가람등이 털렸다.",
+      "post_url": "https://blog.naver.com/ranto28/224430262140?fromRss=true&trackingCode=rss",
+      "published_date": "2026-10-03",
+      "evidence_text": "신한은행은 대출모집인 간편조회 서비스에서 이름,전화번호,연소득,대출한도등 2만5천명의 개인정보가 유출됨.",
+      "evidence_sha256": "97b515ba08bf4c84c8dcdc0986502b8bcb95ca21db2b9484c7d2f056c60e44da",
+      "entity": {
+        "name": "신한은행",
+        "code": "",
+        "market": "",
+        "asset_type": "stock"
+      },
+      "direction": "bearish",
+      "horizon": {
+        "min_days": 0,
+        "max_days": 20
+      },
+      "catalysts": [
+        "개인정보 유출 사고",
+        "인가 검증 누락"
+      ],
+      "invalidation_conditions": [],
+      "thesis_id": "thesis_8d89a94d250c8351fa12376f",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_a605293448c114f06128bc617c53982206d37baa915669e11621b9c8cd451b6f"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224430262140",
+      "post_title": "무신사(29CM),강남언니,신한,KB,하나,BNK,예가람등이 털렸다.",
+      "post_url": "https://blog.naver.com/ranto28/224430262140?fromRss=true&trackingCode=rss",
+      "published_date": "2026-10-03",
+      "evidence_text": "강남언니의 상담조회 API가 유출된 것임.",
+      "evidence_sha256": "b1665eda80ec55034f2bde29fbd4fcf4dcf8f4b614f6c71777c88df6c22f913e",
+      "entity": {
+        "name": "강남언니",
+        "code": "",
+        "market": "",
+        "asset_type": "stock"
+      },
+      "direction": "bearish",
+      "horizon": {
+        "min_days": 0,
+        "max_days": 20
+      },
+      "catalysts": [
+        "상담 조회 API 보안 취약점"
+      ],
+      "invalidation_conditions": [],
+      "thesis_id": "thesis_276b5679479bac4019fc0d13",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_13eb0da32db0b58b9a5e28f54be5458e1c06d22954493d7e48a40bec1bf7cdeb"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224430262140",
+      "post_title": "무신사(29CM),강남언니,신한,KB,하나,BNK,예가람등이 털렸다.",
+      "post_url": "https://blog.naver.com/ranto28/224430262140?fromRss=true&trackingCode=rss",
+      "published_date": "2026-10-03",
+      "evidence_text": "이번 해킹이 과거와 다른것은 AI가 공격에 동원된 정황이 공식 확인됐다는 점임.",
+      "evidence_sha256": "fbcbaef304051222b97ea953de3cc03f48bdfffbafeb5886b1a98886c5dabc9e",
+      "entity": {
+        "name": "보안 산업",
+        "code": "",
+        "market": "",
+        "asset_type": "sector"
+      },
+      "direction": "bullish",
+      "horizon": {
+        "min_days": 60,
+        "max_days": 365
+      },
+      "catalysts": [
+        "AI 기반 해킹 도구 확산"
+      ],
+      "invalidation_conditions": [],
+      "thesis_id": "thesis_40a9ac2781ad896fbb0206ab",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_d8fd9e3c61805fbcbf874b9e6a126b5f7a0c4f6c866be884a2dbf633183f5a63"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224429293459",
+      "post_title": "미국이 아니라 프랑스가 위험한가?",
+      "post_url": "https://blog.naver.com/ranto28/224429293459?fromRss=true&trackingCode=rss",
+      "published_date": "2026-10-02",
+      "evidence_text": "프랑스의 재정적자는 확대되고, 쓸 돈을 마련하기 위해 국채 발행을 늘릴 수밖에 없게 됨.",
+      "evidence_sha256": "8dc4814daaeb207a2c721927879520311d6d04ce88a4972b1aad3edea111da35",
+      "entity": {
+        "name": "프랑스 국채",
+        "code": "",
+        "market": "",
+        "asset_type": "sector"
+      },
+      "direction": "bearish",
+      "horizon": {
+        "min_days": 60,
+        "max_days": 365
+      },
+      "catalysts": [
+        "재정적자 확대",
+        "국채 발행 증가"
+      ],
+      "invalidation_conditions": [
+        "프랑스 정부의 강력한 재정 긴축 성공"
+      ],
+      "thesis_id": "thesis_464a0af5890573e97301f644",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_5451e341b68d146deafa1bdf02c4056194a9a102189041f2484f1b5ed9078ec4"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224429293459",
+      "post_title": "미국이 아니라 프랑스가 위험한가?",
+      "post_url": "https://blog.naver.com/ranto28/224429293459?fromRss=true&trackingCode=rss",
+      "published_date": "2026-10-02",
+      "evidence_text": "신용등급 하락은 프랑스 국채를 많이 가지고 있는 프랑스와 EU은행들로 충격이 전이되는 사건임.",
+      "evidence_sha256": "431bdaf4ccf87ba194b12b2b439f9975815bc6ea1603265972a46015d869ad79",
+      "entity": {
+        "name": "프랑스 및 EU 은행",
+        "code": "",
+        "market": "",
+        "asset_type": "sector"
+      },
+      "direction": "bearish",
+      "horizon": {
+        "min_days": 0,
+        "max_days": 20
+      },
+      "catalysts": [
+        "신용등급 하락"
+      ],
+      "invalidation_conditions": [],
+      "thesis_id": "thesis_72dd0543f8ad5add56ab436d",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_9e594a0028ec98aa886af58e5a2e695992117d0478d1d67c4317df354971b1bb"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224429949987",
+      "post_title": "고용보고서 결과가 나왔다. 관전포인트는?",
+      "post_url": "https://blog.naver.com/ranto28/224429949987?fromRss=true&trackingCode=rss",
+      "published_date": "2026-10-02",
+      "evidence_text": "10월과 12월 2회연속 인상에서,10월은 쉬고 12월 인상으로 분위기가 바뀌는 상황이다.",
+      "evidence_sha256": "e7338f43e92e5a734d1be6511c96f0b8de6641f857661cb9909e37241620174e",
+      "entity": {
+        "name": "연준 기준금리",
+        "code": "",
+        "market": "",
+        "asset_type": "sector"
+      },
+      "direction": "neutral",
+      "horizon": {
+        "min_days": 0,
+        "max_days": 20
+      },
+      "catalysts": [
+        "9월 고용보고서 결과",
+        "시간당 임금 상승률 둔화"
+      ],
+      "invalidation_conditions": [
+        "10월 14일 CPI 발표 결과"
+      ],
+      "thesis_id": "thesis_b580c18322855e44ea59d803",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_72a95122e40fa0be5776b20e0a060f857c684eae2c2ddbb291bec2fc637e80b4"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224428298482",
+      "post_title": "알래스카 LNG 프로젝트에 대해 알아보자",
+      "post_url": "https://blog.naver.com/ranto28/224428298482?fromRss=true&trackingCode=rss",
+      "published_date": "2026-10-01",
+      "evidence_text": "한국은 파이프라인 건설, 천연가스를 LNG로 변환하는 인프라등에 참여가 가능하고, LNG를 배송할 LNG운반선도 수주가 예상됨.",
+      "evidence_sha256": "4644283af8b75b83387cbccd4e43515abbf654c4595e3ced8140959e5c95e94b",
+      "entity": {
+        "name": "한국 조선업",
+        "code": "",
+        "market": "",
+        "asset_type": "sector"
+      },
+      "direction": "bullish",
+      "horizon": {
+        "min_days": 60,
+        "max_days": 365
+      },
+      "catalysts": [
+        "알래스카 LNG 프로젝트 FID 확정",
+        "LNG 운반선 수요 증가"
+      ],
+      "invalidation_conditions": [
+        "알래스카 LNG 프로젝트 무산",
+        "FID 미달성"
+      ],
+      "thesis_id": "thesis_02fc201f872ab462f9c7a721",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_2a821409d3cc8558fdd3a230b811fd8ed0e6a74e361a64471d0da9c3f46daedf"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224428298482",
+      "post_title": "알래스카 LNG 프로젝트에 대해 알아보자",
+      "post_url": "https://blog.naver.com/ranto28/224428298482?fromRss=true&trackingCode=rss",
+      "published_date": "2026-10-01",
+      "evidence_text": "백악관은 트럼프의 방한 성과로 내 세운 항목중 한국가스공사가 미국산 LNG 연간 330만 톤 장기 구매 계약이 있음.",
+      "evidence_sha256": "a3d724dc69f5837f33167a6b331faeb8f097b0bcde532ba5dea411930668f36c",
+      "entity": {
+        "name": "한국가스공사",
+        "code": "",
+        "market": "",
+        "asset_type": "stock"
+      },
+      "direction": "bullish",
+      "horizon": {
+        "min_days": 60,
+        "max_days": 365
+      },
+      "catalysts": [
+        "미국산 LNG 장기 구매 계약 체결"
+      ],
+      "invalidation_conditions": [
+        "계약 파기",
+        "알래스카 LNG 프로젝트 무산"
+      ],
+      "thesis_id": "thesis_c200c4cac41d3a0b75561f65",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_6b0951ba13781de4b53e1165d60c3d639398c04ce4848cf1a29eb530ee8a60f6"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224428978052",
+      "post_title": "연준, 10월에는 금리인상 하지 않겠다?",
+      "post_url": "https://blog.naver.com/ranto28/224428978052?fromRss=true&trackingCode=rss",
+      "published_date": "2026-10-01",
+      "evidence_text": "10월과 12월 2회연속 인상에서,10월은 쉬고 12월 인상으로 분위기가 바뀌는 상황이다.",
+      "evidence_sha256": "e7338f43e92e5a734d1be6511c96f0b8de6641f857661cb9909e37241620174e",
+      "entity": {
+        "name": "미국 금리 정책",
+        "code": "",
+        "market": "",
+        "asset_type": "sector"
+      },
+      "direction": "neutral",
+      "horizon": {
+        "min_days": 0,
+        "max_days": 20
+      },
+      "catalysts": [
+        "9월 고용보고서",
+        "연준 위원 발언"
+      ],
+      "invalidation_conditions": [
+        "9월 고용보고서 수치 급등"
+      ],
+      "thesis_id": "thesis_4c861e8d3d68bba528f4ec0a",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_6191e9fc9e9a8dfa7214bf4194e8a387a87c8747ba739ab1b8ecb5064e5222a3"
+    },
+    {
+      "signal_type": "MER_DIRECT",
+      "post_id": "224426600100",
+      "post_title": "미국국채를 매수하는 단골 고객이 약해지고 있다.",
+      "post_url": "https://blog.naver.com/ranto28/224426600100?fromRss=true&trackingCode=rss",
+      "published_date": "2026-09-30",
+      "evidence_text": "개인적으로 미국 국채는 일부 매수에 들어갔다.",
+      "evidence_sha256": "47271b7a26f7db0fb6055a1b0eb38ec1c14314893361f0c3645bf018e292f422",
+      "entity": {
+        "name": "미국 국채",
+        "code": "",
+        "market": "",
+        "asset_type": "sector"
+      },
+      "direction": "bullish",
+      "horizon": {
+        "min_days": 20,
+        "max_days": 180
+      },
+      "catalysts": [
+        "10년물 금리 5.28% 수준"
+      ],
+      "invalidation_conditions": [],
+      "thesis_id": "thesis_81ba7440c6ea77925d911704",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "MER_DIRECT",
+      "signal_id": "sig_7125c758dd5d3800c46146f9653276cbe519f6f92424c2adf5d45c4ad5421518"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224426600100",
+      "post_title": "미국국채를 매수하는 단골 고객이 약해지고 있다.",
+      "post_url": "https://blog.naver.com/ranto28/224426600100?fromRss=true&trackingCode=rss",
+      "published_date": "2026-09-30",
+      "evidence_text": "미국 베이비붐 세대들의 노후저금통이 미국국채를 가져가던 수요자에서 공급 요인으로 바뀌고 있다.",
+      "evidence_sha256": "2a21fa6ff71c89cbb5e48f9fc9282e46573341326e4759f89068a5c765c7593a",
+      "entity": {
+        "name": "미국 국채",
+        "code": "",
+        "market": "",
+        "asset_type": "sector"
+      },
+      "direction": "bearish",
+      "horizon": {
+        "min_days": 60,
+        "max_days": 365
+      },
+      "catalysts": [
+        "사회보장신탁기금 연금 지급액 증가",
+        "인구 고령화에 따른 자산 구조 변화"
+      ],
+      "invalidation_conditions": [],
+      "thesis_id": "thesis_cb2827256c754b6508fceffb",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_82f82a3e23d1e378614fb0c1ce9d67dc77ba8fe715970bc2849013f07a9c2a11"
+    },
+    {
+      "signal_type": "MER_THESIS",
+      "post_id": "224427709873",
+      "post_title": "미국 물가(PCE)가 낮게 나왔는데, 미국국채10년물이 오르는 비밀",
+      "post_url": "https://blog.naver.com/ranto28/224427709873?fromRss=true&trackingCode=rss",
+      "published_date": "2026-09-30",
+      "evidence_text": "미국 장기국채 금리가 상승한 것은 시장이 이번 변경을 숫자 마사지로 간주하기때문이다.",
+      "evidence_sha256": "c8232c9a8c9773b535ee0fc403e1052941e2b723a5f14eb461e0fac0613ecb86",
+      "entity": {
+        "name": "미국 장기국채",
+        "code": "",
+        "market": "",
+        "asset_type": "sector"
+      },
+      "direction": "bearish",
+      "horizon": {
+        "min_days": 0,
+        "max_days": 20
+      },
+      "catalysts": [
+        "PCE 산정 방식 변경",
+        "물가 지표 왜곡 의혹"
+      ],
+      "invalidation_conditions": [
+        "실물 인플레이션의 실제 하락 확인"
+      ],
+      "thesis_id": "thesis_30566e745fa76a0947bdcf8c",
+      "parent_signal_ids": [],
+      "created_by": "gemini-summary-host-verified",
+      "model_id": "gemini-3.1-flash-lite",
+      "created_at": "2026-10-09T05:42:34.058680",
+      "source_classification": "DIRECTIONAL_THESIS",
+      "signal_id": "sig_ae11da9fb9dff17101693363a0946a0af3bf50aea9f49a188072e08e98f100ca"
     }
   ],
   "last_watchlist_changes": {
-    "date": "2026-10-08",
-    "added": [],
-    "updated": [],
-    "promoted": [],
+    "date": "2026-10-09",
+    "added": [
+      "thesis_d3aae23cef640ebed20cabc4",
+      "thesis_576d2c285c625f1995b127fb"
+    ],
+    "updated": [
+      "thesis_705f2a4ca4f67be5cc2d5c54",
+      "thesis_545e765806ba3a0b5b92451d",
+      "thesis_b30a9cd352a3cb0d06a01e82",
+      "thesis_b9928fa22366e6b3e6306263",
+      "thesis_e45dc7e016fb980bd71fe994",
+      "thesis_1365f8c3633e7679c956772f",
+      "thesis_5027996f4ddceef31f7670de",
+      "thesis_863413c300d2ff99765d6e6d",
+      "thesis_0984ff216cdfaa8cf903aace",
+      "thesis_67bb558bb2a90cd31390a899",
+      "thesis_6bf88b7c4f987325003681c1"
+    ],
+    "promoted": [
+      "thesis_b2c6bf7bac387b804e6f8534",
+      "thesis_d3aae23cef640ebed20cabc4"
+    ],
     "rejected": [],
     "expired": [],
     "archived": []
   },
-  "last_rebalanced_date": "2026-09-27",
+  "last_rebalanced_date": "2026-10-09",
   "admin_review_queue": [
     {
       "queue_id": "admin-2026-07-15-stock:KR:006220",
