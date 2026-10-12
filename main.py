@@ -683,7 +683,7 @@ def _run_no_change_update(
 
 def _is_llm_service_unavailable_error(exc: Exception) -> bool:
     message = str(exc)
-    return "Gemini 투자 판단 보류" in message
+    return "Gemini 투자 판단 보류" in message or "ChatGPT 투자 판단 보류" in message
 
 
 def _is_pro_server_busy_investment_deferral(exc: Exception) -> bool:
@@ -692,6 +692,8 @@ def _is_pro_server_busy_investment_deferral(exc: Exception) -> bool:
 
 def _gemini_deferral_note(exc: Exception) -> str:
     message = str(exc)
+    if "ChatGPT 투자 판단 보류" in message:
+        return "ChatGPT 인증·사용 한도 또는 판단 검증 문제로 투자 판단 보류. 포트폴리오 비중은 변경하지 않음"
     if "GEMINI_PERMANENT" in message:
         return "Gemini 모델 종료·권한 또는 요청 설정 오류로 투자 판단 보류. 포트폴리오 비중은 변경하지 않음"
     if "GEMINI_RATE_LIMIT" in message:

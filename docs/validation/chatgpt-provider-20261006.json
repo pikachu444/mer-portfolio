@@ -1,0 +1,246 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-06",
+  "base_commit": "52a3f9d8f36bde8bc889a20a2f4b5f7e065bf6ad",
+  "regression": {
+    "command": "python -m unittest discover -s tests -v",
+    "passed": 288,
+    "seconds": 30.067,
+    "real_model_requests": 0
+  },
+  "checks": {
+    "regular": {
+      "mode": "dry-run",
+      "analysis_date": "2026-10-06",
+      "selection": {
+        "run_type": "regular",
+        "cutoff_exclusive": null,
+        "cached_posts": 301,
+        "scoped_posts": 10,
+        "selected_posts": 10,
+        "future_posts_excluded": 0,
+        "blocked_posts": []
+      },
+      "input_sha256": "3fe7d64206497198652dc02b1a70f7f7973a208571bc543e9e8b41b71709e8c4",
+      "state_sha256": "ea75055135c378f7209286036b388725020a1610ca6c24b992962b2e86a8fdf9",
+      "templates": {
+        "decision_schema_sha256": "eff8f09971a57ff946ddb94730eba11f5aa43bfc2ebae75e05ca33917ec6ab1d",
+        "system_prompt_sha256": "ef2e986dd111fcfa53e548bf4f33606717c6359534d1b2e3e07306c098405b44",
+        "code_file_sha256": {
+          "analyze.py": "0cc1aa2594fa12b9cc25daa322c645ffafc09166039090e375e4a340571c7c07",
+          "decision_context.py": "651e36786b2c04f6988abd99401a9568f27c9c20c7c864e4d61aa463f0969c91",
+          "system_prompt.py": "1e8538799381ac2cefa9d7c98dcf6bfec0b36c3e93fb5d631b0c4ddea26ed4ab",
+          "portfolio_schema.py": "f26ca32955b0f219c5b37cbe2fee89078cc6d077bd55833e52b77915a2035ed3",
+          "portfolio_provenance.py": "ee04e52adcea78ac2b7bcb50fdb857f78b8748436af17318e77077cc2ea3aa20"
+        }
+      },
+      "source_quote_audit": {
+        "checked": 17,
+        "matched": 17,
+        "failures": []
+      },
+      "prepared_signal_events": 17,
+      "request_budget": {
+        "maximum": 3,
+        "generation_attempts": 0,
+        "remaining": 3,
+        "attempts": [],
+        "responses": []
+      },
+      "operating_state_unchanged": true,
+      "modified_operating_files": [],
+      "attempts": [
+        {
+          "variant": "gemini-baseline",
+          "provider": "gemini",
+          "model_override": null,
+          "context_mode": "baseline",
+          "repetition": 1,
+          "input_sha256": "3fe7d64206497198652dc02b1a70f7f7973a208571bc543e9e8b41b71709e8c4",
+          "request_preview_sha256": "68b34ca0a29509f9b9022c396701d83a5a653b9db190c4dbf8dc0188b0c4b5c3",
+          "request_preview_characters": 133915,
+          "context_count_stage": "user-message only; before provider-specific schema instructions, fitting and token counting",
+          "status": "dry-run"
+        },
+        {
+          "variant": "gemini-focused",
+          "provider": "gemini",
+          "model_override": null,
+          "context_mode": "focused",
+          "repetition": 1,
+          "input_sha256": "3fe7d64206497198652dc02b1a70f7f7973a208571bc543e9e8b41b71709e8c4",
+          "request_preview_sha256": "eb1f39529e4f84f6155d2616f89f8c5de2d4ab752b5864ab271885d88cb36166",
+          "request_preview_characters": 126101,
+          "context_count_stage": "user-message only; before provider-specific schema instructions, fitting and token counting",
+          "status": "dry-run"
+        },
+        {
+          "variant": "chatgpt-focused",
+          "provider": "chatgpt",
+          "model_override": null,
+          "context_mode": "focused",
+          "repetition": 1,
+          "input_sha256": "3fe7d64206497198652dc02b1a70f7f7973a208571bc543e9e8b41b71709e8c4",
+          "request_preview_sha256": "eb1f39529e4f84f6155d2616f89f8c5de2d4ab752b5864ab271885d88cb36166",
+          "request_preview_characters": 126101,
+          "context_count_stage": "user-message only; before provider-specific schema instructions, fitting and token counting",
+          "status": "dry-run"
+        }
+      ],
+      "source_directory_hashes_equal": true,
+      "operating_directory_hashes_equal": true,
+      "user_message_characters_reduction_percent": 5.835,
+      "exit_code": 0
+    },
+    "rebalance": {
+      "mode": "dry-run",
+      "analysis_date": "2026-10-06",
+      "selection": {
+        "run_type": "rebalance",
+        "cutoff_exclusive": "2026-09-27",
+        "cached_posts": 301,
+        "scoped_posts": 14,
+        "selected_posts": 12,
+        "future_posts_excluded": 0,
+        "blocked_posts": []
+      },
+      "input_sha256": "2ce223c7d858f17a78ad3a754f277a9ea4d09b1a6f88e191e5c0208b11ab0d1e",
+      "state_sha256": "ea75055135c378f7209286036b388725020a1610ca6c24b992962b2e86a8fdf9",
+      "templates": {
+        "decision_schema_sha256": "eff8f09971a57ff946ddb94730eba11f5aa43bfc2ebae75e05ca33917ec6ab1d",
+        "system_prompt_sha256": "ef2e986dd111fcfa53e548bf4f33606717c6359534d1b2e3e07306c098405b44",
+        "code_file_sha256": {
+          "analyze.py": "0cc1aa2594fa12b9cc25daa322c645ffafc09166039090e375e4a340571c7c07",
+          "decision_context.py": "651e36786b2c04f6988abd99401a9568f27c9c20c7c864e4d61aa463f0969c91",
+          "system_prompt.py": "1e8538799381ac2cefa9d7c98dcf6bfec0b36c3e93fb5d631b0c4ddea26ed4ab",
+          "portfolio_schema.py": "f26ca32955b0f219c5b37cbe2fee89078cc6d077bd55833e52b77915a2035ed3",
+          "portfolio_provenance.py": "ee04e52adcea78ac2b7bcb50fdb857f78b8748436af17318e77077cc2ea3aa20"
+        }
+      },
+      "source_quote_audit": {
+        "checked": 21,
+        "matched": 21,
+        "failures": []
+      },
+      "prepared_signal_events": 21,
+      "request_budget": {
+        "maximum": 3,
+        "generation_attempts": 0,
+        "remaining": 3,
+        "attempts": [],
+        "responses": []
+      },
+      "operating_state_unchanged": true,
+      "modified_operating_files": [],
+      "attempts": [
+        {
+          "variant": "gemini-baseline",
+          "provider": "gemini",
+          "model_override": null,
+          "context_mode": "baseline",
+          "repetition": 1,
+          "input_sha256": "2ce223c7d858f17a78ad3a754f277a9ea4d09b1a6f88e191e5c0208b11ab0d1e",
+          "request_preview_sha256": "dc423857a772e59d975791edf1b680bcbd6651d377a1c5e5f93218abd3bd3e5c",
+          "request_preview_characters": 137187,
+          "context_count_stage": "user-message only; before provider-specific schema instructions, fitting and token counting",
+          "status": "dry-run"
+        },
+        {
+          "variant": "gemini-focused",
+          "provider": "gemini",
+          "model_override": null,
+          "context_mode": "focused",
+          "repetition": 1,
+          "input_sha256": "2ce223c7d858f17a78ad3a754f277a9ea4d09b1a6f88e191e5c0208b11ab0d1e",
+          "request_preview_sha256": "d4b22cdc0b731f67748fb1be2b2cb0acb5d9571fce72ffa805be4d0369bb5741",
+          "request_preview_characters": 133161,
+          "context_count_stage": "user-message only; before provider-specific schema instructions, fitting and token counting",
+          "status": "dry-run"
+        },
+        {
+          "variant": "chatgpt-focused",
+          "provider": "chatgpt",
+          "model_override": null,
+          "context_mode": "focused",
+          "repetition": 1,
+          "input_sha256": "2ce223c7d858f17a78ad3a754f277a9ea4d09b1a6f88e191e5c0208b11ab0d1e",
+          "request_preview_sha256": "d4b22cdc0b731f67748fb1be2b2cb0acb5d9571fce72ffa805be4d0369bb5741",
+          "request_preview_characters": 133161,
+          "context_count_stage": "user-message only; before provider-specific schema instructions, fitting and token counting",
+          "status": "dry-run"
+        }
+      ],
+      "source_directory_hashes_equal": true,
+      "operating_directory_hashes_equal": true,
+      "user_message_characters_reduction_percent": 2.9347,
+      "exit_code": 0
+    },
+    "chatgpt_preflight": {
+      "mode": "live",
+      "analysis_date": "2026-10-06",
+      "selection": {
+        "run_type": "rebalance",
+        "cutoff_exclusive": "2026-09-27",
+        "cached_posts": 301,
+        "scoped_posts": 14,
+        "selected_posts": 12,
+        "future_posts_excluded": 0,
+        "blocked_posts": []
+      },
+      "input_sha256": "2ce223c7d858f17a78ad3a754f277a9ea4d09b1a6f88e191e5c0208b11ab0d1e",
+      "state_sha256": "ea75055135c378f7209286036b388725020a1610ca6c24b992962b2e86a8fdf9",
+      "templates": {
+        "decision_schema_sha256": "eff8f09971a57ff946ddb94730eba11f5aa43bfc2ebae75e05ca33917ec6ab1d",
+        "system_prompt_sha256": "ef2e986dd111fcfa53e548bf4f33606717c6359534d1b2e3e07306c098405b44",
+        "code_file_sha256": {
+          "analyze.py": "0cc1aa2594fa12b9cc25daa322c645ffafc09166039090e375e4a340571c7c07",
+          "decision_context.py": "651e36786b2c04f6988abd99401a9568f27c9c20c7c864e4d61aa463f0969c91",
+          "system_prompt.py": "1e8538799381ac2cefa9d7c98dcf6bfec0b36c3e93fb5d631b0c4ddea26ed4ab",
+          "portfolio_schema.py": "f26ca32955b0f219c5b37cbe2fee89078cc6d077bd55833e52b77915a2035ed3",
+          "portfolio_provenance.py": "ee04e52adcea78ac2b7bcb50fdb857f78b8748436af17318e77077cc2ea3aa20"
+        }
+      },
+      "source_quote_audit": {
+        "checked": 21,
+        "matched": 21,
+        "failures": []
+      },
+      "prepared_signal_events": 21,
+      "request_budget": {
+        "maximum": 1,
+        "generation_attempts": 0,
+        "remaining": 1,
+        "attempts": [],
+        "responses": []
+      },
+      "operating_state_unchanged": true,
+      "modified_operating_files": [],
+      "attempts": [
+        {
+          "variant": "chatgpt-focused",
+          "provider": "chatgpt",
+          "model_override": null,
+          "context_mode": "focused",
+          "repetition": 1,
+          "input_sha256": "2ce223c7d858f17a78ad3a754f277a9ea4d09b1a6f88e191e5c0208b11ab0d1e",
+          "request_preview_sha256": "d4b22cdc0b731f67748fb1be2b2cb0acb5d9571fce72ffa805be4d0369bb5741",
+          "request_preview_characters": 133161,
+          "context_count_stage": "user-message only; before provider-specific schema instructions, fitting and token counting",
+          "status": "rejected",
+          "error": "RuntimeError: ChatGPT 투자 판단 보류. model=gpt-6.1-sol. No ChatGPT account selected; run python chatgpt_auth.py login.",
+          "request_metrics": null,
+          "successful_generation_responses": null,
+          "generation_attempts": 0,
+          "elapsed_seconds": 0.081
+        }
+      ],
+      "source_directory_hashes_equal": true,
+      "operating_directory_hashes_equal": true,
+      "result": "no selected OAuth account; zero generation requests; not a real-model comparison",
+      "exit_code": 1
+    }
+  },
+  "real_oauth_login_completed": false,
+  "real_model_comparison_completed": false,
+  "returns_improvement_verified": false
+}
