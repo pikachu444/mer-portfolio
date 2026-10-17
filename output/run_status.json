@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "github_run_id": "38950216172",
+  "github_run_id": "39055600925",
   "mode": "scheduled",
   "run_label": "scheduled",
-  "completed_at": "2026-10-17T03:49:25.726145",
+  "completed_at": "2026-10-18T02:52:31.659242",
   "state_bundle_committed": true,
-  "report_path": "report_20261017.md",
+  "report_path": "report_20261018.md",
   "chart_path": "chart_latest.png",
   "no_changes": true,
   "telegram_delivery_required": true,
   "telegram_delivery_deferred": true,
   "telegram_delivery_accepted": null,
-  "status_note": "Gemini 무료 API 한도 초과로 투자 판단 보류. 포트폴리오 비중은 변경하지 않음"
+  "status_note": "새 글 2건 요약 실패/없음으로 투자 분석 보류: 하늘을 난 테슬라의 로드스터에 숨겨진 비밀, 주말에 돼지갈비나 먹을까?"
 }
