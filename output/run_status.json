@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "github_run_id": "39055600925",
+  "github_run_id": "39152725595",
   "mode": "scheduled",
   "run_label": "scheduled",
-  "completed_at": "2026-10-18T02:52:31.659242",
+  "completed_at": "2026-10-19T03:08:24.381080",
   "state_bundle_committed": true,
-  "report_path": "report_20261018.md",
+  "report_path": "report_20261019.md",
   "chart_path": "chart_latest.png",
   "no_changes": true,
   "telegram_delivery_required": true,
   "telegram_delivery_deferred": true,
   "telegram_delivery_accepted": null,
-  "status_note": "새 글 2건 요약 실패/없음으로 투자 분석 보류: 하늘을 난 테슬라의 로드스터에 숨겨진 비밀, 주말에 돼지갈비나 먹을까?"
+  "status_note": "새 글 4건 요약 실패/없음으로 투자 분석 보류: 국민연금은 코스피 얼마부터 국장을 살 수 있을까?(feat …, 하늘을 난 테슬라의 로드스터에 숨겨진 비밀 외 2건"
 }
