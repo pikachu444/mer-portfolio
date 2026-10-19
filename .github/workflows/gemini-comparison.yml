@@ -1,0 +1,74 @@
+name: 메르 Gemini 실모델 비교 (운영 상태 유지)
+
+on:
+  push:
+    branches: [codex/chatgpt-mer-comparison]
+    paths: [.github/workflows/gemini-comparison.yml]
+  workflow_dispatch:
+    inputs:
+      analysis_date:
+        description: "저장된 상태에 맞는 분석일"
+        type: string
+        default: "2026-10-06"
+      max_requests:
+        description: "두 경로의 재시도·교정을 포함한 전체 생성 요청 상한"
+        type: string
+        default: "2"
+      variants:
+        description: "focused=개선안 재검증, both=기존·개선 비교 (상한 4회 권장)"
+        type: choice
+        options: [focused, both]
+        default: focused
+
+permissions:
+  contents: read
+
+env:
+  PYTHONUNBUFFERED: "1"
+  # Revalidate focused-source-v3; at most two generation attempts.
+
+concurrency:
+  group: mer-gemini-comparison
+  cancel-in-progress: false
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -r requirements.txt
+      - name: Compare Gemini baseline and improved context with cached inputs
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          EXPERIMENT_DATE: ${{ inputs.analysis_date || '2026-10-06' }}
+          EXPERIMENT_MAX_REQUESTS: ${{ inputs.max_requests || '2' }}
+          EXPERIMENT_VARIANTS: ${{ inputs.variants || 'focused' }}
+          PYTHONUTF8: "1"
+        run: |
+          python - <<'PY'
+          import os
+          from compare_decisions import main
+          variants = ['gemini-baseline', 'gemini-focused'] if os.environ['EXPERIMENT_VARIANTS'] == 'both' else ['gemini-focused']
+          raise SystemExit(main([
+              '--live', '--run-type', 'rebalance',
+              '--analysis-date', os.environ['EXPERIMENT_DATE'],
+              '--variants', *variants,
+              '--max-requests', os.environ['EXPERIMENT_MAX_REQUESTS'],
+              '--output-dir', 'experiments/comparison-gemini-live',
+          ]))
+          PY
+      - name: Upload comparison only
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mer-gemini-live-comparison
+          path: experiments/comparison-gemini-live/comparison.json
+          if-no-files-found: warn
+
+# One explicit feature-branch validation; no PR/fork trigger, Telegram, or commits.
