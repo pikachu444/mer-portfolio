@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "github_run_id": "39482239730",
+  "github_run_id": "39660449190",
   "mode": "scheduled",
   "run_label": "scheduled",
-  "completed_at": "2026-10-21T04:18:34.353616",
+  "completed_at": "2026-10-22T04:18:55.867360",
   "state_bundle_committed": true,
-  "report_path": "report_20261021.md",
+  "report_path": "report_20261022.md",
   "chart_path": "chart_latest.png",
   "no_changes": true,
   "telegram_delivery_required": true,
   "telegram_delivery_deferred": true,
   "telegram_delivery_accepted": null,
-  "status_note": "새 글 8건 요약 실패/없음으로 투자 분석 보류: 임대차 계약에 중요한 신상 판례가 나왔다 (feat 갱신권), 경기도 재정문제는 뭐가 문제일까? A/S (feat 소방) 외 6건"
+  "status_note": "새 글 10건 요약 실패/없음으로 투자 분석 보류: 일론 머스크는 1,250억달러의 테슬라 보상금을 받을 수 있…, 임대차 계약에 중요한 신상 판례가 나왔다 (feat 갱신권) 외 8건"
 }
