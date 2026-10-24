@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "github_run_id": "40010003858",
+  "github_run_id": "40119492812",
   "mode": "scheduled",
   "run_label": "scheduled",
-  "completed_at": "2026-10-24T04:16:26.653429",
+  "completed_at": "2026-10-25T03:11:12.866133",
   "state_bundle_committed": true,
-  "report_path": "report_20261024.md",
+  "report_path": "report_20261025.md",
   "chart_path": "chart_latest.png",
   "no_changes": true,
   "telegram_delivery_required": true,
   "telegram_delivery_deferred": true,
   "telegram_delivery_accepted": null,
-  "status_note": "새 글 14건 요약 실패/없음으로 투자 분석 보류: 고등어 이야기 (feat 노르웨이 고등어 vs 국산 고등어), 모더나에서 터졌다는 꿈의 암 치료제 3상결과 A/S 외 12건"
+  "status_note": "새 글 16건 요약 실패/없음으로 투자 분석 보류: 네타냐후는 계속 집권할 수 있을까? (feat 이스라엘 총선), 고등어 이야기 (feat 노르웨이 고등어 vs 국산 고등어) 외 14건"
 }
