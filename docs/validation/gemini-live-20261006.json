@@ -1,0 +1,500 @@
+{
+  "v1_pair": {
+    "workflow_url": "https://github.com/pikachu444/mer-portfolio/actions/runs/37399617077",
+    "code_commit": "2cb03daabc74c0f55cff179a487a7eebd766ac35",
+    "analysis_date": "2026-10-06",
+    "selection": {
+      "run_type": "rebalance",
+      "cutoff_exclusive": "2026-09-27",
+      "cached_posts": 301,
+      "scoped_posts": 14,
+      "selected_posts": 12,
+      "future_posts_excluded": 0,
+      "blocked_posts": []
+    },
+    "input_sha256": "2ce223c7d858f17a78ad3a754f277a9ea4d09b1a6f88e191e5c0208b11ab0d1e",
+    "state_sha256": "ea75055135c378f7209286036b388725020a1610ca6c24b992962b2e86a8fdf9",
+    "templates": {
+      "decision_schema_sha256": "eff8f09971a57ff946ddb94730eba11f5aa43bfc2ebae75e05ca33917ec6ab1d",
+      "system_prompt_sha256": "ef2e986dd111fcfa53e548bf4f33606717c6359534d1b2e3e07306c098405b44",
+      "code_file_sha256": {
+        "analyze.py": "0cc1aa2594fa12b9cc25daa322c645ffafc09166039090e375e4a340571c7c07",
+        "decision_context.py": "651e36786b2c04f6988abd99401a9568f27c9c20c7c864e4d61aa463f0969c91",
+        "system_prompt.py": "1e8538799381ac2cefa9d7c98dcf6bfec0b36c3e93fb5d631b0c4ddea26ed4ab",
+        "portfolio_schema.py": "f26ca32955b0f219c5b37cbe2fee89078cc6d077bd55833e52b77915a2035ed3",
+        "portfolio_provenance.py": "ee04e52adcea78ac2b7bcb50fdb857f78b8748436af17318e77077cc2ea3aa20"
+      }
+    },
+    "source_quote_audit": {
+      "checked": 21,
+      "matched": 21,
+      "failures": []
+    },
+    "request_budget": {
+      "maximum": 4,
+      "generation_attempts": 4,
+      "remaining": 0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "provider": "gemini",
+          "model": "gemini-3.5-flash"
+        },
+        {
+          "attempt": 2,
+          "provider": "gemini",
+          "model": "gemini-3.5-flash"
+        },
+        {
+          "attempt": 3,
+          "provider": "gemini",
+          "model": "gemini-3.5-flash"
+        },
+        {
+          "attempt": 4,
+          "provider": "gemini",
+          "model": "gemini-3.5-flash"
+        }
+      ],
+      "responses": [
+        {
+          "provider": "gemini",
+          "model": "gemini-3.5-flash",
+          "input_tokens": 63321,
+          "output_tokens": 12509,
+          "thinking_tokens": 5467,
+          "total_tokens": 81297,
+          "latency_seconds": 65.462,
+          "status": "completed"
+        },
+        {
+          "provider": "gemini",
+          "model": "gemini-3.5-flash",
+          "input_tokens": 63390,
+          "output_tokens": 9898,
+          "thinking_tokens": 6577,
+          "total_tokens": 79865,
+          "latency_seconds": 60.556,
+          "status": "completed"
+        },
+        {
+          "provider": "gemini",
+          "model": "gemini-3.5-flash",
+          "input_tokens": 63813,
+          "output_tokens": 14055,
+          "thinking_tokens": 7724,
+          "total_tokens": 85592,
+          "latency_seconds": 78.189,
+          "status": "completed"
+        },
+        {
+          "provider": "gemini",
+          "model": "gemini-3.5-flash",
+          "input_tokens": 63866,
+          "output_tokens": 13501,
+          "thinking_tokens": 7232,
+          "total_tokens": 84599,
+          "latency_seconds": 78.94,
+          "status": "completed"
+        }
+      ]
+    },
+    "operating_state_unchanged": true,
+    "modified_operating_files": [],
+    "attempts": [
+      {
+        "variant": "gemini-baseline",
+        "provider": "gemini",
+        "model_override": null,
+        "context_mode": "baseline",
+        "repetition": 1,
+        "input_sha256": "2ce223c7d858f17a78ad3a754f277a9ea4d09b1a6f88e191e5c0208b11ab0d1e",
+        "request_preview_sha256": "dc423857a772e59d975791edf1b680bcbd6651d377a1c5e5f93218abd3bd3e5c",
+        "request_preview_characters": 137187,
+        "context_count_stage": "user-message only; before provider-specific schema instructions, fitting and token counting",
+        "status": "rejected",
+        "error": "RuntimeError: Gemini 투자 판단 보류. model=gemini-3.5-flash. decisions[1] links signals incompatible with maintaining or increasing the verified long",
+        "request_metrics": [
+          {
+            "provider": "gemini",
+            "model": "gemini-3.5-flash",
+            "input_tokens": 63321,
+            "output_tokens": 12509,
+            "thinking_tokens": 5467,
+            "total_tokens": 81297,
+            "latency_seconds": 65.462,
+            "status": "completed"
+          },
+          {
+            "provider": "gemini",
+            "model": "gemini-3.5-flash",
+            "input_tokens": 63390,
+            "output_tokens": 9898,
+            "thinking_tokens": 6577,
+            "total_tokens": 79865,
+            "latency_seconds": 60.556,
+            "status": "completed"
+          }
+        ],
+        "successful_generation_responses": 2,
+        "generation_attempts": 2,
+        "elapsed_seconds": 134.509
+      },
+      {
+        "variant": "gemini-focused",
+        "provider": "gemini",
+        "model_override": null,
+        "context_mode": "focused",
+        "repetition": 1,
+        "input_sha256": "2ce223c7d858f17a78ad3a754f277a9ea4d09b1a6f88e191e5c0208b11ab0d1e",
+        "request_preview_sha256": "d4b22cdc0b731f67748fb1be2b2cb0acb5d9571fce72ffa805be4d0369bb5741",
+        "request_preview_characters": 133161,
+        "context_count_stage": "user-message only; before provider-specific schema instructions, fitting and token counting",
+        "status": "rejected",
+        "error": "RuntimeError: Gemini 투자 판단 보류. model=gemini-3.5-flash. decisions[0] links signals incompatible with maintaining or increasing the verified long",
+        "request_metrics": [
+          {
+            "provider": "gemini",
+            "model": "gemini-3.5-flash",
+            "input_tokens": 63813,
+            "output_tokens": 14055,
+            "thinking_tokens": 7724,
+            "total_tokens": 85592,
+            "latency_seconds": 78.189,
+            "status": "completed"
+          },
+          {
+            "provider": "gemini",
+            "model": "gemini-3.5-flash",
+            "input_tokens": 63866,
+            "output_tokens": 13501,
+            "thinking_tokens": 7232,
+            "total_tokens": 84599,
+            "latency_seconds": 78.94,
+            "status": "completed"
+          }
+        ],
+        "successful_generation_responses": 2,
+        "generation_attempts": 2,
+        "elapsed_seconds": 173.024
+      }
+    ]
+  },
+  "v2_revalidation": {
+    "workflow_url": "https://github.com/pikachu444/mer-portfolio/actions/runs/37400614052",
+    "code_commit": "82b97da907c7c57cffd23a2bf6af417fd3288657",
+    "analysis_date": "2026-10-06",
+    "selection": {
+      "run_type": "rebalance",
+      "cutoff_exclusive": "2026-09-27",
+      "cached_posts": 301,
+      "scoped_posts": 14,
+      "selected_posts": 12,
+      "future_posts_excluded": 0,
+      "blocked_posts": []
+    },
+    "input_sha256": "2ce223c7d858f17a78ad3a754f277a9ea4d09b1a6f88e191e5c0208b11ab0d1e",
+    "state_sha256": "ea75055135c378f7209286036b388725020a1610ca6c24b992962b2e86a8fdf9",
+    "templates": {
+      "decision_schema_sha256": "eff8f09971a57ff946ddb94730eba11f5aa43bfc2ebae75e05ca33917ec6ab1d",
+      "system_prompt_sha256": "ef2e986dd111fcfa53e548bf4f33606717c6359534d1b2e3e07306c098405b44",
+      "code_file_sha256": {
+        "analyze.py": "4da334da4adc749c89aa040834582bcab00f0b8f0b2e950c547d442ac8a064b7",
+        "decision_context.py": "391708966b9329b5a03786004449d1463edb74464c09ff926511d6697a209bb8",
+        "system_prompt.py": "1e8538799381ac2cefa9d7c98dcf6bfec0b36c3e93fb5d631b0c4ddea26ed4ab",
+        "portfolio_schema.py": "f26ca32955b0f219c5b37cbe2fee89078cc6d077bd55833e52b77915a2035ed3",
+        "portfolio_provenance.py": "ee04e52adcea78ac2b7bcb50fdb857f78b8748436af17318e77077cc2ea3aa20"
+      }
+    },
+    "source_quote_audit": {
+      "checked": 21,
+      "matched": 21,
+      "failures": []
+    },
+    "request_budget": {
+      "maximum": 2,
+      "generation_attempts": 2,
+      "remaining": 0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "provider": "gemini",
+          "model": "gemini-3.5-flash"
+        },
+        {
+          "attempt": 2,
+          "provider": "gemini",
+          "model": "gemini-3.5-flash"
+        }
+      ],
+      "responses": [
+        {
+          "provider": "gemini",
+          "model": "gemini-3.5-flash",
+          "input_tokens": 63921,
+          "output_tokens": 11083,
+          "thinking_tokens": 8722,
+          "total_tokens": 83726,
+          "latency_seconds": 76.309,
+          "status": "completed"
+        },
+        {
+          "provider": "gemini",
+          "model": "gemini-3.5-flash",
+          "input_tokens": 64592,
+          "output_tokens": 9931,
+          "thinking_tokens": 11441,
+          "total_tokens": 85964,
+          "latency_seconds": 78.708,
+          "status": "completed"
+        }
+      ]
+    },
+    "operating_state_unchanged": true,
+    "modified_operating_files": [],
+    "attempts": [
+      {
+        "variant": "gemini-focused",
+        "provider": "gemini",
+        "model_override": null,
+        "context_mode": "focused",
+        "repetition": 1,
+        "input_sha256": "2ce223c7d858f17a78ad3a754f277a9ea4d09b1a6f88e191e5c0208b11ab0d1e",
+        "request_preview_sha256": "6f416d1efd0629682adfd9475cc8819ebf1c641c9dcfcc762c6a29634328beee",
+        "request_preview_characters": 133398,
+        "context_count_stage": "user-message only; before provider-specific schema instructions, fitting and token counting",
+        "status": "rejected",
+        "error": "RuntimeError: Gemini 투자 판단 보류. model=gemini-3.5-flash. new positions lack verified directional source signals: 미국국채 10년물\n근거 연결 교정 상세: [{\"decision_index\":6,\"code\":\"IEF\",\"name\":\"미국국채 10년물\",\"action\":\"매수\",\"signal_id\":\"sig_7125c758dd5d3800c46146f9653276cbe519f6f92424c2adf5d45c4ad5421518\",\"source_entity\":{\"name\":\"미국 국채\",\"code\":\"\",\"market\":\"\",\"asset_type\":\"sector\"},\"source_direction\":\"bullish\",\"reasons\":[\"원문 대상이 이 종목과 다름; ETF 추론은 AI/sector_only와 명시적인 연결 논리가 필요하며 개별주로 임의 전용할 수 없음\"]}]\n근거의 원문·대상·방향을 바꾸거나 ID를 만들어 통과시키지 마십시오. 반대 근거는 key_risks·무효화 검토에 설명하십시오. 기존 보유를 유지할 근거가 실제로 유효하면 그 종목의 기존 연결을 보존하고, 무효화됐으면 원문에 맞는 축소·매도를 판단하십시오.",
+        "request_metrics": [
+          {
+            "provider": "gemini",
+            "model": "gemini-3.5-flash",
+            "input_tokens": 63921,
+            "output_tokens": 11083,
+            "thinking_tokens": 8722,
+            "total_tokens": 83726,
+            "latency_seconds": 76.309,
+            "status": "completed"
+          },
+          {
+            "provider": "gemini",
+            "model": "gemini-3.5-flash",
+            "input_tokens": 64592,
+            "output_tokens": 9931,
+            "thinking_tokens": 11441,
+            "total_tokens": 85964,
+            "latency_seconds": 78.708,
+            "status": "completed"
+          }
+        ],
+        "successful_generation_responses": 2,
+        "generation_attempts": 2,
+        "elapsed_seconds": 163.884
+      }
+    ]
+  },
+  "chatgpt_oauth_connected": false,
+  "returns_improvement_verified": false,
+  "v3_revalidation": {
+    "analysis_date": "2026-10-06",
+    "selection": {
+      "run_type": "rebalance",
+      "cutoff_exclusive": "2026-09-27",
+      "cached_posts": 301,
+      "scoped_posts": 14,
+      "selected_posts": 12,
+      "future_posts_excluded": 0,
+      "blocked_posts": []
+    },
+    "input_sha256": "2ce223c7d858f17a78ad3a754f277a9ea4d09b1a6f88e191e5c0208b11ab0d1e",
+    "state_sha256": "ea75055135c378f7209286036b388725020a1610ca6c24b992962b2e86a8fdf9",
+    "templates": {
+      "decision_schema_sha256": "eff8f09971a57ff946ddb94730eba11f5aa43bfc2ebae75e05ca33917ec6ab1d",
+      "system_prompt_sha256": "ef2e986dd111fcfa53e548bf4f33606717c6359534d1b2e3e07306c098405b44",
+      "code_file_sha256": {
+        "analyze.py": "c25bf6e44b9aa6fa57ce8c1d4f57a023600000cab3c890134e0e5b1d7dac4474",
+        "decision_context.py": "f655498491cb2a1440c1324c3ac6c94bdbfbc8fa40c1f48cc153dad6eb17d6dd",
+        "system_prompt.py": "1e8538799381ac2cefa9d7c98dcf6bfec0b36c3e93fb5d631b0c4ddea26ed4ab",
+        "portfolio_schema.py": "f26ca32955b0f219c5b37cbe2fee89078cc6d077bd55833e52b77915a2035ed3",
+        "portfolio_provenance.py": "ee04e52adcea78ac2b7bcb50fdb857f78b8748436af17318e77077cc2ea3aa20"
+      }
+    },
+    "source_quote_audit": {
+      "checked": 21,
+      "matched": 21,
+      "failures": []
+    },
+    "request_budget": {
+      "maximum": 2,
+      "generation_attempts": 2,
+      "remaining": 0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "provider": "gemini",
+          "model": "gemini-3.5-flash"
+        },
+        {
+          "attempt": 2,
+          "provider": "gemini",
+          "model": "gemini-3.5-flash"
+        }
+      ],
+      "responses": [
+        {
+          "provider": "gemini",
+          "model": "gemini-3.5-flash",
+          "input_tokens": 64004,
+          "output_tokens": 11314,
+          "thinking_tokens": 6977,
+          "total_tokens": 82295,
+          "latency_seconds": 72.566,
+          "status": "completed"
+        },
+        {
+          "provider": "gemini",
+          "model": "gemini-3.5-flash",
+          "input_tokens": 64595,
+          "output_tokens": 11524,
+          "thinking_tokens": 6436,
+          "total_tokens": 82555,
+          "latency_seconds": 64.399,
+          "status": "completed"
+        }
+      ]
+    },
+    "operating_state_unchanged": true,
+    "modified_operating_files": [],
+    "workflow_url": "https://github.com/pikachu444/mer-portfolio/actions/runs/37401152945",
+    "code_commit": "ad3c942da48e1b661ef7e604a9d30ca4e1c1a550",
+    "context_version": "focused-source-v3",
+    "attempts": [
+      {
+        "variant": "gemini-focused",
+        "provider": "gemini",
+        "model_override": null,
+        "context_mode": "focused",
+        "repetition": 1,
+        "input_sha256": "2ce223c7d858f17a78ad3a754f277a9ea4d09b1a6f88e191e5c0208b11ab0d1e",
+        "request_preview_sha256": "55d409369077747a3a11ae60d856c7a0ec0c8a8621ce1237bda3b1844b4541e7",
+        "request_preview_characters": 133542,
+        "context_count_stage": "user-message only; before provider-specific schema instructions, fitting and token counting",
+        "status": "valid",
+        "decision_model_version": "gemini-3.5-flash",
+        "allocation": {
+          "policy": "llm_proposal_with_position_caps",
+          "active_weight": 23.0,
+          "cash_weight": 77.0,
+          "capped_positions": [],
+          "normalized_to_100": false
+        },
+        "changes_vs_operating_state": [],
+        "changes_vs_first_valid_gemini_baseline": null,
+        "request_metrics": [
+          {
+            "provider": "gemini",
+            "model": "gemini-3.5-flash",
+            "input_tokens": 64004,
+            "output_tokens": 11314,
+            "thinking_tokens": 6977,
+            "total_tokens": 82295,
+            "latency_seconds": 72.566,
+            "status": "completed"
+          },
+          {
+            "provider": "gemini",
+            "model": "gemini-3.5-flash",
+            "input_tokens": 64595,
+            "output_tokens": 11524,
+            "thinking_tokens": 6436,
+            "total_tokens": 82555,
+            "latency_seconds": 64.399,
+            "status": "completed"
+          }
+        ],
+        "successful_generation_responses": 2,
+        "generation_attempts": 2,
+        "elapsed_seconds": 146.575
+      }
+    ],
+    "validated_decision_summary": {
+      "portfolio_decisions": [
+        {
+          "name": "한화오션",
+          "code": "042660",
+          "action": "보유",
+          "previous_weight": 1.5,
+          "proposed_weight": 1.5,
+          "decision_actor": "AI",
+          "basis": "이전 판단 유지",
+          "source_scope": "previous_decision",
+          "provenance_status": "legacy_unvalidated"
+        },
+        {
+          "name": "삼성전자",
+          "code": "005930",
+          "action": "보유",
+          "previous_weight": 1.5,
+          "proposed_weight": 1.5,
+          "decision_actor": "AI",
+          "basis": "이전 판단 유지",
+          "source_scope": "previous_decision",
+          "provenance_status": "legacy_unvalidated"
+        },
+        {
+          "name": "SK하이닉스",
+          "code": "000660",
+          "action": "보유",
+          "previous_weight": 5.0,
+          "proposed_weight": 5.0,
+          "decision_actor": "AI",
+          "basis": "이전 판단 유지",
+          "source_scope": "previous_decision",
+          "provenance_status": "legacy_unvalidated"
+        },
+        {
+          "name": "KODEX 2차전지산업",
+          "code": "305720",
+          "action": "보유",
+          "previous_weight": 5.0,
+          "proposed_weight": 5.0,
+          "decision_actor": "AI",
+          "basis": "이전 판단 유지",
+          "source_scope": "previous_decision",
+          "provenance_status": "legacy_unvalidated"
+        },
+        {
+          "name": "KODEX 은행",
+          "code": "091170",
+          "action": "보유",
+          "previous_weight": 7.0,
+          "proposed_weight": 7.0,
+          "decision_actor": "AI",
+          "basis": "이전 판단 유지",
+          "source_scope": "previous_decision",
+          "provenance_status": "legacy_unvalidated"
+        },
+        {
+          "name": "KODEX 은선물(H)",
+          "code": "233160",
+          "action": "보유",
+          "previous_weight": 3.0,
+          "proposed_weight": 3.0,
+          "decision_actor": "AI",
+          "basis": "이전 판단 유지",
+          "source_scope": "previous_decision",
+          "provenance_status": "legacy_unvalidated"
+        }
+      ],
+      "new_position_codes": [],
+      "IEF_in_watchlist": true,
+      "IEF_watchlist_provenance_status": "legacy_unvalidated",
+      "existing_source_basis_reverified": false,
+      "watchlist_instrument_attribution_fully_resolved": false
+    }
+  },
+  "total_generation_attempts": 8,
+  "repeatability_verified": false,
+  "regression_tests_passed": 291,
+  "regression_ci_url": "https://github.com/pikachu444/mer-portfolio/actions/runs/37401157443"
+}
