@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "github_run_id": "40221098487",
+  "github_run_id": "40396162314",
   "mode": "scheduled",
   "run_label": "scheduled",
-  "completed_at": "2026-10-26T03:25:07.267210",
+  "completed_at": "2026-10-27T05:30:35.539550",
   "state_bundle_committed": true,
-  "report_path": "report_20261026.md",
+  "report_path": "report_20261027.md",
   "chart_path": "chart_latest.png",
   "no_changes": true,
   "telegram_delivery_required": true,
   "telegram_delivery_deferred": true,
   "telegram_delivery_accepted": null,
-  "status_note": "새 글 19건 요약 실패/없음으로 투자 분석 보류: 메모리 다음은 받침대 싸움인가?, 서울 동네 이야기 (feat 신당동) 외 17건"
+  "status_note": "새 글 21건 요약 실패/없음으로 투자 분석 보류: SK하이닉스의 솔리다임 상장 논란의 비밀, 최근 미장의 돈이 몰려가는 곳 외 19건"
 }
