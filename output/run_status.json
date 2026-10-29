@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "github_run_id": "40761747958",
+  "github_run_id": "40947990155",
   "mode": "scheduled",
   "run_label": "scheduled",
-  "completed_at": "2026-10-29T05:17:25.874474",
+  "completed_at": "2026-10-30T05:20:11.647302",
   "state_bundle_committed": true,
-  "report_path": "report_20261029.md",
+  "report_path": "report_20261030.md",
   "chart_path": "chart_latest.png",
   "no_changes": true,
   "telegram_delivery_required": true,
   "telegram_delivery_deferred": true,
   "telegram_delivery_accepted": null,
-  "status_note": "새 글 26건 요약 실패/없음으로 투자 분석 보류: SK하이닉스 실적발표 내용과 솔리다임 상장의 뒷 이야기, 이란이 한국 장금상선에 조치를 취하겠다고 경고한 이유 외 24건"
+  "status_note": "새 글 29건 요약 실패/없음으로 투자 분석 보류: 조선업은 요즘 왜 이럴까?, SK하이닉스 실적발표 내용과 솔리다임 상장의 뒷 이야기 외 27건"
 }
