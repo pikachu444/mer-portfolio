@@ -4,9 +4,9 @@
   "inception_date": "2026-07-14",
   "base_currency": "KRW",
   "starting_value": 100.0,
-  "cash": 67.41184353182067,
+  "cash": 67.43626921126888,
   "realized_pnl": -0.06828706089267475,
-  "dividend_income": 0.03745454960574168,
+  "dividend_income": 0.0618802290539571,
   "cumulative_costs": 0.20931727997956195,
   "positions": [
     {
@@ -1205,11 +1205,25 @@
       "cash_per_share": 61.0,
       "quantity_at_event": 0.00042013519445761307,
       "cash_amount": 0.025628246861914398
+    },
+    {
+      "event_id": "yfinance:091170.KS:cash_dividend:2026-10-29:53",
+      "event_type": "cash_dividend",
+      "key": "etf:KR:091170",
+      "effective_date": "2026-10-29",
+      "source": "yfinance",
+      "ticker": "091170.KS",
+      "native_cash_per_share": 53.0,
+      "native_currency": "KRW",
+      "fx_rate": 1.0,
+      "cash_per_share": 53.0,
+      "quantity_at_event": 0.00046086187638142285,
+      "cash_amount": 0.02442567944821541
     }
   ],
   "corporate_action_state": {
-    "last_checked_date": "2026-10-30",
-    "last_applied_date": "2026-09-29"
+    "last_checked_date": "2026-10-31",
+    "last_applied_date": "2026-10-29"
   },
   "snapshots": [
     {
@@ -2376,6 +2390,17 @@
       "return_pct": -2.46832928,
       "realized_pnl": -0.06828706,
       "dividend_income": 0.03745455,
+      "cumulative_costs": 0.20931728
+    },
+    {
+      "date": "2026-10-31",
+      "kind": "closing",
+      "cash": 67.43626921,
+      "invested_value": 29.61972153,
+      "total_value": 97.05599074,
+      "return_pct": -2.94400926,
+      "realized_pnl": -0.06828706,
+      "dividend_income": 0.06188023,
       "cumulative_costs": 0.20931728
     }
   ],
