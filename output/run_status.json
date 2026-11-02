@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "github_run_id": "41343057295",
+  "github_run_id": "41542790117",
   "mode": "scheduled",
   "run_label": "scheduled",
-  "completed_at": "2026-11-02T04:42:48.662929",
+  "completed_at": "2026-11-03T08:07:27.125313",
   "state_bundle_committed": true,
-  "report_path": "report_20261102.md",
+  "report_path": "report_20261103.md",
   "chart_path": "chart_latest.png",
   "no_changes": true,
   "telegram_delivery_required": true,
   "telegram_delivery_deferred": true,
   "telegram_delivery_accepted": null,
-  "status_note": "새 글 37건 요약 실패/없음으로 투자 분석 보류: 앤트로픽은 왜 엔비디아GPU가 아니라 구글 TPU를 사용했을…, 사칭채널 차단 및 공지사항 업데이트 외 35건"
+  "status_note": "새 글 40건 요약 실패/없음으로 투자 분석 보류: 대한항공 vs 호반, 경영권 전쟁이 시작되나?, 엔비디아와 구글에 새로운 도전자가? 삼전과 하닉은? 외 38건"
 }
