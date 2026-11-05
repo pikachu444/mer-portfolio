@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "github_run_id": "41915110100",
+  "github_run_id": "42112912596",
   "mode": "scheduled",
   "run_label": "scheduled",
-  "completed_at": "2026-11-05T06:20:41.305379",
+  "completed_at": "2026-11-06T06:28:51.278248",
   "state_bundle_committed": true,
-  "report_path": "report_20261105.md",
+  "report_path": "report_20261106.md",
   "chart_path": "chart_latest.png",
   "no_changes": true,
   "telegram_delivery_required": true,
   "telegram_delivery_deferred": true,
   "telegram_delivery_accepted": null,
-  "status_note": "새 글 43건 요약 실패/없음으로 투자 분석 보류: 미국정부, SK하이닉스의 설비도입 승인 보류(feat 로이터), 스페이스X의 도전은 성공할 수 있을까? A/S 외 41건"
+  "status_note": "새 글 46건 요약 실패/없음으로 투자 분석 보류: 오늘 미장에 무슨 일이 일어나고 있나?, 재무부 분기조달계획에 숨겨진 비밀 외 44건"
 }
