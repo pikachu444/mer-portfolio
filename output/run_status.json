@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "github_run_id": "42292349693",
+  "github_run_id": "42406199321",
   "mode": "scheduled",
   "run_label": "scheduled",
-  "completed_at": "2026-11-07T05:55:34.807058",
+  "completed_at": "2026-11-08T04:26:52.944133",
   "state_bundle_committed": true,
-  "report_path": "report_20261107.md",
+  "report_path": "report_20261108.md",
   "chart_path": "chart_latest.png",
   "no_changes": true,
   "telegram_delivery_required": true,
   "telegram_delivery_deferred": true,
   "telegram_delivery_accepted": null,
-  "status_note": "새 글 47건 요약 실패/없음으로 투자 분석 보류: 12년간 문을 닫았던 단골집이 다시 오픈 했는데..., 오늘 미장에 무슨 일이 일어나고 있나? 외 45건"
+  "status_note": "새 글 49건 요약 실패/없음으로 투자 분석 보류: 어느새 방어철이 다가오고 있다., 12년간 문을 닫았던 단골집이 다시 오픈 했는데... 외 47건"
 }
