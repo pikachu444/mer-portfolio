@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "github_run_id": "42406199321",
+  "github_run_id": "42516395796",
   "mode": "scheduled",
   "run_label": "scheduled",
-  "completed_at": "2026-11-08T04:26:52.944133",
+  "completed_at": "2026-11-09T04:43:19.581408",
   "state_bundle_committed": true,
-  "report_path": "report_20261108.md",
+  "report_path": "report_20261109.md",
   "chart_path": "chart_latest.png",
   "no_changes": true,
   "telegram_delivery_required": true,
   "telegram_delivery_deferred": true,
   "telegram_delivery_accepted": null,
-  "status_note": "새 글 49건 요약 실패/없음으로 투자 분석 보류: 어느새 방어철이 다가오고 있다., 12년간 문을 닫았던 단골집이 다시 오픈 했는데... 외 47건"
+  "status_note": "새 글 52건 요약 실패/없음으로 투자 분석 보류: TSMC가 D램을 만든다고?, 젠슨 황 곁의 중국 여성, 스파이 의혹의 실체는? 외 50건"
 }
