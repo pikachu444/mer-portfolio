@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "github_run_id": "42723195125",
+  "github_run_id": "42903725288",
   "mode": "scheduled",
   "run_label": "scheduled",
-  "completed_at": "2026-11-10T08:47:29.114433",
+  "completed_at": "2026-11-11T06:19:10.058391",
   "state_bundle_committed": true,
-  "report_path": "report_20261110.md",
+  "report_path": "report_20261111.md",
   "chart_path": "chart_latest.png",
   "no_changes": true,
   "telegram_delivery_required": true,
   "telegram_delivery_deferred": true,
   "telegram_delivery_accepted": null,
-  "status_note": "새 글 55건 요약 실패/없음으로 투자 분석 보류: 주절주절....젠슨 황이 없어도 엔비디아가 돌아갈까?, 올겨울, 난방비 폭탄 고지서가 날아올까? (feat 천연가스… 외 53건"
+  "status_note": "새 글 56건 요약 실패/없음으로 투자 분석 보류: 바이낸스 사태가 무엇일까?, 주절주절....젠슨 황이 없어도 엔비디아가 돌아갈까? 외 54건"
 }
