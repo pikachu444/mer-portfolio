@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "github_run_id": "43314209099",
+  "github_run_id": "43510616220",
   "mode": "scheduled",
   "run_label": "scheduled",
-  "completed_at": "2026-11-13T06:51:25.587674",
+  "completed_at": "2026-11-14T06:26:33.652907",
   "state_bundle_committed": true,
-  "report_path": "report_20261113.md",
+  "report_path": "report_20261114.md",
   "chart_path": "chart_latest.png",
   "no_changes": true,
   "telegram_delivery_required": true,
   "telegram_delivery_deferred": true,
   "telegram_delivery_accepted": null,
-  "status_note": "새 글 61건 요약 실패/없음으로 투자 분석 보류: 미국 가정용 전기요금을 올린 범인이 데이터센터가 맞나?, 엔비디아의 젠슨 황, 이번에는 사내불륜인가.... 외 59건"
+  "status_note": "새 글 60건 요약 실패/없음으로 투자 분석 보류: 엔비디아의 젠슨 황, 이번에는 사내불륜인가...., 공매도 리포트는 이미 다 알고 있었다. (feat 젠슨 황) 외 58건"
 }
