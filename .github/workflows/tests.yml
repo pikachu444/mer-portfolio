@@ -1,0 +1,30 @@
+name: 메르 코드 회귀 검사
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install -r requirements.txt
+      - name: No-credential unit and regression tests
+        run: python -m unittest discover -s tests -v
+      - name: Frozen cached-source comparison (no API)
+        run: python compare_decisions.py --dry-run --run-type rebalance --output-dir experiments/comparison-ci
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: mer-input-comparison
+          path: experiments/comparison-ci/comparison.json

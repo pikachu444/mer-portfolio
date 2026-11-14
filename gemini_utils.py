@@ -11,6 +11,7 @@ import random
 import re
 import time
 from collections import defaultdict
+from decision_providers import GenerationRequestLimit
 
 
 DEFAULT_HTTP_TIMEOUT_MS = int(
@@ -263,6 +264,8 @@ def generate_content_with_retry(
             mark_model_called(model)
             _log_response_metadata(model, response, time.monotonic() - call_started_at)
             return response
+        except GenerationRequestLimit:
+            raise
         except Exception as e:
             mark_model_called(model)
             message = str(e)
