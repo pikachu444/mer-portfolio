@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "github_run_id": "43981875652",
+  "github_run_id": "44194388813",
   "mode": "scheduled",
   "run_label": "scheduled",
-  "completed_at": "2026-11-17T08:45:08.708924",
+  "completed_at": "2026-11-18T07:54:12.423945",
   "state_bundle_committed": true,
-  "report_path": "report_20261117.md",
+  "report_path": "report_20261118.md",
   "chart_path": "chart_latest.png",
   "no_changes": true,
   "telegram_delivery_required": true,
   "telegram_delivery_deferred": true,
   "telegram_delivery_accepted": null,
-  "status_note": "새 글 68건 요약 실패/없음으로 투자 분석 보류: 주식시장이 달라진 비밀, 연준까지 엔비디아를 저격하고 있나? (feat 연준 금융안정… 외 66건"
+  "status_note": "새 글 70건 요약 실패/없음으로 투자 분석 보류: 젠슨 황과 앨리스 황 이슈의 나비효과, 동남아 데이터센터 비상, 의외로 흥미로운 아이티 상황 (feat 엘살바도르, 용병왕,… 외 68건"
 }
