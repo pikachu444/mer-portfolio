@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "github_run_id": "44827300021",
+  "github_run_id": "44948714346",
   "mode": "scheduled",
   "run_label": "scheduled",
-  "completed_at": "2026-11-21T07:15:22.463386",
+  "completed_at": "2026-11-22T05:54:55.779102",
   "state_bundle_committed": true,
-  "report_path": "report_20261121.md",
+  "report_path": "report_20261122.md",
   "chart_path": "chart_latest.png",
   "no_changes": true,
   "telegram_delivery_required": true,
   "telegram_delivery_deferred": true,
   "telegram_delivery_accepted": null,
-  "status_note": "새 글 77건 요약 실패/없음으로 투자 분석 보류: 미장에 삼각파도가 덮쳤다. 어떻게 해야할까.., 치매 예방, 엉뚱한 곳에서 단서가 나왔다 외 75건"
+  "status_note": "새 글 78건 요약 실패/없음으로 투자 분석 보류: 일론 머스크는 디폴트라 했고, 소프트뱅크는 아니라고 부인한 …, 미장에 삼각파도가 덮쳤다. 어떻게 해야할까.. 외 76건"
 }
