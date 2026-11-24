@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
-  "github_run_id": "45310825603",
+  "github_run_id": "45513829860",
   "mode": "scheduled",
   "run_label": "scheduled",
-  "completed_at": "2026-11-24T11:14:27.875085",
+  "completed_at": "2026-11-25T08:55:17.822711",
   "state_bundle_committed": true,
-  "report_path": "report_20261124.md",
+  "report_path": "report_20261125.md",
   "chart_path": "chart_latest.png",
   "no_changes": true,
   "telegram_delivery_required": true,
   "telegram_delivery_deferred": true,
   "telegram_delivery_accepted": null,
-  "status_note": "새 글 83건 요약 실패/없음으로 투자 분석 보류: 젠슨 황 전격 복귀의 배경과 여파, 가장 큰 승자는 누구?, 국민연금은 코스피 얼마부터 국장을 본격적으로 살 수 있을까? 외 81건"
+  "status_note": "새 글 84건 요약 실패/없음으로 투자 분석 보류: 대만이 증안펀드를 신속하게 가동하고, AI소득을 지급하는 이유, 젠슨 황 전격 복귀의 배경과 여파, 가장 큰 승자는 누구? 외 82건"
 }
