@@ -1,5 +1,43 @@
 [
   {
+    "title": "코어위브는 어떻게 45억달러 대출을 받을 수 있을까?",
+    "date": "2026-11-26",
+    "url": "https://blog.naver.com/ranto28/224494029740?fromRss=true&trackingCode=rss",
+    "content": "블룸버그에 코어위브가 45억달러 규모의 대출을 진행한다는 기사가 나와서 내막을 뜯어봅니다.\n\n1. 코어위브가 2025년 7월, 5년만기로 발행한 회사채 17.5억달러는 11월 25일 1달러당 76.6센트의 사상 최저가로 떨어짐.\n\n2. 1달러에 매수한 코어위브 회사채를 다른 사람에게 매각하려면 76.6센트밖에 받을 수 없다는 의미임.\n\n3. 코어위브의 부도위험이 크게 높아진 것이 회사채 가치하락의 이유임.\n\n4. 이렇게 부도위험이 높은 코어위브가 7% 금리의 45억달러 대출을 진행한다고 함.\n\n5.  다양한 안전장치가 있어서 말이 되는 것임.\n\n6. 이번 대출의 담보는 메타의 데이터센터 이용요금과 GPU임.\n\n7. 이번 대출은 스타벅스가 입점한 건물로 설명할 수 있음.\n\n© 복숭아, 출처 OGQ\n\n8. 건물주의 신용은 좋지 않지만, 건물자체를 담보로 잡고, 1~2층에 입점한 스타벅스가 꼬박꼬박 낼 월세를 담보로 잡는 것임.\n\n9. 건물주에 문제가 생기면, 건물을 경매로 넘기든지, 스타벅스가 내는 월세로 이자와 원리금을 갚아나갈 수 있다는 계산을 할 수 있음.\n\n10. 이런 일에는 스타벅스가 \"\n월세를 건물주가 아니라 채권자에게 주겠다\n\"는 동의를 해야 성사가 됨.\n\n11. 여기서 건물주는 코어위브고, 스타벅스는 메타, 담보건물은 조지아주 돌턴 데이터센터에 들어갈 메타 전용 GPU임.\n\n12. 코어위브와 메타는 take-or-pay 계약을 함.\n\n13. 정수기 렌탈과 비슷한 계약으로, 물을 마시든 안 마시든 매달 렌탈료를 내야 하고 의무사용기간 중에는 마음대로 해지할 수 없음.\n\n© Bdory, 출처\n\n14. 메타도 AI 데이터센터를 쓰든 안 쓰든 약속한 돈은 내야 함.\n\n15. 채권자 입장에서 메타가 내게 될 take-or-pay 계약의 월 이용료는 원금과 이자를 갚아나가는 확실한 재원이 되는 것임.\n\n16. 담보로 잡게 될 GPU는 세월이 지나면 노후화되면서 담보가치가 떨어지는 문제가 있음.\n\n© MeshCube, 출처 OGQ\n\n17. 이번 대출은 이것을 분할상환으로 해결함.\n\n18. 담보가치 하락 속도보다 더 빠르게 원금이 줄어들면 담보비율이 유지될 수 있는 것임.\n\n19. 이번 대출은 메타의 신용을 보고 빌려주는것과 비슷하고, 메타가 전용으로 사용할 GPU가 추가담보로 들어오는 것임.\n\n20. 은행이 코어위브에게 직접 돈을 빌려주지 않는 것도 위험관리 방법의 하나임.\n\n21. 코어위브가 아니라 SPV(특수목적법인) 명의로 대출을 받게 됨.\n\n22. 코어위브에 문제가 생겨도, 메타가 내는 이용료와 GPU를 다른 채권자들이 손을 댈 수 없게 구조를 짜는 것임.\n\n23. 대출금도 코어위브로 가지 않음.\n\n24. 에스크로 계좌로 입금을 시켜서, 칩 값을 치를때만 꺼내 쓸수 있게 함.\n\n25. 3개월 동안 낼 이자와 원금도 묶어두게 됨.\n\n26. 100달러의 이용료가 들어오면, 10달러의 이자와 20달러의 분할상환 원금을 갚고 나머지를 코어위브가 가지고 가게 됨.\n\n27. 3개월치 이자와 원금 상환분 90달러를 묶어둬서, 코어위브가 한두달 삐끗해도 바로 연체가 되지 않게 만드는 것임.\n\n28. 캐시 트랩이라는 장치도 있음.\n\n© OGQ VIDEO, 출처 OGQ\n\n29. 코어위브에 문제가 생기면, SPV로 들어오는 돈이 코어위브로 넘어가지 않고, 전액을 원리금 상환에 사용해서 상환속도를 높이게 됨.\n\n30. 이번 대출을 주관하는 곳은 모건 스탠리와 MUFG임.\n\n31. 이들은 대출구조를 짜서 투자자들에게 팔고, 수수료 수입만을 먹게 됨.\n\n32. 나름 열심히 구조를 짠 것 같음.\n\n한줄 코멘트. 코어위브 대출은 안전장치를 겹겹이 달아서\n\"이정도면 안전하다\n\"는 구조를 짠 것 같음.  겉으로는 안전해 보여도, 막상 문제가 터지면 빈틈이 드러나는 경우가 많기는 함. 예를들면 코어위브가 서비스를 제대로 못해서 메타가 계약을 해지하면 take-or-pay 계약에도 이용료 지급이 끊길 수 있음.  정수기를 렌탈했는데, 계약상 정기적으로 해줘야하는 필터 교체를 안해주면 해지가 가능한 것과 비슷함.",
+    "summary": "글별 Flash-Lite 요약 실패로 투자 분석 보류",
+    "investment_relevant": false,
+    "relevance_reason": "글별 Flash-Lite 요약 실패로 투자 분석 보류",
+    "summary_version": null,
+    "summary_status": "deferred",
+    "summary_model_id": "gemini-3.1-flash-lite",
+    "summary_model_version": null,
+    "signal_candidates": [],
+    "summary_error": "RuntimeError: GEMINI_RATE_LIMIT model=gemini-3.1-flash-lite: 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}",
+    "analysis_status": "pending",
+    "summary_retry_count": 1,
+    "summary_failed_at": "2026-11-26T23:53:08",
+    "summary_next_retry_at": "2026-11-27T05:53:08"
+  },
+  {
+    "title": "고배당기업 분리과세 첫해, 분리과세보다 무서운 건 건보료",
+    "date": "2026-11-26",
+    "url": "https://blog.naver.com/ranto28/224493462867?fromRss=true&trackingCode=rss",
+    "content": "새로운 제도가 도입되어서 정리해 봅니다.\n\n1.  \"\n찬바람이 불면 배당주\n\"라는 말이 있음.\n\n© _𝑶𝒌𝒔𝒂𝒏𝒂_♡🇺🇦, 출처 OGQ\n\n2. 연말에 주식을 사서 배당을 받는 전통적인 전략을 말하는 것임.\n\n3. 올해 배당에는 변수 하나가 추가됨.\n\n4. 고배당기업 배당소득 분리과세가 처음 시행되는 것임.\n\n5. 같은 배당을 받아도, 어느 회사에서 받느냐에 따라서 세금이 달라질 수 있게 된 것임.\n\n6. 지금까지는\n이자와 배당을 합친 금융소득이 연 2천만원을 넘으면, 근로,사업소득과 합산돼 최고 49.5%의 누진세율을 맞았음.\n\n7. 이게 '\n금융소득종합과세\n'임.\n\n8.  올해부터는 요건을 갖춘 고배당기업의 배당은 금융소득이 2천만원을 넘어도 다른 소득과 합치지 않고, 별도 세율로 계산을 해주게 됨.\n\n9. 분리과세 세율은 배당소득 2천만원 이하 14%, 2천만~3억원 20%, 3억~50억원 25%, 50억원 초과 30%로 4단계임.\n\n© MeshCube, 출처 OGQ\n\n10. 위의 세율을 적용받으려면, 배당을 하는 기업이 다음 조건을 충족해야 함.\n\n11. 공통요건은 \"\n전년 대비 현금배당이 줄지 않는 것\n\"임.\n\n12. \"\n배당성향 40% 이상\n\" or \"\n배당성향 25% 이상이면서 전년 대비 배당 10% 이상 증가\n\"중 하나를 충족하면 고배당기업에 해당됨.\n\n13. 배당성향은 연결재무제표 기준으로 계산하고, 현금배당에 한정해서 계산하게 됨.\n\n14. ETF는 안됨.\n\n15. ETF 분배금은 이자나 일반 배당처럼 기존 방식(2천만원까지 분리과세, 초과분 종합과세)을 그대로 따름.\n\n16. 분리과세 혜택을 받으려면 개별종목을 직접 사야하는 것임.\n\n17. 괜찮은 제도 같지만 함정이 있음.\n\n© OGQ VIDEO, 출처 OGQ\n\n18. 분리과세가 항상 유리하지 않다는 것임.\n\n19. 분리과세를 선택하면, 국내 배당에 붙던 그로스업과 배당세액공제를 받을 수 없음.\n\n20. 그로스업과 배당세액공제라는 말이 어려울 것임.\n\n21.  배당소득에 10%(2027년부터 11%)를 더한 뒤, 같은 금액을 세액공제해 준다는 말임.\n\n22. 이것도 무슨말일지 어려울 것 같으니, 예를 들어 보겠음.\n\n23. 38% 세율 구간에 있는 직장인A가 고배당주 배당 5천만원을 받았다고 가정해 봄.\n\n25. 2천만원까지는 무조건 14% 세율을 적용받으니 280만원이 나옴.\n\n26. 2천만원을 넘는 3천만원은 세율 38%에 1.1을 곱해서(그로스업) 나온 금액에 10%를 빼니, 31.8%가 나옴.\n\n27. 38%세율이 아니라 31.8% 세율을 적용 받는다는 말임.\n\n28. 2천만원까지 14%를 적용한 280만원에, 3천만원에 31.8%를 곱해서 나오는 954만원을 더하면 1,234만원이 나오게 됨.\n\n29. 그로스업은 회사가 법인세를 미리 10% 냈다고 보는 것임.\n\n30. 3천만원을 법인세를 내기 전인 3천3백만원으로 돌린 뒤에, 3천만원의 10%인 300만원을 세액공제로 빼주겠다는 논리임.\n\n31. 원래 저 동네 계산은 저렇게 비비 꼬여있으니,  이해하려고 너무 노력하지 말고, 초과분 실효세율을 알아두는게 편함.\n\n32. 이런 사람에게 분리과세가 적용되면, 1,234만원이 880만원으로 줄어들게 됨.\n\n※2천만원*14%+3천만원*20%=880만원\n\n33. 이번에는 다른 소득이 거의 없는 은퇴자B가 3천만원 배당을 받았다고 가정 해봄.\n\n34. B가 종합과세를 선택하면 14%세율을 적용받아서 420만원의 세금을 내야 함.\n\n35. 분리과세는 2천만원이하에 14%가 적용되어 280만원이 나오고, 초과 1천만원에 20%가 적용되어 200만원이 나오게 됨.\n\n36. 은퇴자 B는 현재 종합과세로 420만원을 내면 되는데, 분리과세를 선택하면 480만원을 내야 하는 것임.\n\n© springsull, 출처\n\n37. 가만히 있으면 종합과세가 적용되고, 분리과세를 적용받으려면 2027년 5월 종소세 신고 때 분리과세 신청서를 별도로 내야 함.\n\n38. 세무적인 지식이 없으면, 몰라서 손해를 볼 수 있는 것임.\n\n39.  분리과세의 두번째 함정은 건보료임.\n\n40. 세금은 분리과세로 줄어도, 배당소득 자체는 건보료 소득에 그대로 잡힌다는 해석이 많음.\n\n41.건보공단은 건보료를 매기는 범위를 넓히려고 노력하고 있음 .\n\n42. 그동안 보험료 산정에서 빠져 있던 일용근로소득과 일부 금융,연금소득에 보험료를 매기는 방안등을 검토하고 있는 것임.\n\n43. 피부양자 자격이 걸린 은퇴자라면 세금보다 건보료가 더 큰 변수일 수 있음.\n\n44. 괜히 배당 조금 받으려다가, 소득기준을 초과해서 피부양자에 탈락할 수 있는 것임.\n\n45. 단순하게 세금만 보지말고, 건강보험료까지 같이 보고 배당을 받을지를 결정해야 하는 것임.\n\n46.  12월 결산법인의 배당 기준일은 12월 31일임.\n\n47. 12월 31일은 휴장일이라, 12월 30일이 마지막 거래일이고, 결제가 2일 걸림.\n\n48. 12월 28일까지 주식을 사서 보유하고 있는 사람이 배당을 받게 됨.\n\n한줄 코멘트.  2030은 주택임대차 보호법을 공부할 필요가 있고, 4050은 세법 공부가 필요하다고 생각함. 상속세, 증여세 뿐만 아니라 살아가는 모든 곳에 세금이 따라다니기 때문임.",
+    "summary": "글별 Flash-Lite 요약 실패로 투자 분석 보류",
+    "investment_relevant": false,
+    "relevance_reason": "글별 Flash-Lite 요약 실패로 투자 분석 보류",
+    "summary_version": null,
+    "summary_status": "deferred",
+    "summary_model_id": "gemini-3.1-flash-lite",
+    "summary_model_version": null,
+    "signal_candidates": [],
+    "summary_error": "RuntimeError: GEMINI_RATE_LIMIT model=gemini-3.1-flash-lite: 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}",
+    "analysis_status": "pending",
+    "summary_retry_count": 1,
+    "summary_failed_at": "2026-11-26T23:53:39",
+    "summary_next_retry_at": "2026-11-27T05:53:39"
+  },
+  {
     "title": "주절주절..노관심 PCE...대단한 GDP...돈은 이동중...중국AI 타격",
     "date": "2026-11-25",
     "url": "https://blog.naver.com/ranto28/224492503467?fromRss=true&trackingCode=rss",
@@ -14,9 +52,9 @@
     "signal_candidates": [],
     "summary_error": "RuntimeError: GEMINI_RATE_LIMIT model=gemini-3.1-flash-lite: 402 RESOURCE_EXHAUSTED. {'error': {'code': 402, 'message': 'Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ', 'status': 'RESOURCE_EXHAUSTED'}}",
     "analysis_status": "pending",
-    "summary_retry_count": 1,
-    "summary_failed_at": "2026-11-25T23:39:50",
-    "summary_next_retry_at": "2026-11-26T05:39:50"
+    "summary_retry_count": 2,
+    "summary_failed_at": "2026-11-26T23:53:39",
+    "summary_next_retry_at": "2026-11-27T11:53:39"
   },
   {
     "title": "대한항공 vs 호반 경영권 전쟁 근황",
